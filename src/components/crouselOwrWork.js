@@ -7,6 +7,7 @@ import right from '../assets/img/right-arrow.svg';
 import { useNavigate } from 'react-router-dom';
 import jQuery from "jquery";
 import Slider from "react-slick";
+import Carousel from 'react-spring-3d-carousel';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
@@ -56,78 +57,68 @@ const CarouselOwrWork = () => {
     const slides = [
         {
             key: 1,
-            content: <img src={skin} alt="1" />
+            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }}  alt="1" />
         },
         {
             key: 2,
-            content: <img src={skin} alt="2" />
+            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="2" />
         },
         {
             key: 132,
-            content: <img src={skin} alt="3" />
+            content: <img src={comm} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="3" />
         },
         {
             key: 13,
-            content: <img src={skin} alt="4" />
+            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="4" />
         },
         {
             key: 41,
-            content: <img src={skin} alt="5" />
+            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="5" />
         },
         {
             key: 531,
-            content: <img src={skin} alt="6" />
+            content: <img src={comm} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="6" />
         },
         {
             key: 3221,
-            content: <img src={skin} alt="7" />
+            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="7" />
         },
         {
             key: 111,
-            content: <img src={skin} alt="8" />
+            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="8" />
         }
     ];
     const callback = function (index) {
         console.log("callback", index);
     }
+    const [state, setState] = useState({
+        goToSlide: 0,
+        offsetRadius: 2,
+        showNavigation: false,
+        // config: config.gentle
+      });
+
+      const onChangeInputplus = (e) => {
+        setState({
+          'goToSlide': state.goToSlide + 1|| 0
+        });
+      };
+
+      const onChangeInputminus = (e) => {
+        setState({
+            'goToSlide': state.goToSlide - 1|| 0
+          });
+      };
+    
     return (
         <>
             <div className="tw-hidden min-[900px]:tw-flex tw-flex-row">
-                {/* <Slider {...settings}>
-          <div>
-          <img src={skin} alt="1" />
-          </div>
-          <div>
-          <img src={skin} alt="1" />
-          </div>
-          <div>
-          <img src={skin} alt="1" />
-          </div>
-          <div>
-          <img src={skin} alt="1" />
-          </div>
-          <div>
-          <img src={skin} alt="1" />
-          </div>
-          <div>
-          <img src={skin} alt="1" />
-          </div>
-          <div>
-          <img src={skin} alt="1" />
-          </div>
-          <div>
-          <img src={skin} alt="1" />
-          </div>
-          <div>
-          <img src={skin} alt="1" />
-          </div>
-        </Slider> */}
 
-                <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">                    <div className="" onClick={sliderRef?.slickPrev} >
+                <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">                    <div className="" onClick={onChangeInputminus} >
                     <span className="" aria-hidden="true"><img src={left} alt='dd'></img></span>
                 </div></div>
-                <div class="tw-basis-[90%] min-[900px]:tw-basis-5/6">
-                    <Slider ref={setSliderRef} {...settings} className='tw-hidden min-[900px]:tw-grid tw-w-[30vh] min-[900px]:tw-w-[100vh] tw-mx-auto tw-h-[600px] min-[900px]:tw-h-[600px] center' style={{
+                <div class="tw-basis-[90%] min-[900px]:tw-basis-5/6 tw-w-[100%] tw-h-[500px] mx-auto">
+                    {/* <Slider ref={setSliderRef} {...settings} className='tw-hidden min-[900px]:tw-grid tw-w-[30vh] min-[900px]:tw-w-[100vh] tw-mx-auto tw-h-[600px] min-[900px]:tw-h-[600px] center' style={{
 
                     }}>
                         <div class="main">
@@ -175,94 +166,19 @@ const CarouselOwrWork = () => {
                             <span className='text-over-image centered tw-font-sans tw-font-bold' style={{ "zIndex": '1000000000000000000000000000000' }}>Hair commercial</span>
 
                         </div>
-                    </Slider>
+                    </Slider> */}
+                 <Carousel slides={slides}   goToSlide={state.goToSlide}
+        offsetRadius={state.offsetRadius}
+        showNavigation={state.showNavigation}
+         />
 
 
 
-                    {/* <div id="gallery" className="carousel slide carousel-fade tw-w-full tw-mx-4" data-ride="carousel">
-                    <ol class="carousel-indicators tw-hidden min-[900px]:tw-block">
-                        <li data-target="#gallery" data-slide-to="0" class="active"></li>
-                        <li data-target="#gallery" data-slide-to="1"></li>
-                        <li data-target="#gallery" data-slide-to="2"></li>
-                    </ol>
-                    <div className="carousel-inner ">
-                        <div className="carousel-item active">
-                            <div className="tw-flex tw-flex-row min-[900px]:tw-gap-4">
-                                <div className="tw-hidden min-[900px]:tw-block min-[900px]:tw-basis-1/3 " style={{ 'position': 'relative' }}>
-                                    <div className='sideImage img-fluid' onClick={rediectHair}>
-                                        <img className=" " style={{ 'opacity': '0.5', 'objectFit': 'cover', 'width': '100%', 'height': '500px' }} src={hair} alt="Image 3" />
-                                    </div>
-                                    <div class="centered tw-font-sans tw-font-bold">Hair commercial</div>
-                                </div>
 
-                                <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                                    <img className="img-fluid activeImage" src={comm} alt="Image 2" />
-                                    <div class="centered tw-font-sans tw-font-bold">Commercial</div>
-                                </div>
-
-                                <div className="tw-hidden min-[900px]:tw-block min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                                    <div className='sideImage img-fluid'>
-                                        <img className=" " style={{ 'opacity': '0.5', 'objectFit': 'cover', 'width': '100%', 'height': '500px' }} src={skin} alt="Image 3" />
-                                    </div>
-                                    <div class="centered tw-font-sans tw-font-bold">Skin Commercial</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="carousel-item ">
-                            <div className="tw-flex tw-flex-row min-[900px]:tw-gap-4">
-                                <div className="tw-hidden min-[900px]:tw-block min-[900px]:tw-basis-1/3 " style={{ 'position': 'relative' }}>
-                                    <div className='sideImage img-fluid'>
-                                        <img className=" " style={{ 'opacity': '0.5', 'objectFit': 'cover', 'width': '100%', 'height': '500px' }} src={comm} alt="Image 3" />
-                                    </div>
-                                    <div class="centered tw-font-sans tw-font-bold">Hair commercial</div>
-                                </div>
-
-                                <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                                    <img className="img-fluid activeImage" src={skin} alt="Image 2" />
-                                    <div class="centered tw-font-sans tw-font-bold">Commercial</div>
-                                </div>
-
-                                <div className="tw-hidden min-[900px]:tw-block min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                                    <div className='sideImage img-fluid' onClick={rediectHair}>
-                                        <img className=" " style={{ 'opacity': '0.5', 'objectFit': 'cover', 'width': '100%', 'height': '500px' }} src={hair} alt="Image 3" />
-                                    </div>
-                                    <div class="centered tw-font-sans tw-font-bold">Skin Commercial</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="carousel-item ">
-                            <div className="tw-flex tw-flex-row min-[900px]:tw-gap-4">
-                                <div className="tw-hidden min-[900px]:tw-block min-[900px]:tw-basis-1/3 " style={{ 'position': 'relative' }}>
-                                    <div className='sideImage img-fluid'>
-                                        <img className=" " style={{ 'opacity': '0.5', 'objectFit': 'cover', 'width': '100%', 'height': '500px' }} src={skin} alt="Image 3" />
-                                    </div>
-                                    <div class="centered tw-font-sans tw-font-bold">Hair commercial</div>
-                                </div>
-
-                                <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                                    <img className="img-fluid activeImage" onClick={rediectHair} src={hair} alt="Image 2" />
-                                    <div class="centered tw-font-sans tw-font-bold">Commercial</div>
-                                </div>
-
-                                <div className="tw-hidden min-[900px]:tw-block min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                                    <div className='sideImage img-fluid'>
-                                        <img className=" " style={{ 'opacity': '0.5', 'objectFit': 'cover', 'width': '100%', 'height': '500px' }} src={comm} alt="Image 3" />
-                                    </div>
-                                    <div class="centered tw-font-sans tw-font-bold">Skin Commercial</div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div> */}
 
                 </div>
                 <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">
-                    <div className="" onClick={sliderRef?.slickNext} style={{ 'float': 'right' }}>
+                    <div className="" onClick={onChangeInputplus} style={{ 'float': 'right' }}>
                         <span className="" aria-hidden="true"><img src={right} alt='dd'></img></span>
                     </div>
                 </div>

@@ -123,11 +123,11 @@ const BrandWorkWith = () => {
       <div className='brandWorkWith' id='ss'>
         <div className='tw-grid tw-mx-10 min-[900px]:tw-mx-48'>
           <div className='tw-columns-1'>
-            <div className='tw-font-sans tw-font-bold tw-text-2xl tw-mt-4 min-[900px]:tw-mt-8 tw-text-black min-[900px]:tw-text-white underline-small' style={{ 'textTransform': 'uppercase' }}>
+            <div className='tw-font-sans tw-font-bold tw-text-2xl tw-mt-4 min-[900px]:tw-mt-[55px] tw-text-black min-[900px]:tw-text-white underline-small' style={{ 'textTransform': 'uppercase' }}>
               Brands worked with
             </div>
           </div>
-          <div className='tw-hidden min-[900px]:tw-grid tw-grid-cols-2 min-[900px]:tw-grid-cols-4 tw-gap-4 tw-my-16 '>
+          <div className='tw-hidden min-[900px]:tw-grid tw-grid-cols-2 min-[900px]:tw-grid-cols-4 tw-gap-4 tw-my-[45px] '>
             <img src={brand1} alt='d' style={{ 'margin': 'auto' }}></img>
             <img src={brand2} alt='d' style={{ 'margin': 'auto' }}></img>
             <img src={brand3} alt='d' style={{ 'margin': 'auto' }}></img>
@@ -174,7 +174,7 @@ const BrandWorkWith = () => {
           </div>
         </div>
       </div>
-      <div className='tw-hidden min-[900px]:tw-grid tw-grid-cols-4  tw-h-[285px] min-[900px]:tw-h-auto  tw-mx-8 min-[900px]:tw-mx-48 tw-my-10'>
+      <div className='tw-hidden min-[900px]:tw-grid tw-grid-cols-4  tw-h-[285px] min-[900px]:tw-h-auto  tw-mx-8 min-[900px]:tw-mx-[350px] tw-my-[50px]'>
         <div className='tw-my-auto'><img src={logo} alt='home'></img></div>
         <div className='tw-col-span-3' >
           <div className="vertical-line tw-mx-8"></div>
@@ -193,7 +193,7 @@ const BrandWorkWith = () => {
           </div>
           <div className='tw-columns-1 tw-mx-auto'>
             <div className='tw-font-sans tw-font-normal  tw-mt-1 min-[900px]:tw-mt-2 tw-text-black min-[900px]:tw-text-white' style={{ 'textTransform': 'uppercase', 'fontSize': '142px', 'lineHeight': '142px' }}>
-              "
+             ''
             </div>
           </div>
           <div className='tw-columns-1'>

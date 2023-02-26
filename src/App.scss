@@ -256,7 +256,7 @@ animation-duration: 1s;
 
   }
   background: #232323;
-  height: 335.5px;
+  height: 261px;
   width: 100%;
  }
 
@@ -270,7 +270,7 @@ animation-duration: 1s;
  }
 
  div.vertical-line{
-  width: 10px; /* Line width */
+  width: 5px; /* Line width */
   background-color: black; /* Line color */
   height: 100%; /* Override in-line if you want specific height. */
   float: left; /* Causes the line to float to left of content. 
@@ -602,4 +602,35 @@ border-radius: 81px;
     // }
   }
 } 
+
+
+
+
+.zoom-in {
+  transform: scale(0);
+  transition: transform 1s ease-in;
+}
+
+.zoom-in.zoom-in-active {
+  transform: scale(1);
+}
+
+.fade-out {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-out.fade-out-active {
+  opacity: 0;
+}
+
+.horizonal-line::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #fff;
+}
 

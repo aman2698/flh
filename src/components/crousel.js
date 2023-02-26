@@ -2,15 +2,17 @@ import React from 'react'
 import image1 from '../assets/img/carousel/2.JPG'
 import image2 from '../assets/img/carousel/1.JPG'
 import image3 from '../assets/img/carousel/3.JPG'
-import gif from '../assets/img/circle.gif'
+import giff from '../assets/img/circle.gif'
 
 const Crousel = () => {
     let [path, setPath] = React.useState('')
     let [count, setcount] = React.useState(1)
+    let [gif, setGif] = React.useState(true)
     React.useEffect(() => {
         setPath(image1)
         let interval = setInterval(() => {
             toggle()
+            
         }, 5000);
 
         return () => {
@@ -18,10 +20,35 @@ const Crousel = () => {
         }
     }, [])
 
+    React.useEffect(() => {
+        document.querySelectorAll('.fade-out').forEach(e =>{
+            e.classList.add('fade-out-active');
+        })
+        setTimeout(() => {
+            document.querySelectorAll('.fade-out').forEach(e =>{
+                e.classList.remove('fade-out-active');
+            })
+            
+        }, 500);
+        setTimeout(() => {
+            document.querySelectorAll('.zoom-in').forEach(e =>{
+                e.classList.add('zoom-in-active');
+            })
+        }, 500);
+        if (count ==2) {
+            
+            setGif(false)
+        }
+    }, [count])
+    
+
     const toggle = () => {
+
+
         if (count == 1) {
             setPath(image1)
             setcount(count++)
+            // setGif(false)
         } else if (count == 2) {
             setPath(image2)
             setcount(count++)
@@ -30,6 +57,7 @@ const Crousel = () => {
             setcount(count--)
             setcount(count--)
         }
+
         // setcount(count++)
 
 
@@ -45,17 +73,33 @@ const Crousel = () => {
                     <div className="tw-grid min-[900px]:tw-grid-cols-4 tw-mt-10 min-[900px]:tw-mt-24" style={{
                     }}>
                         <span></span>
-                        <span className='tw-font-sans tw-font-bold min-[900px]:tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '50px', lineHeight: '57px', color: '#fff', 'marginTop': '10%' }}>
+                        {count === 1 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold min-[900px]:tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '50px', lineHeight: '57px', color: '#fff', 'marginTop': '10%' }}>
                             Makeup Artist & Hair Specialist
-                        </span>
+                        </span>}
+                            {count === 2 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold min-[900px]:tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '50px', lineHeight: '57px', color: '#fff', 'marginTop': '10%' }}>
+                            Makeup Artist & Hair Specialist
+                        </span>}
+                            {count === 3 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold min-[900px]:tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '50px', lineHeight: '57px', color: '#fff', 'marginTop': '10%' }}>
+                            Makeup Artist & Hair Specialist
+                        </span>}
+                        
                         <span></span>
                     </div>
                     <div className="tw-grid min-[900px]:tw-grid-cols-4 min-[900px]:tw-mt-10" style={{
                     }}>
                         <span></span>
-                        <span className='tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
+                        {count === 1 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
                             Florian Hurel
-                        </span>
+                        </span>}
+                            {count === 2 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
+                            Florian Hurel
+                        </span>}
+                            {count === 3 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
+                            Florian Hurel
+                        </span>}
+                        {/* <span className=' fade-out zoom-in tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
+                            Florian Hurel
+                        </span> */}
                         <span></span>
                     </div>
                     <div className="tw-grid min-[900px]:tw-grid-cols-4" style={{
@@ -64,15 +108,16 @@ const Crousel = () => {
                         'position':'relative'
                     }}>
                         <span></span>
-                        <p className='tw-font-sans tw-font-light tw-col-span-3 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '18px', lineHeight: '27px', color: '#fff', 'white-space': 'break-spaces', 'text-transform': 'uppercase', width: '90%' }}>
-                            <span className='tw-font-semibold'>BIO</span><span>   ----      Brands worked with    ----    Business holded   Magazine Covers    ----  Commercial</span>
-                            <img src={gif} style={{
+                        <p className=' fade-out zoom-in tw-font-sans tw-font-light tw-col-span-3 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '18px', lineHeight: '27px', color: '#fff', 'white-space': 'break-spaces', 'text-transform': 'uppercase', width: '90%' }}>
+                            <span className='tw-font-semibold'>BIO</span><span>   <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>      Brands worked with    <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>     Business holded   Magazine Covers   <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>    Commercial</span>
+                        </p>
+                            {gif && <img src={giff} style={{
                                 'height': '100px',
                                 'position': 'absolute',
                                 'right': '-5%',
                                 'z-index': '999'
                             }} alt='gif'></img>
-                        </p>
+                            }
                     </div>
                 </div>
                 <div className="animation">
