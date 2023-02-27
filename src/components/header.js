@@ -24,7 +24,7 @@ const Header = () => {
     }
 
     return (
-        <header className=' overlay'>
+        <header id='nav' className=' overlay'>
             <div className='tw-hidden min-[900px]:tw-flex min-[900px]:tw-flex-row ' style={{ height: '60px', margin: '20px' }}>
                 <div className='tw-basis-1/3 tw-my-auto tw-mx-auto tw-font-bold tw-font-sans' style={{ 'fontSize': '20px' }} >
                     <span onClick={e => setNavbar(!navbar)}>MENU</span>

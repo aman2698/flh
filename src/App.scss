@@ -1,7 +1,7 @@
 /* .App {
   text-align: center;
 }
-
+@import "mixins";
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,7 +36,7 @@
     transform: rotate(360deg);
   }
 } */
-
+// @import "mixins";
 .overlay {
   position: relative;
    z-index: 10000;
@@ -395,7 +395,7 @@ border-radius: 81px;
 }
 
 .img-fluid {
-  max-width: 88%;
+  max-width: 100%;
   // height: auto;
 }
 
@@ -634,3 +634,4 @@ border-radius: 81px;
   border-top: 1px solid #fff;
 }
 
+// button

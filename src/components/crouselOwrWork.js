@@ -17,10 +17,13 @@ const CarouselOwrWork = () => {
     const [sliderRef, setSliderRef] = useState(null)
     const navigate = useNavigate();
     const rediectHair = useCallback(() => navigate('/our-work/magzine', { replace: true }), [navigate]);
+    const rediectcomm = useCallback(() => navigate('/our-work/magzine', { replace: true }), [navigate]);
+    const rediectSkin = useCallback(() => navigate('/our-work/magzine', { replace: true }), [navigate]);
+    const rediectCA = useCallback(() => navigate('/our-work/celebrity', { replace: true }), [navigate]);
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        // speed: 500,
         arrows: false,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -57,45 +60,92 @@ const CarouselOwrWork = () => {
     const slides = [
         {
             key: 1,
-            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }}  alt="1" />
+            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }}  alt="1" />,
+            onClick: () => rediectSkin()
         },
         {
             key: 2,
-            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="2" />
+            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="2" />,
+            onClick: () => rediectcomm()
+
         },
         {
             key: 132,
-            content: <img src={comm} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="3" />
+            content: <img src={comm} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="3" />,
+            onClick: () => rediectcomm()
+
         },
         {
             key: 13,
-            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="4" />
+            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="4" />,
+            onClick: () => rediectCA()
+
         },
         {
             key: 41,
-            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="5" />
+            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="5" />,
+            onClick: () => rediectSkin()
+
         },
         {
             key: 531,
-            content: <img src={comm} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="6" />
+            content: <img src={comm} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="6" />,
+            onClick: () => rediectSkin()
+
         },
         {
             key: 3221,
-            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="7" />
+            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="7" />,
+            onClick: () => rediectSkin()
+
         },
         {
             key: 111,
-            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="8" />
+            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="8" />,
+            onClick: () => rediectSkin()
+
+        },
+        {
+            key: 5231,
+            content: <img src={comm} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="6" />,
+            onClick: () => rediectSkin()
+
+        },
+        {
+            key: 356651,
+            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="7" />,
+            onClick: () => rediectSkin()
+
+        },
+        {
+            key: 13211,
+            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="8" />,
+            onClick: () => rediectSkin()
+
         }
     ];
     const callback = function (index) {
+        if (index === -1 ||index === 1) {
+             return {
+                'opacity':0.5,
+                'width':'400px'
+             }
+        }else if(index === 0){
+            return {
+                'opacity':1,
+             }
+        }else{
+            return {
+                'opacity':0,
+             }
+        }
         console.log("callback", index);
     }
     const [state, setState] = useState({
         goToSlide: 0,
         offsetRadius: 2,
         showNavigation: false,
-        // config: config.gentle
+        config: config.gentle
       });
 
       const onChangeInputplus = (e) => {
@@ -169,7 +219,10 @@ const CarouselOwrWork = () => {
                     </Slider> */}
                  <Carousel slides={slides}   goToSlide={state.goToSlide}
         offsetRadius={state.offsetRadius}
+        enableSwipe= 'true'
         showNavigation={state.showNavigation}
+        animationConfig={state.config}
+        offsetFn={callback}
          />
 
 
@@ -193,30 +246,30 @@ const CarouselOwrWork = () => {
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                                <img className="img-fluid activeImage" src={comm} alt="Image 2" />
+                                <img className="img-fluid activeImage tw-object-contain" src={comm} alt="Image 2" />
                                 <div class="centered tw-font-sans tw-font-bold">Commercial</div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                                <img className="img-fluid activeImage" src={skin} alt="Image 2" />
+                                <img className="img-fluid activeImage tw-object-contain" src={skin} alt="Image 2" />
                                 <div class="centered tw-font-sans tw-font-bold">Commercial</div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                                <img className="img-fluid activeImage" onClick={rediectHair} src={hair} alt="Image 2" />
+                                <img className="img-fluid activeImage tw-object-contain" onClick={rediectHair} src={hair} alt="Image 2" />
                                 <div class="centered tw-font-sans tw-font-bold">Commercial</div>
                             </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+                        <span class="sr-only"></span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
+                        <span class="sr-only"></span>
                     </a>
                 </div>
             </div>
