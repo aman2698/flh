@@ -75,9 +75,9 @@ const BrandWorkWith = () => {
   React.useEffect(() => {
     // setSelectedVideo(videoArray[0])
     console.log(videoArray[selectedVideo], selectedVideo, isOpen);
-    videoRef.current?.load();
+    // videoRef.current?.load();
     return () => {
-      videoRef.current?.pause();
+      // videoRef.current?.pause();
     }
   }, [videoArray, selectedVideo, isOpen])
 
@@ -112,7 +112,9 @@ const BrandWorkWith = () => {
   }
 
   const closeModal = () => {
-    videoRef.current?.pause();
+    // console.log(videoRef);
+    // videoRef.current?.contentWindow.close();
+    setvideoArray([])
     document.getElementById('modal').style.display = 'none'
     document.getElementsByTagName('body')[0].classList.remove('tw-overflow-y-hidden')
   }
@@ -263,13 +265,13 @@ const BrandWorkWith = () => {
           </div>
           <div id='video1' className='tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8  tw-mx-8 md:tw-mx-48 tw-my-10 mx-auto'>
             <video onClick={e => play(e, 'video1', 0)} poster={t1}>
-              <source src={f1} type="video/mp4" />
+              <source src='https://www.youtube.com/embed/V3v-hYQC_D8?autoplay=1' type="video/mp4" />
             </video>
             <video onClick={e => play(e, 'video1', 1)} poster={t2}>
-              <source src={f2} type="video/mp4" />
+              <source src='https://www.youtube.com/embed/mXkdtM86REY?autoplay=1' type="video/mp4" />
             </video>
             <video onClick={e => play(e, 'video1', 2)} poster={t3}>
-              <source src={f3} type="video/mp4" />
+              <source src='https://www.youtube.com/embed/7VNpvlF4xCw?autoplay=1' type="video/mp4" />
             </video>
           </div>
           <div className='tw-columns-1'>
@@ -595,9 +597,9 @@ const BrandWorkWith = () => {
                 <source src={videoArray[selectedVideo]} type="video/mp4" />
               </video> */}
 
-              <iframe id="ytplayer" type="text/html" className='tw-w-full tw-h-full'
-                src="https://www.youtube.com/embed/dfjgjXY-nPo?autoplay=1"
-                frameBorder="0" allowFullScreen />
+              <iframe id="ytplayer" type="text/html" ref={videoRef} className='tw-w-full tw-h-full'
+                src={videoArray[selectedVideo]}
+                frameBorder="0" allowFullScreen title="This is a unique title" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"/>
             </div>
             <div className="tw-basis-1/12 my-auto">
               <div className="md:tw-mx-8 tw-mx-2" onClick={nextVideo}>

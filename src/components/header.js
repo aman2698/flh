@@ -5,7 +5,8 @@ import togg from '../assets/img/togg.svg';
 import insta from '../assets/img/instagram.svg';
 import twitter from '../assets/img/twitter.svg';
 import useCollapse from 'react-collapsed';
-
+import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
     const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
@@ -13,6 +14,7 @@ const Header = () => {
     const [ourWork, setourWork] = React.useState(false);
     const [blog, setblog] = React.useState(false);
     const [campaign, setcampaign] = React.useState(false);
+    const navigate = useNavigate();
     React.useEffect(() => {
         console.log(navbar);
 
@@ -27,7 +29,7 @@ const Header = () => {
         <header id='nav' className=' overlay'>
             <div className='tw-hidden min-[900px]:tw-flex min-[900px]:tw-flex-row ' style={{ height: '60px', margin: '20px' }}>
                 <div className='tw-basis-1/3 tw-my-auto tw-mx-auto tw-font-bold tw-font-sans' style={{ 'fontSize': '20px' }} >
-                    <span onClick={e => setNavbar(!navbar)}>MENU</span>
+                    <span style={{'cursor':'pointer'}} onClick={e => setNavbar(!navbar)}>MENU</span>
                 </div>
                 <div className='tw-basis-1/3 tw-my-auto' style={{ textAlign: '-webkit-center', }}>
                     <img src={logo} alt='home'></img>
@@ -63,7 +65,7 @@ const Header = () => {
                         'line-height': '35px',
                         'text-transform': 'uppercase'
                     }}>
-                        <span style={{ 'cursor': 'pointer' }}>Home</span>
+                        <span style={{ 'cursor': 'pointer' }} onClick={() => navigate("/")}>Home </span>
                     </li >
                     <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4" style={{
                         'font-family': 'Open Sans',
@@ -95,7 +97,7 @@ const Header = () => {
                             'line-height': '24px',
                             'text-transform': 'uppercase'
                         }}>
-                            <span style={{ 'cursor': 'pointer' }} onClick={e => moveto()}>Campaigns</span>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/our-work/campaigns")}>Campaigns</span>
                         </li>
                         <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
                             'font-family': 'Open Sans',
@@ -105,18 +107,7 @@ const Header = () => {
                             'line-height': '24px',
                             'text-transform': 'uppercase'
                         }}>
-                            <span style={{ 'cursor': 'pointer' }} onClick={e => moveto()}>Celebrity appearances</span>
-                        </li>
-
-                        <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
-                            'font-family': 'Open Sans',
-                            'font-style': 'normal',
-                            'font-weight': 300,
-                            'font-size': '24px',
-                            'line-height': '24px',
-                            'text-transform': 'uppercase'
-                        }}>
-                            <span style={{ 'cursor': 'pointer' }} onClick={e => moveto()}>Skin Commercials</span>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/our-work/celebrity")}>Celebrity appearances</span>
                         </li>
 
                         <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
@@ -127,7 +118,7 @@ const Header = () => {
                             'line-height': '24px',
                             'text-transform': 'uppercase'
                         }}>
-                            <span style={{ 'cursor': 'pointer' }} onClick={e => moveto()}>Hair Commercials</span>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/our-work/skin")}>Skin Commercials</span>
                         </li>
 
                         <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
@@ -138,7 +129,18 @@ const Header = () => {
                             'line-height': '24px',
                             'text-transform': 'uppercase'
                         }}>
-                            <span style={{ 'cursor': 'pointer' }} onClick={e => moveto()}>Magazine covers</span>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/our-work/hair")}>Hair Commercials</span>
+                        </li>
+
+                        <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
+                            'font-family': 'Open Sans',
+                            'font-style': 'normal',
+                            'font-weight': 300,
+                            'font-size': '24px',
+                            'line-height': '24px',
+                            'text-transform': 'uppercase'
+                        }}>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/our-work/magzine")}>Magazine covers</span>
                         </li>
                     </ul>
 
