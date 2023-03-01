@@ -61,7 +61,7 @@
 .crousel-component{
   @media only screen and (max-width: 900px) {
     background-color: #fff;
-    height: 450px;
+    height: auto;
 
   }
   height: 600px;
@@ -77,13 +77,16 @@
 }
 
 .underline-small::after{
-  content:'';
-  height:2px;
-  width:20px;
-  background:#000;
-  position:absolute;
-  left:calc(30% - 10%);
-  bottom:-5px;
+  @media only screen and (max-width: 900px) {
+    content:'';
+    height:2px;
+    width:20px;
+    background:#000;
+    position:absolute;
+    left:calc(30% - 10%);
+    bottom:-5px;
+  }
+  width:0px;
 /*   another way you can achieve this
   Check this link: 
   https://goo.gl/GgRdjz
@@ -251,7 +254,7 @@ animation-duration: 1s;
 
  .brandWorkWith{
   @media only screen and (max-width: 900px) {
-    background-color: #fff;
+    background-color: #232323;
     height: 200px;
 
   }
@@ -262,7 +265,7 @@ animation-duration: 1s;
 
  .our-work{
   @media only screen and (max-width: 900px) {
-    background-color: #fff;
+    background-color: #232323;
 
   }
   background: #232323;
@@ -638,4 +641,8 @@ border-radius: 81px;
 
 video{
   margin: auto;
+}
+
+a{
+  cursor: pointer;
 }

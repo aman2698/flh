@@ -2,7 +2,7 @@ import React from 'react'
 
 const Bio = () => {
     return (
-        <div className='tw-grid tw-mx-8 min-[900px]:tw-mx-56 tw-my-10'>
+        <div id='bio' className='tw-grid tw-mx-8 min-[900px]:tw-mx-56 tw-my-10'>
           <div className='tw-columns-1 '>
             <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small ' style={{'marginBottom':'15px','textTransform':'uppercase'}}>Bio</div>
             <div className='tw-font-sans tw-font-normal min-[900px]:tw-text-2xl tw-text-lg'>

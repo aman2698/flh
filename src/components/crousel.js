@@ -141,15 +141,15 @@ const Crousel = () => {
             </div>
             <div className='tw-grid min-[900px]:tw-hidden'>
                 <div className='tw-columns-1 '>
-                    <div className='tw-w-full'>
+                    <div className='tw-w-full' style={{'background':'#232323',"padding":'20px 1px'}}>
                         <div className="animation tw-mx-auto tw-mt-2 tw-w-[80vw]" style={{'position':'relative'}} >
-                        <img src={gif} style={{
+                        {gif && <img src={giff} style={{
                                 'height': '80px',
                                 'position': 'absolute',
                                 'left': '-1%',
                                 'z-index': '999',
                                 'top':'10%'
-                            }} alt='gif'></img>
+                            }} alt='gif'></img>}
                             {count === 1 && <div className=' outer2 tw-mx-auto' >
                                 <div class="underlay2 tw-mx-auto">
                                     <img src={image1} className='tw-mx-auto' style={{ 'height': '300px' }} alt="loading logo" />
