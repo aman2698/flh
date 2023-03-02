@@ -26,6 +26,8 @@ import twitter from '../assets/img/twitter.svg';
 import CarouselOwrWork from './crouselOwrWork';
 import left from '../assets/img/left-arrow.svg';
 import right from '../assets/img/right-arrow.svg';
+import leftw from '../assets/img/leftw.svg';
+import rightw from '../assets/img/right.svg';
 import dash from '../assets/img/dash.svg';
 import quote from '../assets/img/quote.png';
 import flh from '../assets/img/flh.svg';
@@ -187,13 +189,13 @@ const BrandWorkWith = () => {
                   <img src={brand2} alt='d' className='mx-auto' ></img>
                 </div>
               </div>
-              <a className="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+              {/* <a className="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true" style={{'background':left}}> </span>
                 
               </a>
               <a className="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true" style={{'background':right}}></span>
-              </a>
+              </a> */}
             </div>
             {/* <div className='overscroll-y-contain' style={{ 'overflow': 'auto' }}>
               <img src={brand1} alt='d' style={{ 'margin': 'auto' }}></img>
@@ -297,13 +299,13 @@ const BrandWorkWith = () => {
                   <img src={fo3} alt='d' className='mx-auto' ></img>
                 </div>
               </div>
-              <a className="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+              {/* <a className="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true" style={{'background':left}}> </span>
                 
               </a>
               <a className="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true" style={{'background':right}}></span>
-              </a>
+              </a> */}
             </div>
 
           </div>
@@ -343,44 +345,55 @@ const BrandWorkWith = () => {
       </div>
 
       <div className='tw-block min-[900px]:tw-hidden tw-w-full' style={{ 'background': '#fff' }}>
-        <div className='tw-grid tw-mx-10 md:tw-mx-40' >
+        <div className='tw-grid tw-mx-8 min-[900px]:tw-mx-40' >
           <div className='tw-columns-1'>
             <div className='tw-font-sans tw-font-bold tw-text-2xl tw-mt-4 underline-small' style={{ 'color': '#232323', 'textTransform': 'uppercase' }}>
               Films
             </div>
           </div>
-          <div id='' className='tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8  tw-mx-8 md:tw-mx-48 tw-my-10 mx-auto'>
-          <div id="carouselExampleIndicators6" className="carousel slide" data-ride="carousel">
-              <ol className="carousel-indicators" style={{'color':'black','bottom':'-50px'}}>
-                <li data-target="#carouselExampleIndicators6" data-slide-to="0" className="active"><img src={dash}></img>&nbsp;&nbsp;&nbsp;</li>
-                <li data-target="#carouselExampleIndicators6" data-slide-to="1"><img src={dash}></img>&nbsp;&nbsp;&nbsp;</li>
-                <li data-target="#carouselExampleIndicators6" data-slide-to="2"><img src={dash}></img></li>
-              </ol>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                <video onClick={e => play(e, 'video1', 0)} poster={t1}>
-              <source src='https://www.youtube.com/embed/V3v-hYQC_D8?autoplay=1' type="video/mp4" />
-            </video>
-                </div>
-                <div className="carousel-item">
-                <video onClick={e => play(e, 'video1', 1)} poster={t2}>
-              <source src='https://www.youtube.com/embed/mXkdtM86REY?autoplay=1' type="video/mp4" />
-            </video>
-                </div>
-                <div className="carousel-item">
-                <video onClick={e => play(e, 'video1', 2)} poster={t3}>
-              <source src='https://www.youtube.com/embed/7VNpvlF4xCw?autoplay=1' type="video/mp4" />
-            </video>
-                </div>
+          <div id='' className='tw-flex tw-flex-row tw-gap-3 tw-mx-8 min-[900px]:tw-mx-48 tw-my-10 mx-auto'>
+            {/* <div class="">///// */}
+              <div class="tw-basis-[8%] m-auto">
+              <a  href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                    <img src={left} alt='dd'></img> 
+
+                  </a>
               </div>
-              <a className="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true" style={{'background':left}}> </span>
-                
-              </a>
-              <a className="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true" style={{'background':right}}></span>
-              </a>
-            </div>
+              <div class="tw-basis-[84%]">
+                <div id="carouselExampleIndicators6" className="carousel slide" data-ride="carousel">
+                  <ol className="carousel-indicators" style={{ 'color': 'black', 'bottom': '-50px' }}>
+                    <li data-target="#carouselExampleIndicators6" data-slide-to="0" className="active"><img src={dash}></img>&nbsp;&nbsp;&nbsp;</li>
+                    <li data-target="#carouselExampleIndicators6" data-slide-to="1"><img src={dash}></img>&nbsp;&nbsp;&nbsp;</li>
+                    <li data-target="#carouselExampleIndicators6" data-slide-to="2"><img src={dash}></img></li>
+                  </ol>
+                  <div className="carousel-inner">
+                    <div className="carousel-item active">
+                      <video onClick={e => play(e, 'video1', 0)} poster={t1}>
+                        <source src='https://www.youtube.com/embed/V3v-hYQC_D8?autoplay=1' type="video/mp4" />
+                      </video>
+                    </div>
+                    <div className="carousel-item">
+                      <video onClick={e => play(e, 'video1', 1)} poster={t2}>
+                        <source src='https://www.youtube.com/embed/mXkdtM86REY?autoplay=1' type="video/mp4" />
+                      </video>
+                    </div>
+                    <div className="carousel-item">
+                      <video onClick={e => play(e, 'video1', 2)} poster={t3}>
+                        <source src='https://www.youtube.com/embed/7VNpvlF4xCw?autoplay=1' type="video/mp4" />
+                      </video>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+              <div class="tw-basis-[8%] m-auto">
+              <a  href="#carouselExampleIndicators6" role="button" data-slide="next">
+                    <img src={right} alt='dd'></img>
+                  </a>
+              </div>
+            {/* </div> */}
           </div>
           <div className='tw-columns-1'>
             {/* <div class="mx-auto">
@@ -406,47 +419,55 @@ const BrandWorkWith = () => {
             <img className='mx-auto' onClick={e => playImage(e, 'image1', 3)} src={a4} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
           </div>
           <div className='tw-block min-[900px]:tw-hidden'>
-            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" data-interval="3000">
-              {/* <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-                    </ol> */}
+          <div id='' className='tw-flex tw-flex-row tw-gap-3 tw-mx-8 min-[900px]:tw-mx-48 tw-my-10 mx-auto'>
+            {/* <div class="">///// */}
+              <div class="tw-basis-[8%] m-auto">
+              <a  href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                    <img src={leftw} alt='dd'></img> 
+
+                  </a>
+              </div>
+              <div class="tw-basis-[84%]">
+              <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" data-interval="3000">
+      
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                    <img className="tw-w-[80%] tw-h-[400px] mx-auto tw-object-cover" src={a1} alt="Image 2" />
+                    <img className="tw-w-[100%] tw-h-[400px] mx-auto tw-object-cover" src={a1} alt="Image 2" />
                     {/* <div class="centered tw-font-sans tw-font-bold">Commercial</div> */}
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                    <img className="tw-w-[80%] tw-h-[400px] mx-auto tw-object-cover" src={a2} alt="Image 2" />
+                    <img className="tw-w-[100%] tw-h-[400px] mx-auto tw-object-cover" src={a2} alt="Image 2" />
                     {/* <div class="centered tw-font-sans tw-font-bold">Commercial</div> */}
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                    <img className="tw-w-[80%] tw-h-[400px] mx-auto  tw-object-cover" src={a3} alt="Image 2" />
+                    <img className="tw-w-[100%] tw-h-[400px] mx-auto  tw-object-cover" src={a3} alt="Image 2" />
                     {/* <div class="centered tw-font-sans tw-font-bold">Commercial</div> */}
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
-                    <img className="tw-w-[80%] tw-h-[400px] mx-auto tw-object-cover" src={a4} alt="Image 2" />
+                    <img className="tw-w-[100%] tw-h-[400px] mx-auto tw-object-cover" src={a4} alt="Image 2" />
                     {/* <div class="centered tw-font-sans tw-font-bold">Commercial</div> */}
                   </div>
                 </div>
               </div>
-              {/* <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only"></span>
-                    </a> */}
+
             </div>
+
+              </div>
+              <div class="tw-basis-[8%] m-auto">
+              <a  href="#carouselExampleIndicators1" role="button" data-slide="next">
+                    <img src={rightw} alt='dd'></img>
+                  </a>
+              </div>
+            {/* </div> */}
+          </div>
+
           </div>
           <div class="tw-hidden min-[900px]:tw-block mx-auto">
             <div class="wrap">

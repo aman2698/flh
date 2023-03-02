@@ -36,8 +36,10 @@ const Crousel = () => {
             })
         }, 500);
         if (count ==2) {
-            
             setGif(false)
+        }
+        if (count === 1) {
+            setGif(true)
         }
     }, [count])
     
@@ -172,17 +174,31 @@ const Crousel = () => {
                         <div className="tw-grid tw-mt-2 tw-mx-10" style={{
                         }}>
                             <span></span>
-                            <span className='tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
+                            {count === 1 && <span className='fade-out zoom-in tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
                                 Makeup Artist & Hair Specialist
-                            </span>
+                            </span>}
+                            {count === 2 && <span className='fade-out zoom-in tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
+                                Makeup Artist & Hair Specialist
+                            </span>}
+                            {count === 3 && <span className='fade-out zoom-in tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
+                                Makeup Artist & Hair Specialist
+                            </span>}
+                            
                             <span></span>
                         </div>
                         <div className="tw-grid tw-mt-2" style={{
                         }}>
                             <span></span>
-                            <span className='tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
+                            
+                            {count === 1 && <span className='fade-out zoom-in tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
                                 Florian Hurel
-                            </span>
+                            </span>}
+                            {count === 2 && <span className='fade-out zoom-in tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
+                                Florian Hurel
+                            </span>}
+                            {count === 3 && <span className=' fade-out zoom-in tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
+                                Florian Hurel
+                            </span>}
                             <span></span>
                         </div>
                         {/* <div className="tw-grid tw-mt-2 tw-mx-auto" style={{
