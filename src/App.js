@@ -22,11 +22,11 @@ function App() {
           <Route path='/' element={<Wrapper />} />
           <Route path="blogs" element={<Blog/>} />
           <Route path="commercial" element={<Commercial/>} />
-          <Route path="/our-work/magzine" element={<Magzine/>} />
-          <Route path="/our-work/celebrity" element={<Apperance/>} />
-          <Route path="/our-work/campaigns" element={<Campaigns/>} />
-          <Route path="/our-work/skin" element={<Skin/>} />
-          <Route path="/our-work/hair" element={<Hair/>} />
+          <Route path="/magzine" element={<Magzine/>} />
+          <Route path="/celebrity" element={<Apperance/>} />
+          <Route path="/campaigns" element={<Campaigns/>} />
+          <Route path="/skin" element={<Skin/>} />
+          <Route path="/hair" element={<Hair/>} />
           
           {/* <Route path="*" element={<NoPage />} /> */}
         {/* </Route> */}

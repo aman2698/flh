@@ -16,10 +16,10 @@ const CarouselOwrWork = () => {
 
     const [sliderRef, setSliderRef] = useState(null)
     const navigate = useNavigate();
-    const rediectHair = useCallback(() => navigate('/our-work/magzine', { replace: true }), [navigate]);
-    const rediectcomm = useCallback(() => navigate('/our-work/magzine', { replace: true }), [navigate]);
-    const rediectSkin = useCallback(() => navigate('/our-work/magzine', { replace: true }), [navigate]);
-    const rediectCA = useCallback(() => navigate('/our-work/celebrity', { replace: true }), [navigate]);
+    const rediectHair = useCallback(() => navigate('/magzine', { replace: true }), [navigate]);
+    const rediectcomm = useCallback(() => navigate('/magzine', { replace: true }), [navigate]);
+    const rediectSkin = useCallback(() => navigate('/magzine', { replace: true }), [navigate]);
+    const rediectCA = useCallback(() => navigate('/celebrity', { replace: true }), [navigate]);
     const settings = {
         dots: true,
         infinite: true,

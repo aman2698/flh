@@ -471,12 +471,12 @@ const BrandWorkWith = () => {
           </div>
           <div class="tw-hidden min-[900px]:tw-block mx-auto">
             <div class="wrap">
-              <a class="btn-6" onClick={() =>navigate("/our-work/celebrity")}>VIEW ALL<span></span></a>
+              <a class="btn-6" onClick={() =>navigate("/celebrity")}>VIEW ALL<span></span></a>
             </div>
           </div>
           <div class="tw-block min-[900px]:tw-hidden mx-auto">
             <div class="wrap">
-              <a class="btn-7" onClick={() =>navigate("/our-work/celebrity")}>VIEW ALL<span></span></a>
+              <a class="btn-7" onClick={() =>navigate("/celebrity")}>VIEW ALL<span></span></a>
             </div>
           </div>
         </div>

@@ -107,7 +107,7 @@ const Header = () => {
                             'line-height': '24px',
                             'text-transform': 'uppercase'
                         }}>
-                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/our-work/campaigns")}>Campaigns</span>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/campaigns")}>Campaigns</span>
                         </li>
                         <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
                             'font-family': 'Open Sans',
@@ -117,7 +117,7 @@ const Header = () => {
                             'line-height': '24px',
                             'text-transform': 'uppercase'
                         }}>
-                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/our-work/celebrity")}>Celebrity appearances</span>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/celebrity")}>Celebrity appearances</span>
                         </li>
 
                         <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
@@ -128,7 +128,7 @@ const Header = () => {
                             'line-height': '24px',
                             'text-transform': 'uppercase'
                         }}>
-                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/our-work/magzine")}>Magazine covers</span>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/magzine")}>Magazine covers</span>
                         </li>
                     </ul>
 
@@ -189,7 +189,7 @@ const Header = () => {
                             'line-height': '24px',
                             'text-transform': 'uppercase'
                         }}>
-                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/our-work/skin")}>Skin Commercials</span>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/skin")}>Skin Commercials</span>
                         </li>
 
                         <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
@@ -200,7 +200,7 @@ const Header = () => {
                             'line-height': '24px',
                             'text-transform': 'uppercase'
                         }}>
-                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/our-work/hair")}>Hair Commercials</span>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/hair")}>Hair Commercials</span>
                         </li>
                     </ul>
 
