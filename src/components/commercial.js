@@ -127,28 +127,34 @@ const Commercial = () => {
 
         {/* footer */}
         <div className='tw-w-full' style={{ 'background': 'rgba(229, 229, 229, 0.5)' }}>
-          <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 min-[900px]:tw-mx-40 tw-my-10 tw-py-8 mx-auto' >
-            <img className='mx-auto my-auto' src={fo1} alt='g' ></img>
-            <div>
-              <div className='columns-1'>
-                <img className='mx-auto' src={fo2} alt='g' ></img>
-                <img className='mx-auto' src={fo21} alt='g' ></img>
-                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4'>
-                  <img className='mx-auto' src={fb} alt='g' ></img>
-                  <img className='mx-auto' src={insta} alt='g' ></img>
-                  <img className='mx-auto' src={twitter} alt='g' ></img>
-                </div>
+        <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
+          <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
+          <div>
+            <div className='columns-1'>
+              <img className='mx-auto' src={fo2} alt='g' ></img>
+              <img className='mx-auto' src={fo21} alt='g' ></img>
+              <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
+                <img className='mx-auto' src={fb} alt='g' ></img>
+                <img className='mx-auto' src={insta} alt='g' ></img>
+                <img className='mx-auto' src={twitter} alt='g' ></img>
               </div>
             </div>
-            <img className='mx-auto my-auto' src={fo3} alt='g' ></img>
           </div>
-          <hr className='w-full' />
-          <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 min-[900px]:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
-            <div></div>
-            <div className='mx-auto'>&#169;Copyrights 2023</div>
-            <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
-          </div>
+          <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo3} alt='g' ></img>
         </div>
+        <hr className='w-full tw-hidden min-[900px]:tw-block' />
+        <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
+          <div></div>
+          <div className='mx-auto'>&#169;Copyrights 2023</div>
+          <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+        </div>
+        <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
+          {/* <div></div> */}
+          <div className='mx-auto'>&#169;Copyrights 2023
+          </div>
+          <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+        </div>
+      </div>
       </div>
     </>
   )

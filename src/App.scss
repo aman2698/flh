@@ -620,7 +620,7 @@ border-radius: 81px;
 
 .fade-out {
   opacity: 1;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 2s ease-out;
 }
 
 .fade-out.fade-out-active {
@@ -635,6 +635,40 @@ border-radius: 81px;
   left: 0;
   right: 0;
   border-top: 1px solid #fff;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-delay: 1s;
+}
+
+.fadeIn2 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-delay: 1500ms;
+}
+
+.animated {
+  // background-image: url(/css/images/logo.png);
+  // background-repeat: no-repeat;
+  // background-position: left top;
+  // padding-top:95px;
+  // margin-bottom:60px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 // button

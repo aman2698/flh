@@ -36,8 +36,12 @@ const Header = () => {
     }
 
     return (
-        <header id='nav' className=' overlay'>
-            <div className='tw-hidden min-[900px]:tw-flex min-[900px]:tw-flex-row ' style={{ height: '60px', margin: '20px' }}>
+        <header id='nav' className=' overlay' style={{    'position': 'sticky',
+            'top': '0',
+            'left': '0',
+            'background': '#fff',
+            'width': '100%'}}>
+            <div className='tw-hidden min-[900px]:tw-flex min-[900px]:tw-flex-row ' style={{ height: '60px', margin: '0px 20px' }}>
                 <div className='tw-basis-1/3 tw-my-auto tw-mx-auto tw-font-bold tw-font-sans' style={{ 'fontSize': '20px' }} >
                     <span style={{'cursor':'pointer'}} onClick={e => setNavbar(!navbar)}>MENU</span>
                 </div>
@@ -64,7 +68,7 @@ const Header = () => {
                 </div>
             </div>
             <div
-                className={`tw-flex-1 tw-justify-self-center overlay-content ${navbar ? "tw-block" : "tw-hidden"}`} style={{ 'marginTop': '3.5em' }}
+                className={`tw-flex-1 tw-justify-self-center overlay-content ${navbar ? "tw-block" : "tw-hidden"}`} style={{ 'marginTop': '3em' }}
             >
                 <ul className="tw-items-center tw-justify-center">
                     <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4 " style={{

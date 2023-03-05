@@ -3,11 +3,17 @@ import image1 from '../assets/img/carousel/2.JPG'
 import image2 from '../assets/img/carousel/1.JPG'
 import image3 from '../assets/img/carousel/3.JPG'
 import giff from '../assets/img/circle.gif'
-
+import cross from '../assets/img/times.svg';
+import left from '../assets/img/left-arrow.svg';
+import right from '../assets/img/right-arrow.svg';
 const Crousel = () => {
     let [path, setPath] = React.useState('')
     let [count, setcount] = React.useState(1)
+    let [count2, setcount2] = React.useState(1)
     let [gif, setGif] = React.useState(true)
+  const [videoArray, setvideoArray] = React.useState('')
+  let [selectedVideo, setSelectedVideo] = React.useState('https://www.youtube.com/embed/V3v-hYQC_D8?autoplay=1')
+
     React.useEffect(() => {
         setPath(image1)
         let interval = setInterval(() => {
@@ -66,6 +72,26 @@ const Crousel = () => {
 
     }
 
+    const play = () => {
+    document.getElementById('nav').style.display = 'none'
+
+        // console.log(event.target.parentElement);
+        document.getElementById('modal').style.display = 'block'
+        document.getElementsByTagName('body')[0].classList.add('tw-overflow-y-hidden')
+        setTimeout(() => {
+            setvideoArray(selectedVideo)
+        }, 200);
+      }
+      const closeModal = () => {
+        setvideoArray('')
+        // console.log(videoRef);
+        // videoRef.current?.contentWindow.close();
+        // setvideoArray([])
+    document.getElementById('nav').style.display = 'block'
+
+        document.getElementById('modal').style.display = 'none'
+        document.getElementsByTagName('body')[0].classList.remove('tw-overflow-y-hidden')
+      }
 
 
     return (
@@ -90,13 +116,13 @@ const Crousel = () => {
                     <div className="tw-grid min-[900px]:tw-grid-cols-4 min-[900px]:tw-mt-10" style={{
                     }}>
                         <span></span>
-                        {count === 1 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
+                        {count === 1 && <span className=' animated fadeIn tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
                             Florian Hurel
                         </span>}
-                            {count === 2 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
+                            {count === 2 && <span className=' animated fadeIn tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
                             Florian Hurel
                         </span>}
-                            {count === 3 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
+                            {count === 3 && <span className=' animated fadeIn tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
                             Florian Hurel
                         </span>}
                         {/* <span className=' fade-out zoom-in tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
@@ -110,9 +136,15 @@ const Crousel = () => {
                         'position':'relative'
                     }}>
                         <span></span>
-                        <p className=' fade-out zoom-in tw-font-sans tw-font-light tw-col-span-3 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '18px', lineHeight: '27px', color: '#fff', 'white-space': 'break-spaces', 'text-transform': 'uppercase', width: '90%' }}>
-                            <span className='tw-font-semibold'>BIO</span><span>   <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>      Brands worked with    <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>     Business holded   Magazine Covers   <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>    Commercial</span>
-                        </p>
+                        <p className=' tw-font-sans tw-font-light tw-col-span-3 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '18px', lineHeight: '27px', color: '#fff', 'white-space': 'break-spaces', 'text-transform': 'uppercase', width: '90%' }}>
+                            {/* <span className='tw-font-semibold'>BIO</span><span>   <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>      Brands worked with    <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>     Business holded   Magazine Covers   <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>    Commercial</span> */}
+                            {/* <a href="#" class="button">Hover me</a> */}
+                            {/* <button class="custom-btn btn-10">Read Moreh</button> */}
+                            
+                            {count === 1 && <span className='animated fadeIn2'>Neque porro quisquam est</span>}
+                            {count === 2 && <span className='animated fadeIn2'>Neque porro quisquam est</span>}
+                            {count === 3 && <span className='animated fadeIn2'>Neque porro quisquam est</span>}
+                          </p>
                             {gif && <img src={giff} style={{
                                 'height': '100px',
                                 'position': 'absolute',
@@ -130,7 +162,7 @@ const Crousel = () => {
                     </div>}
                     {count === 2 && <div class="outer">
                         <div class="underlay">
-                            <img src={image2} style={{ 'height': '600px' }} alt="loading logo" />
+                            <img src={image2} onClick={play} style={{ 'height': '600px' }} alt="loading logo" />
                         </div>
                     </div>}
                     {count === 3 && <div class="outer">
@@ -159,7 +191,7 @@ const Crousel = () => {
                             </div>}
                             {count === 2 && <div className=' outer2 tw-mx-auto' style={{ 'height': '300px' }}>
                                 <div class="underlay2">
-                                    <img src={image2} className='tw-mx-auto' style={{ 'height': '300px' }} alt="loading logo" />
+                                    <img src={image2} onClick={play} className='tw-mx-auto' style={{ 'height': '300px' }} alt="loading logo" />
                                 </div>
                             </div>}
                             {count === 3 && <div className=' outer2 tw-mx-auto' style={{ 'height': '300px' }}>
@@ -190,13 +222,13 @@ const Crousel = () => {
                         }}>
                             <span></span>
                             
-                            {count === 1 && <span className='fade-out zoom-in tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
+                            {count === 1 && <span className='animated fadeIn tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
                                 Florian Hurel
                             </span>}
-                            {count === 2 && <span className='fade-out zoom-in tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
+                            {count === 2 && <span className='animated fadeIn tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
                                 Florian Hurel
                             </span>}
-                            {count === 3 && <span className=' fade-out zoom-in tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
+                            {count === 3 && <span className=' animated fadeIn tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
                                 Florian Hurel
                             </span>}
                             <span></span>
@@ -212,6 +244,45 @@ const Crousel = () => {
                     </div>
                 </div>
             </div>
+
+            <div id="modal" className="tw-fixed tw-hidden tw-z-50 tw-inset-0 tw-bg-gray-900 tw-bg-opacity-60 tw-overflow-y-auto tw-h-full tw-w-full tw-modal" style={{'zIndex':'999999999999999'}}>
+        <div className="tw-relative tw-mx-auto tw-h-full tw-w-full tw-shadow-xl tw-rounded-md tw-bg-white " id='video-model'>
+          <div className="tw-grid tw-grid-cols-2 gap-4 tw-pt-8 md:tw-mx-24 tw-mx-8">
+            <div className='tw-font-sans tw-font-bold' style={{ 'fontSize': '13.3521px', 'lineHeight': '18px', 'textTransform': 'uppercase' }}>Back to home</div>
+            <div ><img className='tw-float-right' src={cross} onClick={closeModal} alt='cross' style={{ 'cursor': 'pointer' }}></img></div>
+          </div>
+          <div className="tw-flex tw-flex-row tw-pt-2 tw-h-[80vh]">
+            <div className="tw-basis-1/12 my-auto">
+              <div className="md:tw-mx-8 tw-mx-2 tw-float-right" >
+                <span className="" aria-hidden="true"><img src={left} alt='dd'></img></span>
+              </div></div>
+            <div className="tw-basis-5/6 mx-auto tw-w-full tw-h-full">
+              {/* <video className='tw-w-full tw-h-full' controls ref={videoRef}>
+                <source src={videoArray[selectedVideo]} type="video/mp4" />
+              </video> */}
+
+              <iframe id="ytplayer" type="text/html"  className='tw-w-full tw-h-full'
+                src={videoArray}
+                frameBorder="0" allowFullScreen title="This is a unique title" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full"/>
+            </div>
+            <div className="tw-basis-1/12 my-auto">
+              <div className="md:tw-mx-8 tw-mx-2">
+                <span className="" aria-hidden="true"><img src={right} alt='dd'></img></span>
+              </div>
+            </div>
+          </div>
+
+          <div className="tw-flex tw-flex-row ">
+            <div className="tw-basis-1/12 my-auto"></div>
+            <div className="tw-basis-5/6">
+              {/* {selectedVideo + 1}/{videoArray.length} */}
+            </div>
+            <div className="tw-basis-1/12 my-auto">
+            </div>
+          </div>
+
+        </div>
+      </div>
         </div>
     )
 }
