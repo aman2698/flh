@@ -10,18 +10,18 @@ import twitter from '../../assets/img/twitter.svg';
 import cross from '../../assets/img/times.svg';
 import left from '../../assets/img/left-arrow.svg';
 import right from '../../assets/img/right-arrow.svg';
-import colT from '../../assets/img/campign/colgate.jpg'
-import rexonaT from '../../assets/img/campign/rexona.jpg'
-import pumaT from '../../assets/img/campign/puma.jpg'
-import fixderma from '../../assets/img/campign/fixderma.jpg'
-import fbb from '../../assets/img/campign/fbb.jpg'
-import one from '../../assets/img/campign/one.jpg'
-import nourish from '../../assets/img/campign/nourish.jpg'
-import mama from '../../assets/img/campign/mama.jpg'
-import sketchers from '../../assets/img/campign/sketchers.jpg'
-import jio from '../../assets/img/campign/jio.jpg'
-import melange from '../../assets/img/campign/melange.jpg'
-import flipkart from '../../assets/img/campign/flipkart.jpg'
+import colT from '../../assets/img/campign/1.jpg'
+import rexonaT from '../../assets/img/campign/2.jpg'
+import pumaT from '../../assets/img/campign/3.jpg'
+import fixderma from '../../assets/img/campign/4.jpg'
+import fbb from '../../assets/img/campign/5.jpg'
+import one from '../../assets/img/campign/6.jpg'
+import nourish from '../../assets/img/campign/7.jpg'
+import mama from '../../assets/img/campign/8.jpg'
+import sketchers from '../../assets/img/campign/9.jpg'
+import jio from '../../assets/img/campign/11.jpg'
+import melange from '../../assets/img/campign/10.jpg'
+import flipkart from '../../assets/img/campign/12.jpg'
 import cadbury from '../../assets/img/campign/cadbury.JPG'
 import ceris from '../../assets/img/campign/ceris.jpg'
 
@@ -147,7 +147,7 @@ const Campaigns = () => {
 
                             {noor.map((e, i) => (
 
-                                <img className='mx-auto' onClick={e => playImage(e, 'Nooraniyat', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
+                                <img className='mx-auto' onClick={e => playImage(e, 'Nooraniyat', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
                             ))}
                         </div>
 
@@ -158,7 +158,7 @@ const Campaigns = () => {
 
                             {reliance.map((e, i) => (
 
-                                <img className='mx-auto' onClick={e => playImage(e, 'reliance', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
+                                <img className='mx-auto' onClick={e => playImage(e, 'reliance', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
                             ))}
                         </div>
 
@@ -301,7 +301,7 @@ const Campaigns = () => {
                                 <source src='https://www.youtube.com/embed/vmxAHV1httQ?autoplay=1' type="video/mp4" />
                             </video>
                         </div>
-                        \
+                        
                     </div>
 
                 </div>

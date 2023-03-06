@@ -77,6 +77,10 @@ const Apperance = () => {
               </div>
               <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1'>
                 <span>Daisy</span>  --  <span>Deepika</span> -- <span>Kangna</span>  --  <span>Sara ali khan</span>  --  <span>Tamannah</span>
+                {/* Florian's impressive roster of celebrity clients is a testament to his exceptional skills and ability to create customized looks that enhance each person's unique features. He has a keen eye for detail and a talent for creating makeup and hair styles that are both stunning and natural-looking.<br/>
+Florian's ability to create customized looks that showcase each person's natural beauty has made him a favorite among celebrities and high-end clients alike. He is committed to understanding his clients' needs and preferences and works closely with them to create looks that exceed their expectations.<br/>
+Whether he is working with a celebrity on a film or television project, or creating a stunning look for a red carpet event, Florian's dedication to his craft and commitment to his clients have earned him a reputation as one of the most talented hair and makeup artists in the industry. */}
+
               </div>
             </div>
 
@@ -87,7 +91,7 @@ const Apperance = () => {
             <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
               {daisy.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
             </div>
 
@@ -97,7 +101,7 @@ const Apperance = () => {
             <div id='bazaar' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8  tw-mb-10 tw-justify-center'>
               {deepika.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto'}}></img>
               ))}
             </div>
 
@@ -107,7 +111,7 @@ const Apperance = () => {
             <div id='bride' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
               {kangna.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
             </div>
 
@@ -117,7 +121,7 @@ const Apperance = () => {
             <div id='hello' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
               {sara.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto'}}></img>
               ))}
             </div>
 
@@ -127,7 +131,7 @@ const Apperance = () => {
             <div id='gazia' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
               {tamannah.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto'}}></img>
               ))}
             </div>
             {/* <div className='view-all tw-mx-auto tw-mt-8' style={{ 'position': 'relative', 'border': '3px solid #fff' }}>

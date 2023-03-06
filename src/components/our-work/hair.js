@@ -17,21 +17,21 @@ import jio from '../../assets/img/campign/jio.jpg'
 import melange from '../../assets/img/campign/melange.jpg'
 import flipkart from '../../assets/img/campign/flipkart.jpg'
 import hair1 from '../../assets/img/hair/hair1.jpg'
-import hair2 from '../../assets/img/hair/hair2.jpg'
-import godrej1 from '../../assets/img/hair/godrej1.jpg'
-import godrej2 from '../../assets/img/hair/godrej2.jpg'
-import dabur1 from '../../assets/img/hair/dabur1.jpg'
-import tres1 from '../../assets/img/hair/tres1.jpg'
-import tres2 from '../../assets/img/hair/tres2.jpg'
-import pan1 from '../../assets/img/hair/pan1.jpg'
-import kesh1 from '../../assets/img/hair/kesh1.jpg'
-import dove1 from '../../assets/img/hair/dove1.jpg'
-import mama1 from '../../assets/img/hair/mama1.jpg'
-import mama2 from '../../assets/img/hair/mama2.jpg'
-import tiru1 from '../../assets/img/hair/tiru1.jpg'
-import para1 from '../../assets/img/hair/para1.jpg'
-import sch1 from '../../assets/img/hair/sch1.jpg'
-import sch2 from '../../assets/img/hair/sch2.jpg'
+import hair2 from '../../assets/img/hair/15.jpg'
+import godrej1 from '../../assets/img/hair/1.jpg'
+import godrej2 from '../../assets/img/hair/7.jpg'
+import dabur1 from '../../assets/img/hair/2.jpg'
+import tres1 from '../../assets/img/hair/16.jpg'
+import tres2 from '../../assets/img/hair/4.jpg'
+import pan1 from '../../assets/img/hair/5.jpg'
+import kesh1 from '../../assets/img/hair/6.jpg'
+import dove1 from '../../assets/img/hair/8.jpg'
+import mama1 from '../../assets/img/hair/9.jpg'
+import mama2 from '../../assets/img/hair/10.jpg'
+import tiru1 from '../../assets/img/hair/11.jpg'
+import para1 from '../../assets/img/hair/12.jpg'
+import sch1 from '../../assets/img/hair/13.jpg'
+import sch2 from '../../assets/img/hair/14.jpg'
 
 
 const Hair = () => {
@@ -272,7 +272,7 @@ const Hair = () => {
                                 <source src='https://www.youtube.com/embed/AepxyLNoQeI?autoplay=1' type="video/mp4" />
                             </video>
                                                         {sch.map((e,i) => (
-                <img className='mx-auto' onClick={e => playImage(e, 'Schwarzkopf', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'Schwarzkopf', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
                         </div>
 
@@ -281,7 +281,7 @@ const Hair = () => {
                         </div>
                         <div id='strek' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
                                                        {streak.map((e,i) => (
-                <img className='mx-auto' onClick={e => playImage(e, 'streak', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'streak', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
                         </div>
 
@@ -356,10 +356,6 @@ const Hair = () => {
 
                 </div>
             </div>
-
-
-
-
             <div id="modal" className="tw-fixed tw-hidden tw-z-50 tw-inset-0 tw-bg-gray-900 tw-bg-opacity-60 tw-overflow-y-auto tw-h-full tw-w-full tw-modal">
                 <div className="tw-relative tw-mx-auto tw-h-full tw-w-full tw-shadow-xl tw-rounded-md tw-bg-white " id='video-model'>
                     <div className="tw-grid tw-grid-cols-2 gap-4 tw-pt-8 md:tw-mx-24 tw-mx-8">

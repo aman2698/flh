@@ -7,6 +7,7 @@ import twitter from '../assets/img/twitter.svg';
 import useCollapse from 'react-collapsed';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import cross from '../assets/img/times.svg';
 
 const Header = () => {
     const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
@@ -16,7 +17,8 @@ const Header = () => {
     const [campaign, setcampaign] = React.useState(false);
     const navigate = useNavigate();
     React.useEffect(() => {
-        console.log(navbar);
+        // if (navbar) {
+            // get the element
 
 
     }, [navbar])
@@ -64,11 +66,16 @@ const Header = () => {
                     <img className='tw-float-left' src={logo} alt='home'></img>
                 </div>
                 <div className='tw-basis-1/3 tw-my-auto'>
-                    <img className='tw-float-right' src={togg} onClick={e => setNavbar(!navbar)} alt='home'></img>
+                    {!navbar && <img className='tw-float-right' src={togg} onClick={e => setNavbar(!navbar)} alt='home'></img>}
+                    {navbar && <img className='tw-float-right' src={cross} onClick={e => setNavbar(!navbar)} alt='home'></img>}
+                    
                 </div>
             </div>
+            {
+                navbar && 
+                <>
             <div
-                className={`tw-flex-1 tw-justify-self-center overlay-content ${navbar ? "tw-block" : "tw-hidden"}`} style={{ 'marginTop': '3em' }}
+                className={`tw-flex-1 tw-justify-self-center overlay-content tw-h-[100vh] min-[900px]:tw-h-auto slide-right min-[900px]:tw-hidden`} style={{ 'marginTop': '2.7em' }}
             >
                 <ul className="tw-items-center tw-justify-center">
                     <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4 " style={{
@@ -221,6 +228,163 @@ const Header = () => {
 
                 </ul>
             </div>
+            <div
+                className={`tw-flex-1 tw-justify-self-center overlay-content tw-h-[100vh] min-[900px]:tw-h-auto tw-hidden min-[900px]:tw-block`} style={{ 'marginTop': '2.7em' }}
+            >
+                <ul className="tw-items-center tw-justify-center">
+                    <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4 " style={{
+                        'font-family': 'Open Sans',
+                        'font-style': 'normal',
+                        'font-weight': 300,
+                        'font-size': '35px',
+                        'line-height': '35px',
+                        'text-transform': 'uppercase'
+                    }}>
+                        <span style={{ 'cursor': 'pointer' }} onClick={() => navigate("/")}>Home </span>
+                    </li >
+                    <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4" style={{
+                        'font-family': 'Open Sans',
+                        'font-style': 'normal',
+                        'font-weight': 300,
+                        'font-size': '35px',
+                        'line-height': '35px',
+                        'text-transform': 'uppercase'
+                    }}>
+                        <span style={{ 'cursor': 'pointer' }} onClick={e => moveto('bio')}>About</span>
+                    </li>
+
+                    <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4" style={{
+                        'font-family': 'Open Sans',
+                        'font-style': 'normal',
+                        'font-weight': 300,
+                        'font-size': '35px',
+                        'line-height': '35px',
+                        'text-transform': 'uppercase'
+                    }}>
+                        <span style={{ 'cursor': 'pointer' }} onClick={e => setourWork(!ourWork)}>Our works {ourWork ? <span>-</span> : <span>+</span>}</span>
+                    </li>
+                    <ul className={`tw-items-center tw-justify-center tw-ml-16 ${ourWork ? "tw-block" : "tw-hidden"}`}>
+                        <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
+                            'font-family': 'Open Sans',
+                            'font-style': 'normal',
+                            'font-weight': 300,
+                            'font-size': '24px',
+                            'line-height': '24px',
+                            'text-transform': 'uppercase'
+                        }}>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/campaigns")}>Campaigns</span>
+                        </li>
+                        <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
+                            'font-family': 'Open Sans',
+                            'font-style': 'normal',
+                            'font-weight': 300,
+                            'font-size': '24px',
+                            'line-height': '24px',
+                            'text-transform': 'uppercase'
+                        }}>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/celebrity")}>Celebrity appearances</span>
+                        </li>
+
+                        <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
+                            'font-family': 'Open Sans',
+                            'font-style': 'normal',
+                            'font-weight': 300,
+                            'font-size': '24px',
+                            'line-height': '24px',
+                            'text-transform': 'uppercase'
+                        }}>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/magzine")}>Magazine covers</span>
+                        </li>
+                    </ul>
+
+                    <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4" style={{
+                        'font-family': 'Open Sans',
+                        'font-style': 'normal',
+                        'font-weight': 300,
+                        'font-size': '35px',
+                        'line-height': '35px',
+                        'text-transform': 'uppercase'
+                    }}>
+                        <span style={{ 'cursor': 'pointer' }} 
+                        // onClick={e => setblog(!blog)}
+                        onClick={e => navigate("/blogs")}
+                        >Blog 
+                        {/* {blog ? <span>-</span> : <span>+</span>} */}
+                        </span>
+                    </li>
+                    {/* <ul className={`tw-items-center tw-justify-center tw-ml-16 ${blog ? "tw-block" : "tw-hidden"}`}>
+                        <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
+                            'font-family': 'Open Sans',
+                            'font-style': 'normal',
+                            'font-weight': 300,
+                            'font-size': '24px',
+                            'line-height': '24px',
+                            'text-transform': 'uppercase'
+                        }}>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => moveto()}>News coverage</span>
+                        </li>
+                        <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
+                            'font-family': 'Open Sans',
+                            'font-style': 'normal',
+                            'font-weight': 300,
+                            'font-size': '24px',
+                            'line-height': '24px',
+                            'text-transform': 'uppercase'
+                        }}>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => moveto()}>Blogs</span>
+                        </li>
+                    </ul> */}
+
+                    <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4" style={{
+                        'font-family': 'Open Sans',
+                        'font-style': 'normal',
+                        'font-weight': 300,
+                        'font-size': '35px',
+                        'line-height': '35px',
+                        'text-transform': 'uppercase'
+                    }}>
+                        <span style={{ 'cursor': 'pointer' }} onClick={e => setcampaign(!campaign)}>Commercials {campaign ? <span>-</span> : <span>+</span>}</span>
+                    </li>
+                    <ul className={`tw-items-center tw-justify-center tw-ml-16 ${campaign ? "tw-block" : "tw-hidden"}`}>
+                    <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
+                            'font-family': 'Open Sans',
+                            'font-style': 'normal',
+                            'font-weight': 300,
+                            'font-size': '24px',
+                            'line-height': '24px',
+                            'text-transform': 'uppercase'
+                        }}>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/skin")}>Skin Commercials</span>
+                        </li>
+
+                        <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
+                            'font-family': 'Open Sans',
+                            'font-style': 'normal',
+                            'font-weight': 300,
+                            'font-size': '24px',
+                            'line-height': '24px',
+                            'text-transform': 'uppercase'
+                        }}>
+                            <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/hair")}>Hair Commercials</span>
+                        </li>
+                    </ul>
+
+                    <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4" style={{
+                        'font-family': 'Open Sans',
+                        'font-style': 'normal',
+                        'font-weight': 300,
+                        'font-size': '35px',
+                        'line-height': '35px',
+                        'text-transform': 'uppercase'
+                    }}>
+                        <span style={{ 'cursor': 'pointer' }} onClick={e => moveto()}>Contact</span>
+                    </li>
+
+                </ul>
+            </div>
+                </>
+            }
+
         </header>
     )
 }

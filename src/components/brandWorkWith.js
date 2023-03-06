@@ -12,9 +12,9 @@ import a4 from '../assets/img/apperance/4.JPG';
 import f1 from '../assets/img/film/1.mp4';
 import f2 from '../assets/img/film/2.mp4';
 import f3 from '../assets/img/film/3.mp4';
-import t1 from '../assets/img/film/t1.jpg';
-import t2 from '../assets/img/film/t2.jpg';
-import t3 from '../assets/img/film/t3.jpg';
+import t1 from '../assets/img/film/1.jpg';
+import t2 from '../assets/img/film/2.jpg';
+import t3 from '../assets/img/film/3.jpg';
 import fo1 from '../assets/img/footer/1.svg';
 import fo2 from '../assets/img/footer/2-1.svg';
 import fo21 from '../assets/img/footer/2.svg';
@@ -35,8 +35,12 @@ import flhAcademy from '../assets/img/flhAcademy.svg';
 import { Outlet, Link } from "react-router-dom";
 import VideoModel from './videoModel';
 import { useNavigate } from "react-router-dom";
-
+import Slider from "react-slick";
+import salonspa from '../assets/img/SALONSPA.png'
 import $ from "jquery";
+
+//commercial import
+
 const BrandWorkWith = () => {
   const [videoArray, setvideoArray] = React.useState([])
   const [imageArray, setimageArray] = React.useState([])
@@ -49,6 +53,7 @@ const BrandWorkWith = () => {
 
   const play = (event, id, index) => {
     console.log(event.target.parentElement);
+    document.getElementById('nav').style.display = 'none'
     document.getElementById('modal').style.display = 'block'
     document.getElementsByTagName('body')[0].classList.add('tw-overflow-y-hidden')
     setTimeout(() => {
@@ -64,6 +69,7 @@ const BrandWorkWith = () => {
   }
 
   const playImage = (event, id, index) => {
+    document.getElementById('nav').style.display = 'none'
     document.getElementById('modal-image').style.display = 'block'
     document.getElementsByTagName('body')[0].classList.add('tw-overflow-y-hidden')
     setTimeout(() => {
@@ -104,7 +110,6 @@ const BrandWorkWith = () => {
   }
 
   const nextImage = () => {
-    // debugger
     if (selectedImage < (imageArray.length - 1)) {
       setSelectedImage(selectedImage + 1)
 
@@ -112,21 +117,20 @@ const BrandWorkWith = () => {
   }
 
   const previousImage = () => {
-    // debugger
     if (selectedImage !== 0) {
       setSelectedImage(selectedImage - 1)
     }
   }
 
   const closeModal = () => {
-    // console.log(videoRef);
-    // videoRef.current?.contentWindow.close();
+    document.getElementById('nav').style.display = 'block'
     setvideoArray([])
     document.getElementById('modal').style.display = 'none'
     document.getElementsByTagName('body')[0].classList.remove('tw-overflow-y-hidden')
   }
 
   const closeModalImage = () => {
+    document.getElementById('nav').style.display = 'block'
     document.getElementById('modal-image').style.display = 'none'
     document.getElementsByTagName('body')[0].classList.remove('tw-overflow-y-hidden')
   }
@@ -152,7 +156,24 @@ const BrandWorkWith = () => {
     // }); 
   }, [])
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    arrows:false
+  };
 
+  function importAll(r) {
+    return r.keys().map((r));
+}
+
+  const commercial = importAll(require.context('../assets/img/commercial', false, /\.(png|jpe?g|JPG|svg)$/));
+  console.log(commercial);
 
   return (
     <>
@@ -170,13 +191,8 @@ const BrandWorkWith = () => {
             <img src={brand4} alt='d' style={{ 'margin': 'auto' }}></img>
           </div>
           <div className='min-[900px]:tw-hidden tw-w-full tw-gap-4 tw-my-12 '>
-            <div id="carouselExampleIndicators2" className="carousel slide" data-ride="carousel">
-              {/* <ol className="carousel-indicators">
-                <li data-target="#carouselExampleIndicators2" data-slide-to="0" className="active">-</li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="1">-</li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="2">-</li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="3">-</li>
-              </ol> */}
+            {/* <div id="carouselExampleIndicators2" className="carousel slide" data-ride="carousel" data-interval="5000">
+
               <div className="carousel-inner" style={{ 'margin': 'auto', 'width': '50%' }}>
                 <div className="carousel-item active">
                   <img src={brand5} alt='d' className='mx-auto' ></img>
@@ -191,21 +207,22 @@ const BrandWorkWith = () => {
                   <img src={brand2} alt='d' className='mx-auto' ></img>
                 </div>
               </div>
-              {/* <a className="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true" style={{'background':left}}> </span>
-                
-              </a>
-              <a className="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true" style={{'background':right}}></span>
-              </a> */}
-            </div>
-            {/* <div className='overscroll-y-contain' style={{ 'overflow': 'auto' }}>
-              <img src={brand1} alt='d' style={{ 'margin': 'auto' }}></img>
-              <img src={brand2} alt='d' style={{ 'margin': 'auto' }}></img>
-              <img src={brand3} alt='d' style={{ 'margin': 'auto' }}></img>
-              <img src={brand4} alt='d' style={{ 'margin': 'auto' }}></img>
 
             </div> */}
+            <Slider {...settings} style={{'width':'80vw'}}>
+          <div>
+          <img src={brand1} alt='d'  style={{ 'margin': 'auto','width':'70%' }}></img>
+          </div>
+          <div>
+          <img src={brand2} alt='d' style={{ 'margin': 'auto','width':'70%' }}></img>
+          </div>
+          <div>
+          <img src={brand3} alt='d' style={{ 'margin': 'auto','width':'70%' }}></img>
+          </div>
+          <div>
+          <img src={brand4} alt='d' style={{ 'margin': 'auto','width':'70%' }}></img>
+          </div>
+        </Slider>
           </div>
         </div>
       </div>
@@ -238,11 +255,12 @@ const BrandWorkWith = () => {
               Speaking of his International Experience of so many years, Florian himself has developed a Method of his own which he passes out to young, experienced and aspiring artists through his educational platform “Florian Hurel Academy” as a entrepreneur, Florian holds on to business within the education and fitness sectors of the Industry owning Florian Hurel Academy and FloFitBox Mumbai.
             </div>
           </div>
-          <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-my-[45px]' >
+          <div className='tw-grid tw-grid-cols-4 tw-gap-2 tw-my-[45px]' >
             <img className='mx-auto my-auto' src={flhAcademy} alt='g' ></img>
 
             <img className='mx-auto' src={flh} alt='g' ></img>
             <img className='mx-auto my-auto' src={fo3} alt='g' ></img>
+            <img className='mx-auto my-auto' src={salonspa} alt='g' ></img>
           </div>
         </div>
 
@@ -283,62 +301,20 @@ const BrandWorkWith = () => {
             </div>
           </div>
           <div className='tw-grid tw-my-[45px]' >
-            <div id="carouselExampleIndicators5" className="carousel slide" data-ride="carousel">
-              {/* <ol className="carousel-indicators">
-                <li data-target="#carouselExampleIndicators2" data-slide-to="0" className="active">-</li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="1">-</li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="2">-</li>
-                <li data-target="#carouselExampleIndicators2" data-slide-to="3">-</li>
-              </ol> */}
-              <div className="carousel-inner" style={{ 'margin': 'auto', 'width': '100%' }}>
-                <div className="carousel-item active">
-                  <div className="tw-grid tw-grid-cols-2 tw-gap-4">
-                    <div>
-
-                      <img src={flhAcademy} style={{ 'width': '100%', 'height': '70px' }} alt='d' className='mx-auto tw-basis-1/2' ></img>
-                    </div>
-                    <div>
-
-                      <img src={flh} alt='d' style={{ 'width': '100%', 'height': '70px' }} className='mx-auto tw-basis-1/2' ></img>
-                    </div>
-                  </div>
-
-                </div>
-                <div className="carousel-item">
-                  <div className="tw-grid tw-grid-cols-2 tw-gap-4">
-
-                    <div>
-
-                      <img src={fo3} alt='d' style={{ 'width': '100%', 'height': '70px' }} className='mx-auto tw-basis-1/2' ></img>
-                    </div>
-                    <div>
-
-                      <img src={flh} alt='d' style={{ 'width': '100%', 'height': '70px' }} className='mx-auto tw-basis-1/2' ></img>
-                    </div>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="tw-grid tw-grid-cols-2 tw-gap-4">
-                    <div>
-
-                      <img src={flhAcademy} alt='d' style={{ 'width': '100%', 'height': '70px' }} className='mx-auto tw-basis-1/2' ></img>
-                    </div>
-                    <div>
-
-                      <img src={fo3} alt='d' style={{ 'width': '100%', 'height': '70px' }} className='mx-auto tw-basis-1/2' ></img>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* <a className="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true" style={{'background':left}}> </span>
-                
-              </a>
-              <a className="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true" style={{'background':right}}></span>
-              </a> */}
-            </div>
-
+            <Slider {...settings} style={{'width':'80vw'}}>
+          <div>
+          <img src={fo3} alt='d'  style={{ 'margin': 'auto','width':'70%' }}></img>
+          </div>
+          <div>
+          <img src={flhAcademy} alt='d' style={{ 'margin': 'auto','width':'70%' }}></img>
+          </div>
+          <div>
+          <img src={flh} alt='d' style={{ 'margin': 'auto','width':'70%' }}></img>
+          </div>
+          <div>
+          <img src={salonspa} alt='d' style={{ 'margin': 'auto','width':'70%' }}></img>
+          </div>
+        </Slider>
           </div>
         </div>
 
@@ -524,29 +500,29 @@ const BrandWorkWith = () => {
             </div>
           </div>
           <div id='video2' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-1 tw-gap-8  tw-mx-8 md:tw-mx-48 tw-my-10 mx-auto'>
-            <video onClick={e => play(e, 'video2', 0)} poster={t1}>
-              <source src={f1} type="video/mp4" />
+            <video onClick={e => play(e, 'video2', 0)} poster={commercial[0]}>
+              <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
             </video>
-            <video onClick={e => play(e, 'video2', 1)} poster={t2}>
-              <source src={f2} type="video/mp4" />
+            <video onClick={e => play(e, 'video2', 1)} poster={commercial[1]}>
+              <source src='https://www.youtube.com/embed/R58kGs01FBM?autoplay=1' type="video/mp4" />
             </video>
-            <video onClick={e => play(e, 'video2', 2)} poster={t3}>
-              <source src={f3} type="video/mp4" />
+            <video onClick={e => play(e, 'video2', 2)} poster={commercial[2]}>
+              <source src='https://www.youtube.com/embed/hKyNjBpuOjQ?autoplay=1' type="video/mp4" />
             </video>
-            <video onClick={e => play(e, 'video2', 3)} poster={t1}>
-              <source src={f1} type="video/mp4" />
+            <video onClick={e => play(e, 'video2', 3)} poster={commercial[3]}>
+              <source src='https://www.youtube.com/embed/aZWl4QY-LOA?autoplay=1' type="video/mp4" />
             </video>
-            <video onClick={e => play(e, 'video2', 4)} poster={t2}>
-              <source src={f2} type="video/mp4" />
+            <video onClick={e => play(e, 'video2', 4)} poster={commercial[4]}>
+              <source src='https://www.youtube.com/embed/PbR98T2peEY?autoplay=1' type="video/mp4" />
             </video>
-            <video onClick={e => play(e, 'video2', 5)} poster={t3}>
-              <source src={f3} type="video/mp4" />
+            <video onClick={e => play(e, 'video2', 5)} poster={commercial[5]}>
+              <source src='https://www.youtube.com/embed/x5lvN1pSKNE?autoplay=1' type="video/mp4" />
             </video>
-            <video onClick={e => play(e, 'video2', 6)} poster={t2}>
-              <source src={f1} type="video/mp4" />
+            <video onClick={e => play(e, 'video2', 6)} poster={commercial[6]}>
+              <source src='https://www.youtube.com/embed/EEXXcqRUquo?autoplay=1' type="video/mp4" />
             </video>
-            <video onClick={e => play(e, 'video2', 7)} poster={t1}>
-              <source src={f2} type="video/mp4" />
+            <video onClick={e => play(e, 'video2', 7)} poster={commercial[7]}>
+              <source src='https://www.youtube.com/embed/sLSlt7Fx8mU?autoplay=1' type="video/mp4" />
             </video>
           </div>
           <div className='tw-columns-1 tw-w-full'>

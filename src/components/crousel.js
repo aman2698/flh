@@ -12,7 +12,7 @@ const Crousel = () => {
     let [count2, setcount2] = React.useState(1)
     let [gif, setGif] = React.useState(true)
   const [videoArray, setvideoArray] = React.useState('')
-  let [selectedVideo, setSelectedVideo] = React.useState('https://www.youtube.com/embed/V3v-hYQC_D8?autoplay=1')
+  let [selectedVideo, setSelectedVideo] = React.useState('https://player.vimeo.com/video/805016119?h=0fd1008446')
 
     React.useEffect(() => {
         setPath(image1)
@@ -76,7 +76,7 @@ const Crousel = () => {
     document.getElementById('nav').style.display = 'none'
 
         // console.log(event.target.parentElement);
-        document.getElementById('modal').style.display = 'block'
+        document.getElementById('modal2').style.display = 'block'
         document.getElementsByTagName('body')[0].classList.add('tw-overflow-y-hidden')
         setTimeout(() => {
             setvideoArray(selectedVideo)
@@ -89,7 +89,7 @@ const Crousel = () => {
         // setvideoArray([])
     document.getElementById('nav').style.display = 'block'
 
-        document.getElementById('modal').style.display = 'none'
+        document.getElementById('modal2').style.display = 'none'
         document.getElementsByTagName('body')[0].classList.remove('tw-overflow-y-hidden')
       }
 
@@ -116,16 +116,16 @@ const Crousel = () => {
                     <div className="tw-grid min-[900px]:tw-grid-cols-4 min-[900px]:tw-mt-10" style={{
                     }}>
                         <span></span>
-                        {count === 1 && <span className=' animated fadeIn tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
+                        {count === 1 && <span className=' animated fadeIn  tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
                             Florian Hurel
                         </span>}
-                            {count === 2 && <span className=' animated fadeIn tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
+                            {count === 2 && <span className=' animated  fadeIn tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
                             Florian Hurel
                         </span>}
-                            {count === 3 && <span className=' animated fadeIn tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
+                            {count === 3 && <span className=' animated  fadeIn tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
                             Florian Hurel
                         </span>}
-                        {/* <span className=' fade-out zoom-in tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
+                        {/* <span className=' fade-out  tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
                             Florian Hurel
                         </span> */}
                         <span></span>
@@ -141,9 +141,9 @@ const Crousel = () => {
                             {/* <a href="#" class="button">Hover me</a> */}
                             {/* <button class="custom-btn btn-10">Read Moreh</button> */}
                             
-                            {count === 1 && <span className='animated fadeIn2'>Neque porro quisquam est</span>}
-                            {count === 2 && <span className='animated fadeIn2'>Neque porro quisquam est</span>}
-                            {count === 3 && <span className='animated fadeIn2'>Neque porro quisquam est</span>}
+                            {count === 1 && <span className='animated  fadeIn2'>Neque porro quisquam est</span>}
+                            {count === 2 && <span className='animated  fadeIn2'>Neque porro quisquam est</span>}
+                            {count === 3 && <span className='animated  fadeIn2'>Neque porro quisquam est</span>}
                           </p>
                             {gif && <img src={giff} style={{
                                 'height': '100px',
@@ -206,13 +206,13 @@ const Crousel = () => {
                         <div className="tw-grid tw-mt-2 tw-mx-10" style={{
                         }}>
                             <span></span>
-                            {count === 1 && <span className='fade-out zoom-in tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
+                            {count === 1 && <span className='fade-out  tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
                                 Makeup Artist & Hair Specialist
                             </span>}
-                            {count === 2 && <span className='fade-out zoom-in tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
+                            {count === 2 && <span className='fade-out  tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
                                 Makeup Artist & Hair Specialist
                             </span>}
-                            {count === 3 && <span className='fade-out zoom-in tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
+                            {count === 3 && <span className='fade-out  tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
                                 Makeup Artist & Hair Specialist
                             </span>}
                             
@@ -222,13 +222,13 @@ const Crousel = () => {
                         }}>
                             <span></span>
                             
-                            {count === 1 && <span className='animated fadeIn tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
+                            {count === 1 && <span className='animated fadeIn  tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
                                 Florian Hurel
                             </span>}
-                            {count === 2 && <span className='animated fadeIn tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
+                            {count === 2 && <span className='animated fadeIn  tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
                                 Florian Hurel
                             </span>}
-                            {count === 3 && <span className=' animated fadeIn tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
+                            {count === 3 && <span className=' animated fadeIn  tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
                                 Florian Hurel
                             </span>}
                             <span></span>
@@ -245,7 +245,7 @@ const Crousel = () => {
                 </div>
             </div>
 
-            <div id="modal" className="tw-fixed tw-hidden tw-z-50 tw-inset-0 tw-bg-gray-900 tw-bg-opacity-60 tw-overflow-y-auto tw-h-full tw-w-full tw-modal" style={{'zIndex':'999999999999999'}}>
+            <div id="modal2" className="tw-fixed tw-hidden tw-z-50 tw-inset-0 tw-bg-gray-900 tw-bg-opacity-60 tw-overflow-y-auto tw-h-full tw-w-full tw-modal" style={{'zIndex':'999999999999999'}}>
         <div className="tw-relative tw-mx-auto tw-h-full tw-w-full tw-shadow-xl tw-rounded-md tw-bg-white " id='video-model'>
           <div className="tw-grid tw-grid-cols-2 gap-4 tw-pt-8 md:tw-mx-24 tw-mx-8">
             <div className='tw-font-sans tw-font-bold' style={{ 'fontSize': '13.3521px', 'lineHeight': '18px', 'textTransform': 'uppercase' }}>Back to home</div>
@@ -260,6 +260,7 @@ const Crousel = () => {
               {/* <video className='tw-w-full tw-h-full' controls ref={videoRef}>
                 <source src={videoArray[selectedVideo]} type="video/mp4" />
               </video> */}
+              {/* <iframe src="https://player.vimeo.com/video/805016119?h=0fd1008446" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> */}
 
               <iframe id="ytplayer" type="text/html"  className='tw-w-full tw-h-full'
                 src={videoArray}

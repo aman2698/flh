@@ -179,7 +179,7 @@ const Skin = () => {
                         <div id='Maybelline' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
 
                             {may.map((e, i) => (
-                                <img className='mx-auto' onClick={e => playImage(e, 'Maybelline', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
+                                <img className='mx-auto' onClick={e => playImage(e, 'Maybelline', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
                             ))}
                         </div>
 

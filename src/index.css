@@ -473,3 +473,48 @@ background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
+@keyframes slide-zero {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.slide-zero {
+  animation: 3s slide-zero;
+}
+
+.slide-right, .slide-zero {
+  width: 100%;
+}
+
+.slide-right {
+    animation: 2s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.zoom-in{
+  animation: 2s zoom-in;
+}
+
+@keyframes zoom-in {
+  from {
+    /* font-size: 50px; */
+    transform: scale(0.90);
+  }
+  to {
+    /* font-size: 55px; */
+    transform: scale(1);
+
+  }
+}
