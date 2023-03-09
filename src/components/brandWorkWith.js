@@ -230,7 +230,7 @@ const BrandWorkWith = () => {
           </div>
         </div>
       </div>
-      <div className='tw-hidden min-[900px]:tw-grid tw-grid-cols-4  tw-h-[285px] min-[900px]:tw-h-auto  tw-mx-8 min-[900px]:tw-mx-[350px] tw-my-[50px]'>
+      <div className='tw-hidden min-[900px]:tw-grid tw-grid-cols-4  tw-h-[285px] min-[900px]:tw-h-auto  tw-mx-8 min-[900px]:tw-mx-[275px] tw-my-[50px]'>
         <div id='home' className='tw-my-auto'>
         <video onClick={e => play(e, 'home', 0)} poster={home}>
             <source src='https://player.vimeo.com/video/805016119?h=0fd1008446' type="video/mp4" />
@@ -264,11 +264,10 @@ const BrandWorkWith = () => {
             </div>
           </div>
           <div className='tw-grid tw-grid-cols-4 tw-gap-2 tw-my-[45px]' >
-            <img className='mx-auto my-auto' src={flhAcademy} alt='g' ></img>
-
-            <img className='mx-auto' src={flh} alt='g' ></img>
-            <img className='mx-auto my-auto' src={fo3} alt='g' ></img>
-            <img className='mx-auto my-auto' src={salonspa} alt='g' ></img>
+            <a href='https://florianhurelacademy.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={flhAcademy} alt='g' ></img></a>
+            <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={flh} alt='g' ></img></a>
+            <a href='https://flofitbox.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={fo3} alt='g' ></img></a>
+            <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={salonspa} alt='g' ></img></a>
           </div>
         </div>
 
@@ -311,16 +310,16 @@ const BrandWorkWith = () => {
           <div className='tw-grid tw-my-[45px]' >
             <Slider {...settings} style={{ 'width': '80vw' }}>
               <div>
-                <img src={fo3} alt='d' style={{ 'margin': 'auto', 'width': '70%' }}></img>
+              <a href='https://florianhurelacademy.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={flhAcademy} alt='g' ></img></a>
               </div>
               <div>
-                <img src={flhAcademy} alt='d' style={{ 'margin': 'auto', 'width': '70%' }}></img>
+              <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={flh} alt='g' ></img></a>
               </div>
               <div>
-                <img src={flh} alt='d' style={{ 'margin': 'auto', 'width': '70%' }}></img>
+              <a href='https://flofitbox.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={fo3} alt='g' ></img></a>
               </div>
               <div>
-                <img src={salonspa} alt='d' style={{ 'margin': 'auto', 'width': '70%' }}></img>
+              <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={salonspa} alt='g' ></img></a>
               </div>
             </Slider>
           </div>
@@ -333,7 +332,7 @@ const BrandWorkWith = () => {
         <div className='tw-grid tw-mx-10 md:tw-mx-40 tw-py-8' >
           <div className='tw-columns-1'>
             <div className='tw-font-sans tw-font-bold tw-text-2xl tw-mt-4 md:tw-mt-8 underline-small' style={{ 'color': '#fff', 'textTransform': 'uppercase' }}>
-              Films
+              Direction
             </div>
           </div>
           <div id='video1' className='tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8  tw-mx-8 md:tw-mx-48 tw-my-10 mx-auto'>
@@ -363,7 +362,7 @@ const BrandWorkWith = () => {
         <div className='tw-grid tw-mx-8 min-[900px]:tw-mx-40' >
           <div className='tw-columns-1'>
             <div className='tw-font-sans tw-font-bold tw-text-2xl tw-mt-4 underline-small' style={{ 'color': '#232323', 'textTransform': 'uppercase' }}>
-              Films
+            Direction
             </div>
           </div>
           <div id='' className='tw-flex tw-flex-row tw-gap-3 tw-mx-8 min-[900px]:tw-mx-48 tw-my-10 mx-auto'>

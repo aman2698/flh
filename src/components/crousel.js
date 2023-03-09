@@ -143,9 +143,9 @@ const Crousel = () => {
                             {/* <a href="#" class="button">Hover me</a> */}
                             {/* <button class="custom-btn btn-10">Read Moreh</button> */}
                             
-                            {count === 1 && <span className='animated  fadeIn2'>Neque porro quisquam est</span>}
+                            {/* {count === 1 && <span className='animated  fadeIn2'>Neque porro quisquam est</span>}
                             {count === 2 && <span className='animated  fadeIn2'>Neque porro quisquam est</span>}
-                            {count === 3 && <span className='animated  fadeIn2'>Neque porro quisquam est</span>}
+                            {count === 3 && <span className='animated  fadeIn2'>Neque porro quisquam est</span>} */}
                           </p>
                             {gif && <img src={giff} style={{
                                 'height': '100px',
