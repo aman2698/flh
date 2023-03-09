@@ -53,7 +53,7 @@ const Bio = () => {
       <div className='tw-columns-1 '>
         <div id='home' className='min-[900px]:tw-hidden' style={{'marginBottom':'15px'}}>
           <video onClick={e => play(e, 'home', 0)} poster={home}>
-            <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
+            <source src='https://player.vimeo.com/video/805016119?h=0fd1008446' type="video/mp4" />
           </video>
         </div>
         <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small ' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase' }}>Bio</div>

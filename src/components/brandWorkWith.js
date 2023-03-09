@@ -233,7 +233,7 @@ const BrandWorkWith = () => {
       <div className='tw-hidden min-[900px]:tw-grid tw-grid-cols-4  tw-h-[285px] min-[900px]:tw-h-auto  tw-mx-8 min-[900px]:tw-mx-[350px] tw-my-[50px]'>
         <div id='home' className='tw-my-auto'>
         <video onClick={e => play(e, 'home', 0)} poster={home}>
-            <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
+            <source src='https://player.vimeo.com/video/805016119?h=0fd1008446' type="video/mp4" />
           </video>
           </div>
         <div className='tw-col-span-3' >
