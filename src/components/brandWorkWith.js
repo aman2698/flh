@@ -259,8 +259,8 @@ const BrandWorkWith = () => {
             </div>
           </div>
           <div className='tw-columns-1'>
-            <div className='tw-font-sans tw-font-normal min-[900px]:tw-text-2xl tw-text-lg  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-black min-[900px]:tw-text-white' style={{ 'textTransform': 'uppercase' }}>
-              Speaking of his International Experience of so many years, Florian himself has developed a Method of his own which he passes out to young, experienced and aspiring artists through his educational platform “Florian Hurel Academy” as a entrepreneur, Florian holds on to business within the education and fitness sectors of the Industry owning Florian Hurel Academy and FloFitBox Mumbai.
+            <div className='tw-font-sans tw-font-normal min-[900px]:tw-text-2xl tw-text-lg  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-black min-[900px]:tw-text-white' style={{ 'textTransform': 'lowercase' }}>
+            Speaking of his many years of international experience, Florian himself has developed a system that he shares with aspiring young, seasoned, and established artists through his educational platform, "FLORIAN HUREL ACADEMY," which he runs as an entrepreneur. FLORIAN CONTINUES TO DO BUSINESS IN THE EDUCATION AND FITNESS SECTORS OF THE INDUSTRY AND OWNS FLORIAN HUREL ACADEMY AND FLOFITBOX MUMBAI
             </div>
           </div>
           <div className='tw-grid tw-grid-cols-4 tw-gap-2 tw-my-[45px]' >
@@ -303,23 +303,23 @@ const BrandWorkWith = () => {
             </div>
           </div>
           <div className='tw-columns-1'>
-            <div className='tw-font-sans tw-font-normal min-[900px]:tw-text-2xl tw-text-lg  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-white' style={{ 'textTransform': 'uppercase' }}>
-              Speaking of his International Experience of so many years, Florian himself has developed a Method of his own which he passes out to young, experienced and aspiring artists through his educational platform “Florian Hurel Academy” as a entrepreneur, Florian holds on to business within the education and fitness sectors of the Industry owning Florian Hurel Academy and FloFitBox Mumbai.
+            <div className='tw-font-sans tw-font-normal min-[900px]:tw-text-2xl tw-text-lg  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-white' style={{ 'textTransform': 'lowercase' }}>
+            Speaking of his many years of international experience, Florian himself has developed a system that he shares with aspiring young, seasoned, and established artists through his educational platform, "FLORIAN HUREL ACADEMY," which he runs as an entrepreneur. FLORIAN CONTINUES TO DO BUSINESS IN THE EDUCATION AND FITNESS SECTORS OF THE INDUSTRY AND OWNS FLORIAN HUREL ACADEMY AND FLOFITBOX MUMBAI
             </div>
           </div>
           <div className='tw-grid tw-my-[45px]' >
             <Slider {...settings} style={{ 'width': '80vw' }}>
               <div>
-              <a href='https://florianhurelacademy.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={flhAcademy} alt='g' ></img></a>
+              <a href='https://florianhurelacademy.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' style={{ 'margin': 'auto','width':'70%' }} src={flhAcademy} alt='g' ></img></a>
               </div>
               <div>
-              <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={flh} alt='g' ></img></a>
+              <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={flh} style={{ 'margin': 'auto','width':'70%' }} alt='g' ></img></a>
               </div>
               <div>
-              <a href='https://flofitbox.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={fo3} alt='g' ></img></a>
+              <a href='https://flofitbox.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' style={{ 'margin': 'auto','width':'70%' }} src={fo3} alt='g' ></img></a>
               </div>
               <div>
-              <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={salonspa} alt='g' ></img></a>
+              <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={salonspa} style={{ 'margin': 'auto','width':'70%' }} alt='g' ></img></a>
               </div>
             </Slider>
           </div>
