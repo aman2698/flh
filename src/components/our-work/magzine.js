@@ -74,104 +74,201 @@ const Magzine = () => {
 
         {/* Commercial */}
         <div className='tw-w-full'>
-          <div className='tw-grid tw-mx-10 md:tw-mx-40 tw-mb-10 tw-pb-8' >
-            <div className='tw-columns-1 tw-pb-4'>
-              <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
-                Magazine Cover
+        <div className='tw-hidden min-[900px]:tw-block'>
+            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+              <div class="carousel-inner">
+                {/* mobile view */}
+                <div class="carousel-item active ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={images[0]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Magazine Cover</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={bazaar[0]} alt="Second slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Magazine Cover</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={BRIDE[0]} alt="Third slide" />
+                   <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Magazine Cover</h5>
+                  </div>
+                </div>
               </div>
-              <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1'>
-                Vogue  --  Harpers Bazaar -- Bride  --  Hello  --  Grazia  --  Cosmopolitan  --  Femina wedding  --  Flimfare   --  Wedding vows
+
+            </div>
+          </div>
+          <div className='min-[900px]:tw-hidden'>
+            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+              <div class="carousel-inner">
+                {/* mobile view */}
+                <div class="carousel-item active ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={images[0]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.9)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Magazine Cover</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={bazaar[0]} alt="Second slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.9)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Magazine Cover</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={BRIDE[0]} alt="Third slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.9)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Magazine Cover</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8' >
+            <div className='tw-columns-1 tw-pb-4'>
+              {/* <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
+                Magazine Cover
+              </div> */}
+              <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
+                {/* Vogue  --  Harpers Bazaar -- Bride  --  Hello  --  Grazia  --  Cosmopolitan  --  Femina wedding  --  Flimfare   --  Wedding vows */}
+                His talent and versatility as an artist have allowed him to work across different genres, from fashion and beauty to film and television. he has collaborated on a variety of projects, including feature films, music videos, and commercials.
               </div>
             </div>
 
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
               Vogue
             </div>
-            <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+            <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {images.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px', 'marginBottom':'18px' }}>
             Harpers Bazaar
             </div>
-            <div id='bazaar' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8  tw-mb-10 tw-justify-center'>
+            <div id='bazaar' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
               {bazaar.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
               Bride
             </div>
-            <div id='bride' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+            <div id='bride' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {BRIDE.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
               Hello
             </div>
-            <div id='hello' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+            <div id='hello' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {HELLO.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
              Grazia
             </div>
-            <div id='gazia' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+            <div id='gazia' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {GRAZIA.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
               Cosmopolitan
             </div>
-            <div id='cos' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+            <div id='cos' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {Cosmopolitan.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'cos', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'cos', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
               Femina wedding
             </div>
-            <div id='femina' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+            <div id='femina' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {FEMINA.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'femina', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'femina', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
               Flimfare
             </div>
-            <div id='filmfare' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+            <div id='filmfare' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {FLIMFARE.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'filmfare', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'filmfare', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
               wedding vows
             </div>
-            <div id='vows' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+            <div id='vows' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {WEDDINGVOWS.map((e,i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'vows', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'vows', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
             </div>
             {/* <div className='view-all tw-mx-auto tw-mt-8' style={{ 'position': 'relative', 'border': '3px solid #fff' }}>

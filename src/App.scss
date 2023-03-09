@@ -680,3 +680,18 @@ video{
 a{
   cursor: pointer;
 }
+
+.rotate{
+  animation: rotation 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(359deg);
+  }
+}

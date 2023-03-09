@@ -70,68 +70,163 @@ const Apperance = () => {
 
         {/* Commercial */}
         <div className='tw-w-full'>
-          <div className='tw-grid tw-mx-10 md:tw-mx-40 tw-mb-10 tw-pb-8' >
+          <div className='tw-hidden min-[900px]:tw-block'>
+            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+              <div class="carousel-inner">
+                {/* mobile view */}
+                <div class="carousel-item active ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={daisy[0]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Celebrity Apperencce</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={deepika[0]} alt="Second slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Celebrity Apperencce</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={sara[0]} alt="Third slide" />
+                   <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Celebrity Apperencce</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div className='min-[900px]:tw-hidden'>
+            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+              <div class="carousel-inner">
+                {/* mobile view */}
+                <div class="carousel-item active ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={daisy[0]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Celebrity Apperence</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={deepika[0]} alt="Second slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Celebrity Apperence</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={sara[0]} alt="Third slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Celebrity Apperence</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8' >
             <div className='tw-columns-1 tw-pb-4'>
-              <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
+              {/* <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
                 Celebrity Apperence
+              </div> */}
+              <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1  md:tw-mt-1' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
+                {/* <span>Daisy</span>  --  <span>Deepika</span> -- <span>Kangna</span>  --  <span>Sara ali khan</span>  --  <span>Tamannah</span> */}
+                Whether he is working with a celebrity Florian's dedication to his craft and commitment to his clients have earned him a reputation as one of the most talented hair and makeup artists in the industry.
+
+
               </div>
-              <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1'>
-                <span>Daisy</span>  --  <span>Deepika</span> -- <span>Kangna</span>  --  <span>Sara ali khan</span>  --  <span>Tamannah</span>
-                {/* Florian's impressive roster of celebrity clients is a testament to his exceptional skills and ability to create customized looks that enhance each person's unique features. He has a keen eye for detail and a talent for creating makeup and hair styles that are both stunning and natural-looking.<br/>
-Florian's ability to create customized looks that showcase each person's natural beauty has made him a favorite among celebrities and high-end clients alike. He is committed to understanding his clients' needs and preferences and works closely with them to create looks that exceed their expectations.<br/>
-Whether he is working with a celebrity on a film or television project, or creating a stunning look for a red carpet event, Florian's dedication to his craft and commitment to his clients have earned him a reputation as one of the most talented hair and makeup artists in the industry. */}
-
-              </div>
             </div>
 
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-            Daisy
+              Daisy
             </div>
-            <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
-              {daisy.map((e,i) => (
+            <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+              {daisy.map((e, i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
               ))}
             </div>
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-            Deepika
+              Deepika
             </div>
-            <div id='bazaar' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8  tw-mb-10 tw-justify-center'>
-              {deepika.map((e,i) => (
+            <div id='bazaar' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
+              {deepika.map((e, i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto'}}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
               ))}
             </div>
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-            Kangna
+              Kangna
             </div>
-            <div id='bride' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
-              {kangna.map((e,i) => (
+            <div id='bride' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+              {kangna.map((e, i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
               ))}
             </div>
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-            Sara ali khan
+              Sara ali khan
             </div>
-            <div id='hello' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
-              {sara.map((e,i) => (
+            <div id='hello' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+              {sara.map((e, i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto'}}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
               ))}
             </div>
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-            Tamannah
+              Tamannah
             </div>
-            <div id='gazia' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
-              {tamannah.map((e,i) => (
+            <div id='gazia' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+              {tamannah.map((e, i) => (
 
-                <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto'}}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
               ))}
             </div>
             {/* <div className='view-all tw-mx-auto tw-mt-8' style={{ 'position': 'relative', 'border': '3px solid #fff' }}>
@@ -143,34 +238,34 @@ Whether he is working with a celebrity on a film or television project, or creat
 
         {/* footer */}
         <div className='tw-w-full' style={{ 'background': 'rgba(229, 229, 229, 0.5)' }}>
-        <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
-          <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
-          <div>
-            <div className='columns-1'>
-              <img className='mx-auto' src={fo2} alt='g' ></img>
-              <img className='mx-auto' src={fo21} alt='g' ></img>
-              <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
-                <img className='mx-auto' src={fb} alt='g' ></img>
-                <img className='mx-auto' src={insta} alt='g' ></img>
-                <img className='mx-auto' src={twitter} alt='g' ></img>
+          <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
+            <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
+            <div>
+              <div className='columns-1'>
+                <img className='mx-auto' src={fo2} alt='g' ></img>
+                <img className='mx-auto' src={fo21} alt='g' ></img>
+                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
+                  <img className='mx-auto' src={fb} alt='g' ></img>
+                  <img className='mx-auto' src={insta} alt='g' ></img>
+                  <img className='mx-auto' src={twitter} alt='g' ></img>
+                </div>
               </div>
             </div>
+            <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo3} alt='g' ></img>
           </div>
-          <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo3} alt='g' ></img>
-        </div>
-        <hr className='w-full tw-hidden min-[900px]:tw-block' />
-        <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
-          <div></div>
-          <div className='mx-auto'>&#169;Copyrights 2023</div>
-          <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
-        </div>
-        <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
-          {/* <div></div> */}
-          <div className='mx-auto'>&#169;Copyrights 2023
+          <hr className='w-full tw-hidden min-[900px]:tw-block' />
+          <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
+            <div></div>
+            <div className='mx-auto'>&#169;Copyrights 2023</div>
+            <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
           </div>
-          <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+          <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
+            {/* <div></div> */}
+            <div className='mx-auto'>&#169;Copyrights 2023
+            </div>
+            <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+          </div>
         </div>
-      </div>
       </div>
 
       <div id="modal-image" className="tw-fixed tw-hidden tw-z-50 tw-inset-0 tw-bg-gray-900 tw-bg-opacity-60 tw-overflow-y-auto tw-h-full tw-w-full tw-modal">

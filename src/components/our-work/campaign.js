@@ -129,13 +129,111 @@ const Campaigns = () => {
 
                 {/* Commercial */}
                 <div className='tw-w-full'>
-                    <div className='tw-grid tw-mx-10 md:tw-mx-40 tw-mb-10 tw-pb-8' >
+                <div className='tw-hidden min-[900px]:tw-block'>
+            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+              <div class="carousel-inner">
+                {/* mobile view */}
+                <div class="carousel-item active ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={noor[0]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Campaigns</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={noor[1]} alt="Second slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Campaigns</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={reliance[0]} alt="Third slide" />
+                   <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Campaigns</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div className='min-[900px]:tw-hidden'>
+            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+              <div class="carousel-inner">
+                {/* mobile view */}
+                <div class="carousel-item active ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={noor[0]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Campaigns</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={noor[0]} alt="Second slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Campaigns</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={reliance[0]} alt="Third slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Campaigns</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+                    <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8' >
                         <div className='tw-columns-1 tw-pb-4'>
-                            <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
+                            {/* <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
                                 Campaigns
-                            </div>
-                            <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1'>
-                                Nooraniyat  --  Reliance Jewels  --  Cadbury  --  Ceris  --  Colgate  --  REXONA -- PUMA  --  Fixderma  --  FBB  --  One Plus  --  Nourish  --  Mama Earth   --  Sketchers  --  Melange  -- JIO --  Flipkart
+                            </div> */}
+                            <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1 ' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
+                                {/* Nooraniyat  --  Reliance Jewels  --  Cadbury  --  Ceris  --  Colgate  --  REXONA -- PUMA  --  Fixderma  --  FBB  --  One Plus  --  Nourish  --  Mama Earth   --  Sketchers  --  Melange  -- JIO --  Flipkart */}
+                                His ability to create makeup and hair styles that are both stunning and natural-looking has made him a favorite among creative directors and photographers, who have praised his attention to detail and his ability to bring their visions to life.
+
                             </div>
                         </div>
 
@@ -143,22 +241,22 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Nooraniyat
                         </div>
-                        <div id='Nooraniyat' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='Nooraniyat' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
                             {noor.map((e, i) => (
 
-                                <img className='mx-auto' onClick={e => playImage(e, 'Nooraniyat', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                                <img className='mx-auto' onClick={e => playImage(e, 'Nooraniyat', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
                             ))}
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                         Reliance Jewels
                         </div>
-                        <div id='reliance' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='reliance' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
                             {reliance.map((e, i) => (
 
-                                <img className='mx-auto' onClick={e => playImage(e, 'reliance', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                                <img className='mx-auto' onClick={e => playImage(e, 'reliance', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
                             ))}
                         </div>
 
@@ -166,7 +264,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Cadbury
                         </div>
-                        <div id='cadbury' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='cadbury' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
                             <video onClick={e => play(e, 'cadbury', 0)} poster={cadbury}>
                                 <source src='https://www.youtube.com/embed/1LLKXt4Y4Uo?autoplay=1' type="video/mp4" />
@@ -176,7 +274,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Ceris
                         </div>
-                        <div id='ceris' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='ceris' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
                             <video onClick={e => play(e, 'ceris', 0)} poster={ceris}>
                                 <source src='https://www.youtube.com/embed/1LLKXt4Y4Uo?autoplay=1' type="video/mp4" />
@@ -186,7 +284,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Colgate
                         </div>
-                        <div id='colgate' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='colgate' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
                             <video onClick={e => play(e, 'colgate', 0)} poster={colT}>
                                 <source src='https://www.youtube.com/embed/crgys_Vvf5Y?autoplay=1' type="video/mp4" />
@@ -196,7 +294,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             REXONA
                         </div>
-                        <div id='rexona' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8  tw-mb-10 tw-justify-center'>
+                        <div id='rexona' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
                             {/* {bazaar.map((e,i) => (
                 <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
               ))} */}
@@ -208,7 +306,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             PUMA
                         </div>
-                        <div id='puma' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='puma' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             {/* {BRIDE.map((e,i) => (
                 <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
               ))} */}
@@ -220,7 +318,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Fixderma
                         </div>
-                        <div id='Fixderma' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='Fixderma' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             {/* {HELLO.map((e,i) => (
 
                 <img className='mx-auto' onClick={e => playImage(e, 'Fixderma', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
@@ -233,7 +331,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             FBB
                         </div>
-                        <div id='fbb' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='fbb' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'fbb', 0)} poster={fbb}>
                                 <source src='https://www.youtube.com/embed/c7yoHJgvgWM?autoplay=1' type="video/mp4" />
                             </video>
@@ -242,7 +340,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             One Plus
                         </div>
-                        <div id='one' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='one' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'one', 0)} poster={one}>
                                 <source src='https://www.youtube.com/embed/k3zs-V1bOC0?autoplay=1' type="video/mp4" />
                             </video>
@@ -251,7 +349,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Nourish
                         </div>
-                        <div id='Nourish' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='Nourish' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Nourish', 0)} poster={nourish}>
                                 <source src='https://www.youtube.com/embed/YEvJ1qTydA4?autoplay=1' type="video/mp4" />
                             </video>
@@ -260,7 +358,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Mama Earth
                         </div>
-                        <div id='mama' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='mama' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'mama', 0)} poster={mama}>
                                 <source src='https://www.youtube.com/embed/G44P6OE_YWc?autoplay=1' type="video/mp4" />
                             </video>
@@ -269,7 +367,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Sketchers
                         </div>
-                        <div id='Sketchers' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='Sketchers' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Sketchers', 0)} poster={sketchers}>
                                 <source src='https://www.youtube.com/embed/w-1f7ITyeNg?autoplay=1' type="video/mp4" />
                             </video>
@@ -278,7 +376,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Melange
                         </div>
-                        <div id='Melange' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='Melange' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Melange', 0)} poster={melange}>
                                 <source src='https://www.youtube.com/embed/hhjaB8Rz0SQ?autoplay=1' type="video/mp4" />
                             </video>
@@ -287,7 +385,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             JIO
                         </div>
-                        <div id='jio' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='jio' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'jio', 0)} poster={jio}>
                                 <source src='https://www.youtube.com/embed/XUYxCyTuGxs?autoplay=1' type="video/mp4" />
                             </video>
@@ -296,7 +394,7 @@ const Campaigns = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Flipkart
                         </div>
-                        <div id='flipkart' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='flipkart' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'flipkart', 0)} poster={flipkart}>
                                 <source src='https://www.youtube.com/embed/vmxAHV1httQ?autoplay=1' type="video/mp4" />
                             </video>

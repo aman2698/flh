@@ -122,13 +122,110 @@ const Skin = () => {
 
                 {/* Commercial */}
                 <div className='tw-w-full'>
-                    <div className='tw-grid tw-mx-10 md:tw-mx-40 tw-mb-10 tw-pb-8' >
+                <div className='tw-hidden min-[900px]:tw-block'>
+            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+              <div class="carousel-inner">
+                {/* mobile view */}
+                <div class="carousel-item active ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Skin</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Second slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Skin</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Third slide" />
+                   <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Skin</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div className='min-[900px]:tw-hidden'>
+            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+              <div class="carousel-inner">
+                {/* mobile view */}
+                <div class="carousel-item active ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'35%'
+                  }}>
+                    <h5>Skin</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Second slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'35%'
+                  }}>
+                    <h5>Skin</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Third slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'35%'
+                  }}>
+                    <h5>Skin</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+                    <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8' >
                         <div className='tw-columns-1 tw-pb-4'>
-                            <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
+                            {/* <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
                                 Skin
-                            </div>
-                            <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1'>
-                                Glow & Lovely  --  Lakme  --  Biotique  --  Maybelline
+                            </div> */}
+                            <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
+                                {/* Glow & Lovely  --  Lakme  --  Biotique  --  Maybelline */}
+                                He understands the importance of using high-quality products and techniques to achieve flawless skin and works closely with each client to create a look that highlights their natural beauty.
                             </div>
                         </div>
 
@@ -176,10 +273,10 @@ const Skin = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Maybelline
                         </div>
-                        <div id='Maybelline' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='Maybelline' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
                             {may.map((e, i) => (
-                                <img className='mx-auto' onClick={e => playImage(e, 'Maybelline', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                                <img className='mx-auto' onClick={e => playImage(e, 'Maybelline', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
                             ))}
                         </div>
 

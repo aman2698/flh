@@ -6,6 +6,8 @@ import giff from '../assets/img/circle.gif'
 import cross from '../assets/img/times.svg';
 import left from '../assets/img/left-arrow.svg';
 import right from '../assets/img/right-arrow.svg';
+import logo from '../assets/img/logo.svg';
+
 const Crousel = () => {
     let [path, setPath] = React.useState('')
     let [count, setcount] = React.useState(1)
@@ -102,13 +104,13 @@ const Crousel = () => {
                     }}>
                         <span></span>
                         {count === 1 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold min-[900px]:tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '50px', lineHeight: '57px', color: '#fff', 'marginTop': '10%' }}>
-                            Makeup Artist & Hair Specialist
+                            Transforming your look, enhancing your beauty
                         </span>}
                             {count === 2 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold min-[900px]:tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '50px', lineHeight: '57px', color: '#fff', 'marginTop': '10%' }}>
-                            Makeup Artist & Hair Specialist
+                            Transforming your look, enhancing your beauty
                         </span>}
                             {count === 3 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold min-[900px]:tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '50px', lineHeight: '57px', color: '#fff', 'marginTop': '10%' }}>
-                            Makeup Artist & Hair Specialist
+                            Transforming your look, enhancing your beauty
                         </span>}
                         
                         <span></span>
@@ -117,13 +119,13 @@ const Crousel = () => {
                     }}>
                         <span></span>
                         {count === 1 && <span className=' animated fadeIn  tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
-                            Florian Hurel
+                            -Florian Hurel
                         </span>}
                             {count === 2 && <span className=' animated  fadeIn tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
-                            Florian Hurel
+                            -Florian Hurel
                         </span>}
                             {count === 3 && <span className=' animated  fadeIn tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
-                            Florian Hurel
+                            -Florian Hurel
                         </span>}
                         {/* <span className=' fade-out  tw-font-sans tw-font-bold tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '42px', lineHeight: '57px', color: '#fff' }}>
                             Florian Hurel
@@ -150,7 +152,7 @@ const Crousel = () => {
                                 'position': 'absolute',
                                 'right': '-5%',
                                 'z-index': '999'
-                            }} alt='gif'></img>
+                            }} alt='gif' ></img>
                             }
                     </div>
                 </div>
@@ -207,13 +209,13 @@ const Crousel = () => {
                         }}>
                             <span></span>
                             {count === 1 && <span className='fade-out  tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
-                                Makeup Artist & Hair Specialist
+                                Transforming your look, enhancing your beauty 
                             </span>}
                             {count === 2 && <span className='fade-out  tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
-                                Makeup Artist & Hair Specialist
+                                Transforming your look, enhancing your beauty 
                             </span>}
                             {count === 3 && <span className='fade-out  tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
-                                Makeup Artist & Hair Specialist
+                                Transforming your look, enhancing your beauty 
                             </span>}
                             
                             <span></span>
@@ -223,13 +225,13 @@ const Crousel = () => {
                             <span></span>
                             
                             {count === 1 && <span className='animated fadeIn  tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
-                                Florian Hurel
+                                -Florian Hurel
                             </span>}
                             {count === 2 && <span className='animated fadeIn  tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
-                                Florian Hurel
+                                -Florian Hurel
                             </span>}
                             {count === 3 && <span className=' animated fadeIn  tw-font-sans tw-font-normal tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '30px', lineHeight: '40px', color: '#000' }}>
-                                Florian Hurel
+                                -Florian Hurel
                             </span>}
                             <span></span>
                         </div>

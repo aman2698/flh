@@ -132,13 +132,110 @@ const Hair = () => {
 
                 {/* Commercial */}
                 <div className='tw-w-full'>
-                    <div className='tw-grid tw-mx-10 md:tw-mx-40 tw-mb-10 tw-pb-8' >
+                <div className='tw-hidden min-[900px]:tw-block'>
+            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+              <div class="carousel-inner">
+                {/* mobile view */}
+                <div class="carousel-item active ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={streak[0]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Hair Commercial</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={streak[1]} alt="Second slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Hair Commercial</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={sch[0]} alt="Third slide" />
+                   <div class="carousel-caption" style={{
+                    'fontSize': '44px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'33%'
+                  }}>
+                    <h5>Hair Commercial</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div className='min-[900px]:tw-hidden'>
+            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+              <div class="carousel-inner">
+                {/* mobile view */}
+                <div class="carousel-item active ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={streak[0]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Hair Commercial</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={streak[1]} alt="Second slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Hair Commercial</h5>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={sch[0]} alt="Third slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px'
+                  }}>
+                    <h5>Hair Commercial</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+                    <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8' >
                         <div className='tw-columns-1 tw-pb-4'>
-                            <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
+                            {/* <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
                                 Hair Commercial
-                            </div>
-                            <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1'>
-                            Hair & Care  --  Godrej  --  Dabur  --  TRESemme  --  Pantene  --  Kash King -- Dove  --  Mamaearth  --  Tirumalaa  --  Parachute  --  Schwarzkopf   --  Streak
+                            </div> */}
+                            <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
+                            {/* Hair & Care  --  Godrej  --  Dabur  --  TRESemme  --  Pantene  --  Kash King -- Dove  --  Mamaearth  --  Tirumalaa  --  Parachute  --  Schwarzkopf   --  Streak */}
+                            He understands the importance of using high-quality products and techniques to achieve beautiful, healthy-looking hair and works closely with each client to create a look that highlights their natural beauty.
                             </div>
                         </div>
 
@@ -146,7 +243,7 @@ const Hair = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Hair & Care
                         </div>
-                        <div id='hair' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='hair' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
                             <video onClick={e => play(e, 'hair', 0)} poster={hair1}>
                                 <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
@@ -159,7 +256,7 @@ const Hair = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                         Godrej
                         </div>
-                        <div id='Godrej' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='Godrej' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                         <video onClick={e => play(e, 'Godrej', 0)} poster={godrej1}>
                                 <source src='https://www.youtube.com/embed/hKyNjBpuOjQ?autoplay=1' type="video/mp4" />
                             </video>
@@ -172,7 +269,7 @@ const Hair = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Dabur
                         </div>
-                        <div id='dabur' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='dabur' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
                             <video onClick={e => play(e, 'dabur', 0)} poster={dabur1}>
                                 <source src='https://www.youtube.com/embed/GbwTDTa3KgA?autoplay=1' type="video/mp4" />
@@ -182,7 +279,7 @@ const Hair = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             TRESemme
                         </div>
-                        <div id='tresemme' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='tresemme' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
                             <video onClick={e => play(e, 'tresemme', 0)} poster={tres1}>
                                 <source src='https://www.youtube.com/embed/8fGpeQaWKBE?autoplay=1' type="video/mp4" />
@@ -196,7 +293,7 @@ const Hair = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Pantene
                         </div>
-                        <div id='pantene' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='pantene' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
                             <video onClick={e => play(e, 'pantene', 0)} poster={pan1}>
                                 <source src='https://www.youtube.com/embed/pYUML21X1fM?autoplay=1' type="video/mp4" />
@@ -206,7 +303,7 @@ const Hair = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Kesh King
                         </div>
-                        <div id='kesh' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8  tw-mb-10 tw-justify-center'>
+                        <div id='kesh' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
                             {/* {bazaar.map((e,i) => (
                 <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
               ))} */}
@@ -218,7 +315,7 @@ const Hair = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Dove
                         </div>
-                        <div id='dove' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='dove' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             {/* {BRIDE.map((e,i) => (
                 <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
               ))} */}
@@ -230,7 +327,7 @@ const Hair = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Mama Earth
                         </div>
-                        <div id='mama' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='mama' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'mama', 0)} poster={mama1}>
                                 <source src='https://www.youtube.com/embed/PbR98T2peEY?autoplay=1' type="video/mp4" />
                             </video>
@@ -242,7 +339,7 @@ const Hair = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Tirumalaa
                         </div>
-                        <div id='Tirumalaa' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='Tirumalaa' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             {/* {HELLO.map((e,i) => (
 
                 <img className='mx-auto' onClick={e => playImage(e, 'Tirumalaa', i)} src={e} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
@@ -255,7 +352,7 @@ const Hair = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Parachute
                         </div>
-                        <div id='Parachute' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='Parachute' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Parachute', 0)} poster={para1}>
                                 <source src='https://www.youtube.com/embed/37ZXneJcYro?autoplay=1' type="video/mp4" />
                             </video>
@@ -264,7 +361,7 @@ const Hair = () => {
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Schwarzkopf
                         </div>
-                        <div id='Schwarzkopf' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='Schwarzkopf' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Schwarzkopf', 0)} poster={sch1}>
                                 <source src='https://www.youtube.com/embed/cEOJw1OpJWI?autoplay=1' type="video/mp4" />
                             </video>
@@ -272,16 +369,16 @@ const Hair = () => {
                                 <source src='https://www.youtube.com/embed/AepxyLNoQeI?autoplay=1' type="video/mp4" />
                             </video>
                                                         {sch.map((e,i) => (
-                <img className='mx-auto' onClick={e => playImage(e, 'Schwarzkopf', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'Schwarzkopf', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Streak
                         </div>
-                        <div id='strek' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div id='strek' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                                                        {streak.map((e,i) => (
-                <img className='mx-auto' onClick={e => playImage(e, 'streak', i)} src={e} alt='g' style={{ 'width': '90%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <img className='mx-auto' onClick={e => playImage(e, 'streak', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
               ))}
                         </div>
 
