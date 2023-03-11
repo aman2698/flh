@@ -28,7 +28,7 @@ const Contact = () => {
                                         name="first-name"
                                         id="first-name"
                                         autoComplete="given-name"
-                                        className="tw-mt-2 tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
+                                        className="tw-mt-2 tw-block tw-w-full tw-rounded-md  tw-shadow tw-appearance-none tw-border tw-rounded tw-py-2 tw-px-3 tw-text-gray-700 tw-leading-tight focus:tw-outline-none focus:tw-shadow-outline"
                                     />
                                 </div>
                                 <div className="">                      <label htmlFor="last-name" className="tw-block tw-text-sm tw-font-medium tw-leading-6 tw-text-gray-900">
@@ -39,7 +39,7 @@ const Contact = () => {
                                         name="last-name"
                                         id="last-name"
                                         autoComplete="family-name"
-                                        className="tw-mt-2 tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
+                                        className="tw-mt-2 tw-block tw-w-full tw-rounded-md  tw-shadow tw-appearance-none tw-border tw-rounded tw-py-2 tw-px-3 tw-text-gray-700 tw-leading-tight focus:tw-outline-none focus:tw-shadow-outline"
                                     />
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ const Contact = () => {
                                         name="Email"
                                         id="Email"
                                         autoComplete="given-name"
-                                        className="tw-mt-2 tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
+                                        className="tw-mt-2 tw-block tw-w-full tw-rounded-md  tw-shadow tw-appearance-none tw-border tw-rounded tw-py-2 tw-px-3 tw-text-gray-700 tw-leading-tight focus:tw-outline-none focus:tw-shadow-outline"
                                     />
                                 </div>
                             </div>
@@ -67,7 +67,7 @@ const Contact = () => {
                                         name="Message"
                                         id="Message"
                                         autoComplete="given-name"
-                                        className="tw-mt-2 tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
+                                        className="tw-mt-2 tw-block tw-w-full tw-rounded-md  tw-shadow tw-appearance-none tw-border tw-rounded tw-py-2 tw-px-3 tw-text-gray-700 tw-leading-tight focus:tw-outline-none focus:tw-shadow-outline"
                                     />
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                                         name="Additional Details"
                                         id="Additional Details"
                                         autoComplete="given-name"
-                                        className="tw-mt-2 tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
+                                        className="tw-mt-2 tw-block tw-w-full tw-rounded-md  tw-shadow tw-appearance-none tw-border tw-rounded tw-py-2 tw-px-3 tw-text-gray-700 tw-leading-tight focus:tw-outline-none focus:tw-shadow-outline"
                                     />
                                 </div>
                             </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                         </div>
                         <div className='min-[900px]:tw-w-1/2 tw-mx-[30px] tw-my-auto tw-mb-[20px] min-[900px]:tw-mb-auto'>
                             <div class="tw-flex tw-flex-col">
-                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[12px] tw=leading-[16px] tw-text-[#E9145A]'>Got a Question?</div>
+                                {/* <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[12px] tw=leading-[16px] tw-text-[#E9145A]'>Got a Question?</div> */}
                                 <div className='mx-auto tw-font-sans tw-font-bold tw-text-[36px] tw=leading-[49px] tw-text-[#000000]'>Contact Florian</div>
                                 <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#000] ' style={{'textAlign':'center'}}>We’re here to help and answer any question you might have. We look forward to hearing from you</div>
                                 <div className='tw-mt-[30px] tw-hidden min-[900px]:tw-block'>

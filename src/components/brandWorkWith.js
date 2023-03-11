@@ -388,7 +388,23 @@ const BrandWorkWith = () => {
               </a>
             </div> */}
             <div class="tw-basis-[100%]">
-              <div id="carouselExampleIndicators6" className="carousel slide" data-ride="carousel">
+            <Slider {...settings2} style={{ 'width': '80vw', 'margin':'auto' }}>
+              <div>
+              <video onClick={e => play(e, 'video1', 0)} poster={t1}>
+                      <source src='https://www.youtube.com/embed/V3v-hYQC_D8?autoplay=1' type="video/mp4" />
+                    </video>
+              </div>
+              <div>
+              <video onClick={e => play(e, 'video1', 1)} poster={t2}>
+                      <source src='https://www.youtube.com/embed/mXkdtM86REY?autoplay=1' type="video/mp4" />
+                    </video>
+              </div>
+              <div>
+              <video onClick={e => play(e, 'video1', 2)} poster={t3}>
+                      <source src='https://www.youtube.com/embed/7VNpvlF4xCw?autoplay=1' type="video/mp4" />
+                    </video></div>
+            </Slider>
+              {/* <div id="carouselExampleIndicators6" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators" style={{ 'color': 'black', 'bottom': '-50px' }}>
                   <li data-target="#carouselExampleIndicators6" data-slide-to="0" className="active"><img src={dash}></img>&nbsp;&nbsp;&nbsp;</li>
                   <li data-target="#carouselExampleIndicators6" data-slide-to="1"><img src={dash}></img>&nbsp;&nbsp;&nbsp;</li>
@@ -413,7 +429,7 @@ const BrandWorkWith = () => {
                 </div>
 
 
-              </div>
+              </div> */}
 
             </div>
             {/* <div class="tw-basis-[8%] m-auto">
@@ -504,7 +520,7 @@ const BrandWorkWith = () => {
             </div>
             <div class="tw-block min-[900px]:tw-hidden mx-auto">
               <div class="wrap">
-                <a class="btn-7" onClick={() => navigate("/celebrity")}>VIEW ALL<span></span></a>
+                <a href='/celebrity' class="btn-7" onClick={() => navigate("/celebrity")}>VIEW ALL<span></span></a>
               </div>
             </div>
           </div>
@@ -549,7 +565,7 @@ const BrandWorkWith = () => {
           <div className='tw-columns-1 tw-w-full'>
             <div class="mx-auto">
               <div class="wrap">
-                <a class="btn-7" onClick={() => navigate("/hair")}>VIEW ALL<span></span></a>
+                <a href='/hair' class="btn-7" onClick={() => navigate("/hair")}>VIEW ALL<span></span></a>
               </div>
             </div>
 
@@ -743,7 +759,7 @@ const BrandWorkWith = () => {
             </div>
             <div class="tw-block min-[900px]:tw-hidden mx-auto">
               <div class="wrap">
-                <a class="btn-7" onClick={() => navigate("/blogs")}>VIEW ALL<span></span></a>
+                <a href='/blogs' class="btn-7" onClick={() => navigate("/blogs")}>VIEW ALL<span></span></a>
               </div>
             </div>
           </div>
