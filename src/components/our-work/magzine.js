@@ -67,6 +67,14 @@ const Magzine = () => {
   const HELLO = importAll(require.context('../../assets/img/magine-cover/HELLO', false, /\.(png|jpe?g|svg)$/));
   const WEDDINGVOWS = importAll(require.context('../../assets/img/magine-cover/WEDDINGVOWS', false, /\.(png|jpe?g|svg)$/));
 
+  const displayName = (e) =>{
+    let name = e.split('/')
+    name = name[name.length-1]
+    name = name.split(' ')[0]
+    return name
+        //  console.log(name);
+        //  debugger
+  }
   return (
     <>
       <div className='tw-w-full'>
@@ -187,8 +195,10 @@ const Magzine = () => {
             </div>
             <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {images.map((e,i) => (
-
+                 <div>
                 <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <span className='mx-auto' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                 </div>   
               ))}
             </div>
 

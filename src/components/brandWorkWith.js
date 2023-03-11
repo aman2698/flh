@@ -42,7 +42,6 @@ import b1 from '../assets/img/blog/1.webp';
 import b2 from '../assets/img/blog/2.webp';
 import b3 from '../assets/img/blog/3.jpg';
 import home from '../assets/img/home.jpeg';
-
 //commercial import
 
 const BrandWorkWith = () => {
@@ -87,6 +86,10 @@ const BrandWorkWith = () => {
     }, 500);
   }
 
+  React.useEffect(() => {
+ 
+  }, [])
+  
 
 
   React.useEffect(() => {
@@ -170,6 +173,18 @@ const BrandWorkWith = () => {
     autoplaySpeed: 2000,
     cssEase: "linear",
     arrows: false
+  };
+  const settings2 = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 5000,
+    cssEase: "linear",
+    fade:true
   };
 
   function importAll(r) {
@@ -442,7 +457,7 @@ const BrandWorkWith = () => {
                   </a>
                 </div>
                 <div class="tw-basis-[84%]">
-                  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" data-interval="3000">
+                  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" data-interval="3000" data-touch="true">
 
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -548,7 +563,28 @@ const BrandWorkWith = () => {
         <div className='tw-columns-1 '>
           <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small' style={{ 'marginBottom': '15px' }}>Commercial</div>
           <div className='tw-block min-[900px]:tw-hidden'>
-            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel" data-interval="3000">
+          {/* <Slider {...settings2} style={{ 'width': '80vw', 'margin':'auto' }}>
+              <div>
+              <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 0)} poster={commercial[0]}>
+                    <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
+                  </video>
+              </div>
+              <div>
+              <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 1)} poster={commercial[1]}>
+                    <source src='https://www.youtube.com/embed/R58kGs01FBM?autoplay=1' type="video/mp4" />
+                  </video>
+              </div>
+              <div>
+              <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 2)} poster={commercial[2]}>
+                    <source src='https://www.youtube.com/embed/hKyNjBpuOjQ?autoplay=1' type="video/mp4" />
+                  </video></div>
+              <div>
+              <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 3)} poster={commercial[3]}>
+                    <source src='https://www.youtube.com/embed/aZWl4QY-LOA?autoplay=1' type="video/mp4" />
+                  </video>
+              </div>
+            </Slider> */}
+            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel" data-interval="3000" data-touch="true">
               <ol className="carousel-indicators" style={{ 'color': 'black', 'bottom': '-50px' }}>
                 <li data-target="#carouselExampleIndicators3" data-slide-to="0" className="active"><img src={dash}></img>&nbsp;&nbsp;&nbsp;</li>
                 <li data-target="#carouselExampleIndicators3" data-slide-to="1"><img src={dash}></img>&nbsp;&nbsp;&nbsp;</li>
@@ -596,14 +632,7 @@ const BrandWorkWith = () => {
                   </video>
                 </div>
               </div>
-              {/* <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only"></span>
-                    </a> */}
+            
             </div>
           </div>
           <div class="mx-auto tw-mt-8">
