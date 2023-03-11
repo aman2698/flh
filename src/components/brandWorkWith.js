@@ -175,16 +175,15 @@ const BrandWorkWith = () => {
     arrows: false
   };
   const settings2 = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+   
     arrows: false,
-    autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 5000,
-    cssEase: "linear",
-    fade:true
+    dots: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      pauseOnHover: true
   };
 
   function importAll(r) {
@@ -563,7 +562,7 @@ const BrandWorkWith = () => {
         <div className='tw-columns-1 '>
           <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small' style={{ 'marginBottom': '15px' }}>Commercial</div>
           <div className='tw-block min-[900px]:tw-hidden'>
-          {/* <Slider {...settings2} style={{ 'width': '80vw', 'margin':'auto' }}>
+          <Slider {...settings2} style={{ 'width': '80vw', 'margin':'auto' }}>
               <div>
               <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 0)} poster={commercial[0]}>
                     <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
@@ -583,8 +582,18 @@ const BrandWorkWith = () => {
                     <source src='https://www.youtube.com/embed/aZWl4QY-LOA?autoplay=1' type="video/mp4" />
                   </video>
               </div>
-            </Slider> */}
-            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel" data-interval="3000" data-touch="true">
+              <div>
+              <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 2)} poster={commercial[6]}>
+                    <source src='https://www.youtube.com/embed/EEXXcqRUquo?autoplay=1' type="video/mp4" />
+                  </video>
+              </div>
+              <div>
+              <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 7)} poster={commercial[7]}>
+                    <source src='https://www.youtube.com/embed/sLSlt7Fx8mU?autoplay=1' type="video/mp4" />
+                  </video>
+              </div>
+            </Slider>
+            {/* <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel" data-interval="3000" data-touch="true">
               <ol className="carousel-indicators" style={{ 'color': 'black', 'bottom': '-50px' }}>
                 <li data-target="#carouselExampleIndicators3" data-slide-to="0" className="active"><img src={dash}></img>&nbsp;&nbsp;&nbsp;</li>
                 <li data-target="#carouselExampleIndicators3" data-slide-to="1"><img src={dash}></img>&nbsp;&nbsp;&nbsp;</li>
@@ -633,7 +642,7 @@ const BrandWorkWith = () => {
                 </div>
               </div>
             
-            </div>
+            </div> */}
           </div>
           <div class="mx-auto tw-mt-8">
             <div class="wrap">
