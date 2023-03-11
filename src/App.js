@@ -13,6 +13,7 @@ import ScrollToTop from './components/scrollToTop';
 import Campaigns from './components/our-work/campaign';
 import Skin from './components/our-work/skin';
 import Hair from './components/our-work/hair';
+import Contact from './components/contact';
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +28,7 @@ function App() {
           <Route path="/campaigns" element={<Campaigns/>} />
           <Route path="/skin" element={<Skin/>} />
           <Route path="/hair" element={<Hair/>} />
+          <Route path="/contact" element={<Contact/>} />
           
           {/* <Route path="*" element={<NoPage />} /> */}
         {/* </Route> */}

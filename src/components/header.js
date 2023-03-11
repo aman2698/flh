@@ -96,7 +96,7 @@ const Header = () => {
                         'line-height': '35px',
                         'text-transform': 'uppercase'
                     }}>
-                        <span style={{ 'cursor': 'pointer' }} onClick={e => moveto('bio')}>About</span>
+                        <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/contact")}>About</span>
                     </li>
 
                     <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4" style={{
@@ -250,7 +250,7 @@ const Header = () => {
                         'line-height': '35px',
                         'text-transform': 'uppercase'
                     }}>
-                        <span style={{ 'cursor': 'pointer' }} onClick={e => moveto('bio')}>About</span>
+                        <span style={{ 'cursor': 'pointer' }} onClick={e => navigate("/contact")}>About</span>
                     </li>
 
                     <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4" style={{
