@@ -23,7 +23,7 @@ const Wrapper = () => {
           const handleScroll = () => {
             const scrollY = window.scrollY;
             const rotation = scrollY / 10; // Change the rotation speed here
-            console.log(rotation);
+            
             setRotation(rotation);
           };
       

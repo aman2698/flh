@@ -138,7 +138,7 @@ const Crousel = () => {
                         'position':'relative'
                     }}>
                         <span></span>
-                        <p className=' tw-font-sans tw-font-light tw-col-span-3 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '18px', lineHeight: '27px', color: '#fff', 'white-space': 'break-spaces', 'text-transform': 'uppercase', width: '90%' }}>
+                        <p className=' tw-font-sans tw-font-light tw-col-span-3 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '18px', lineHeight: '27px', color: '#fff', 'whiteSpace': 'break-spaces', 'textTransform': 'uppercase', width: '90%' }}>
                             {/* <span className='tw-font-semibold'>BIO</span><span>   <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>      Brands worked with    <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>     Business holded   Magazine Covers   <span style={{'position':'relative', 'width':'30px','display':'inline-block'}} className="horizonal-line"> </span>    Commercial</span> */}
                             {/* <a href="#" class="button">Hover me</a> */}
                             {/* <button class="custom-btn btn-10">Read Moreh</button> */}
@@ -151,7 +151,7 @@ const Crousel = () => {
                                 'height': '100px',
                                 'position': 'absolute',
                                 'right': '-5%',
-                                'z-index': '999'
+                                'zIndex': '999'
                             }} alt='gif' ></img>
                             }
                     </div>
@@ -183,7 +183,7 @@ const Crousel = () => {
                                 'height': '80px',
                                 'position': 'absolute',
                                 'left': '-1%',
-                                'z-index': '999',
+                                'zIndex': '999',
                                 'top':'10%'
                             }} alt='gif'></img>}
                             {count === 1 && <div className=' outer2 tw-mx-auto' >
@@ -239,7 +239,7 @@ const Crousel = () => {
                             'padding': '1px 40px'
                         }}>
                             <span></span>
-                            <p className='tw-font-sans tw-font-light tw-text-left' style={{ fontSize: '18px', lineHeight: '27px', color: '#fff', 'white-space': 'break-spaces', 'text-transform': 'uppercase', width: '90%' }}>
+                            <p className='tw-font-sans tw-font-light tw-text-left' style={{ fontSize: '18px', lineHeight: '27px', color: '#fff', 'whiteSpace': 'break-spaces', 'textTransform': 'uppercase', width: '90%' }}>
                                 <span className='tw-font-semibold'>BIO</span><span> ---  Brands worked with   ---   Business holded  Magazine Covers   ----  Commercial</span>
                             </p>
                         </div> */}

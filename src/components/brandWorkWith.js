@@ -191,8 +191,6 @@ const BrandWorkWith = () => {
   }
 
   const commercial = importAll(require.context('../assets/img/commercial', false, /\.(png|jpe?g|JPG|svg)$/));
-  console.log(commercial);
-
   return (
     <>
       <div className='brandWorkWith' id='ss'>
