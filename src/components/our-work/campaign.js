@@ -24,6 +24,7 @@ import melange from '../../assets/img/campign/10.jpg'
 import flipkart from '../../assets/img/campign/12.jpg'
 import cadbury from '../../assets/img/campign/cadbury.JPG'
 import ceris from '../../assets/img/campign/ceris.jpg'
+import logo from '../../assets/img/home.svg';
 
 const Campaigns = () => {
     const [imageArray, setimageArray] = React.useState([])
@@ -239,7 +240,7 @@ const Campaigns = () => {
 
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Nooraniyat
+                            Nooraniyat by Sara ali khan
                         </div>
                         <div id='Nooraniyat' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
@@ -410,8 +411,8 @@ const Campaigns = () => {
           <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
           <div>
             <div className='columns-1'>
-              <img className='mx-auto' src={fo2} alt='g' ></img>
-              <img className='mx-auto' src={fo21} alt='g' ></img>
+              <img className='mx-auto' src={logo} alt='g' ></img>
+              {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
               <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
                 <img className='mx-auto' src={fb} alt='g' ></img>
                 <img className='mx-auto' src={insta} alt='g' ></img>

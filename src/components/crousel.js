@@ -104,7 +104,8 @@ const Crousel = () => {
                     }}>
                         <span></span>
                         {count === 1 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold min-[900px]:tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '50px', lineHeight: '57px', color: '#fff', 'marginTop': '10%' }}>
-                            Transforming your look, enhancing your beauty
+                        Makeup Artist 
+& Hair Specialist
                         </span>}
                             {count === 2 && <span className=' fade-out zoom-in tw-font-sans tw-font-bold min-[900px]:tw-col-span-2 tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '50px', lineHeight: '57px', color: '#fff', 'marginTop': '10%' }}>
                             Transforming your look, enhancing your beauty
@@ -209,7 +210,8 @@ const Crousel = () => {
                         }}>
                             <span></span>
                             {count === 1 && <span className='fade-out  tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
-                                Transforming your look, enhancing your beauty 
+                            Makeup Artist 
+& Hair Specialist
                             </span>}
                             {count === 2 && <span className='fade-out  tw-font-sans tw-font-bold tw-text-center min-[900px]:tw-text-left' style={{ fontSize: '35px', lineHeight: '57px', color: '#000' }}>
                                 Transforming your look, enhancing your beauty 

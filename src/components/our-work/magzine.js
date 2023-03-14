@@ -10,6 +10,8 @@ import twitter from '../../assets/img/twitter.svg';
 import cross from '../../assets/img/times.svg';
 import left from '../../assets/img/left-arrow.svg';
 import right from '../../assets/img/right-arrow.svg';
+import logo from '../../assets/img/home.svg';
+
 const Magzine = () => {
   const [imageArray, setimageArray] = React.useState([])
   let [selectedImage, setSelectedImage] = React.useState(0)
@@ -71,9 +73,7 @@ const Magzine = () => {
     let name = e.split('/')
     name = name[name.length-1]
     name = name.split(' ')[0]
-    return name
-        //  console.log(name);
-        //  debugger
+    return name;
   }
   return (
     <>
@@ -197,7 +197,7 @@ const Magzine = () => {
               {images.map((e,i) => (
                  <div>
                 <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                <span className='mx-auto' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                  </div>   
               ))}
             </div>
@@ -209,7 +209,7 @@ const Magzine = () => {
               {bazaar.map((e,i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                  <span className='mx-auto' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                 </div>
               ))}
             </div>
@@ -221,7 +221,7 @@ const Magzine = () => {
               {BRIDE.map((e,i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                  <span className='mx-auto' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                 </div>
               ))}
             </div>
@@ -233,7 +233,7 @@ const Magzine = () => {
               {HELLO.map((e,i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                  <span className='mx-auto' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                 </div>
               ))}
             </div>
@@ -245,7 +245,7 @@ const Magzine = () => {
               {GRAZIA.map((e,i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                  <span className='mx-auto' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                 </div>
               ))}
             </div>
@@ -257,7 +257,7 @@ const Magzine = () => {
               {Cosmopolitan.map((e,i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'cos', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                  <span className='mx-auto' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                 </div>
               ))}
             </div>
@@ -269,7 +269,7 @@ const Magzine = () => {
               {FEMINA.map((e,i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'femina', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                  <span className='mx-auto' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                 </div>
               ))}
             </div>
@@ -281,7 +281,7 @@ const Magzine = () => {
               {FLIMFARE.map((e,i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'filmfare', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                  <span className='mx-auto' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                 </div>
               ))}
             </div>
@@ -293,7 +293,7 @@ const Magzine = () => {
               {WEDDINGVOWS.map((e,i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'vows', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                  <span className='mx-auto' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                 </div>
               ))}
             </div>
@@ -310,8 +310,8 @@ const Magzine = () => {
           <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
           <div>
             <div className='columns-1'>
-              <img className='mx-auto' src={fo2} alt='g' ></img>
-              <img className='mx-auto' src={fo21} alt='g' ></img>
+              <img className='mx-auto' src={logo} alt='g' ></img>
+              {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
               <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
                 <img className='mx-auto' src={fb} alt='g' ></img>
                 <img className='mx-auto' src={insta} alt='g' ></img>

@@ -17,6 +17,7 @@ import lakme from '../../assets/img/skin/lakme.jpg'
 import bio1 from '../../assets/img/skin/bio1.jpg'
 import bio2 from '../../assets/img/skin/bio2.jpg'
 import bio3 from '../../assets/img/skin/bio3.jpg'
+import logo from '../../assets/img/home.svg';
 
 const Skin = () => {
     const [imageArray, setimageArray] = React.useState([])
@@ -84,7 +85,7 @@ const Skin = () => {
         document.getElementById('modal').style.display = 'block'
         document.getElementsByTagName('body')[0].classList.add('tw-overflow-y-hidden')
         setTimeout(() => {
-            var img = document.getElementById(id).children;
+            var img = document.getElementById(id).getElementsByTagName('video');
             let arr = []
             for (let i = 0; i <= img.length - 1; i++) {
                 arr.push(`${img[i].getElementsByTagName("source")[0].src}`)
@@ -112,6 +113,7 @@ const Skin = () => {
 
     const closeModal = () => {
         setvideoArray([])
+        document.getElementById('nav').style.display = 'block'
         document.getElementById('modal').style.display = 'none'
         document.getElementsByTagName('body')[0].classList.remove('tw-overflow-y-hidden')
     }
@@ -234,44 +236,72 @@ const Skin = () => {
                             Glow & Lovely
                         </div>
                         <div id='glow' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
-                            <video onClick={e => play(e, 'glow', 0)} poster={glow1}>
+                        <div>
+                        <video onClick={e => play(e, 'glow', 0)} poster={glow1}>
                                 <source src='https://www.youtube.com/embed/LzUDs54BpGs?autoplay=1' type="video/mp4" />
                             </video>
-                            <video onClick={e => play(e, 'glow', 0)} poster={glow2}>
+                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Glow & Lovely by Manya</span>
+                            </div>
+                            <div>
+                            <video onClick={e => play(e, 'glow', 1)} poster={glow2}>
                                 <source src='https://www.youtube.com/embed/-ZGn04ob4Nk?autoplay=1' type="video/mp4" />
                             </video>
-                            <video onClick={e => play(e, 'glow', 0)} poster={glow3}>
+                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Glow & Lovely by Manya</span>
+                            </div>
+                            <div>
+                            <video onClick={e => play(e, 'glow', 2)} poster={glow3}>
                                 <source src='https://www.youtube.com/embed/sLSlt7Fx8mU?autoplay=1' type="video/mp4" />
                             </video>
+                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Glow & Lovely by Manya</span>
+                            </div>
+ 
+                            
+
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Lakme
                         </div>
                         <div id='lakme' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
-                            <video onClick={e => play(e, 'lakme', 0)} poster={lakme}>
+                        <div>
+                        <video onClick={e => play(e, 'lakme', 0)} poster={lakme}>
                                 <source src='https://www.youtube.com/embed/EEXXcqRUquo?autoplay=1' type="video/mp4" />
                             </video>
+                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Lakme by Ananya</span>
+                            </div>
+
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
                             Biotique
                         </div>
                         <div id='Biotique' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
-                            <video onClick={e => play(e, 'Biotique', 0)} poster={bio1}>
+                        <div>
+                        <video onClick={e => play(e, 'Biotique', 0)} poster={bio1}>
                                 <source src='https://www.youtube.com/embed/4j_iTSV74_Q?autoplay=1' type="video/mp4" />
                             </video>
-                            <video onClick={e => play(e, 'Biotique', 0)} poster={bio2}>
+                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span>
+                            </div>
+                            <div>
+
+                            <video onClick={e => play(e, 'Biotique', 1)} poster={bio2}>
                                 <source src='https://www.youtube.com/embed/4aAgyGLnngs?autoplay=1' type="video/mp4" />
                             </video>
-                            <video onClick={e => play(e, 'Biotique', 0)} poster={bio3}>
+                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span>
+                            </div>
+                            <div>
+                            <video onClick={e => play(e, 'Biotique', 2)} poster={bio3}>
                                 <source src='https://www.youtube.com/embed/6dH51aKh3rA?autoplay=1' type="video/mp4" />
                             </video>
+                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span>
+                            </div>
+
+
                         </div>
 
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Maybelline
+                            Maybelline by Sara
                         </div>
                         <div id='Maybelline' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
@@ -294,8 +324,8 @@ const Skin = () => {
           <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
           <div>
             <div className='columns-1'>
-              <img className='mx-auto' src={fo2} alt='g' ></img>
-              <img className='mx-auto' src={fo21} alt='g' ></img>
+              <img className='mx-auto' src={logo} alt='g' ></img>
+              {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
               <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
                 <img className='mx-auto' src={fb} alt='g' ></img>
                 <img className='mx-auto' src={insta} alt='g' ></img>

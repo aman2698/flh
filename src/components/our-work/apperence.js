@@ -10,6 +10,8 @@ import twitter from '../../assets/img/twitter.svg';
 import cross from '../../assets/img/times.svg';
 import left from '../../assets/img/left-arrow.svg';
 import right from '../../assets/img/right-arrow.svg';
+import logo from '../../assets/img/home.svg';
+
 const Apperance = () => {
   const [imageArray, setimageArray] = React.useState([])
   let [selectedImage, setSelectedImage] = React.useState(0)
@@ -57,11 +59,18 @@ const Apperance = () => {
     document.getElementsByTagName('body')[0].classList.remove('tw-overflow-y-hidden')
   }
 
-  const daisy = importAll(require.context('../../assets/img/CA/DAISY SHAH', false, /\.(png|jpe?g|svg)$/));
-  const deepika = importAll(require.context('../../assets/img/CA/DEEPIKA/CHAPAAK PROMOTIONS', false, /\.(png|jpe?g|svg)$/));
-  const kangna = importAll(require.context('../../assets/img/CA/KANGNA', false, /\.(png|jpe?g|svg)$/));
-  const sara = importAll(require.context('../../assets/img/CA/SARA ALI KHAN', false, /\.(png|jpe?g|svg)$/));
-  const tamannah = importAll(require.context('../../assets/img/CA/TAMANNAH/CANNES 2022', false, /\.(png|jpe?g|svg)$/));
+  const daisy = importAll(require.context('../../assets/img/CA/DAISY SHAH', false, /\.(png|jpe?g|JPG|svg)$/));
+  const deepika = importAll(require.context('../../assets/img/CA/DEEPIKA/CHAPAAK PROMOTIONS', false, /\.(png|jpe?g|JPG|svg)$/));
+  const kangna = importAll(require.context('../../assets/img/CA/KANGNA', false, /\.(png|jpe?g|JPG|svg)$/));
+  const sara = importAll(require.context('../../assets/img/CA/SARA ALI KHAN', false, /\.(png|jpe?g|JPG|svg)$/));
+  const tamannah = importAll(require.context('../../assets/img/CA/TAMANNAH/CANNES 2022', false, /\.(png|jpe?g|JPG|svg)$/));
+  console.log(daisy);
+  const displayName = (e) =>{
+    let name = e.split('/')
+    name = name[name.length-1]
+    name = name.split(' ')[0]
+    return name;
+  }
 
   return (
     <>
@@ -185,18 +194,22 @@ const Apperance = () => {
             </div>
             <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {daisy.map((e, i) => (
-
-                <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                <div>
+                  <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                </div>
               ))}
             </div>
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-              Deepika
+              Chapaak by Deepika
             </div>
             <div id='bazaar' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
               {deepika.map((e, i) => (
-
-                <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                <div>
+                  <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '100%', 'height': '400px', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                </div>
               ))}
             </div>
 
@@ -205,8 +218,10 @@ const Apperance = () => {
             </div>
             <div id='bride' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {kangna.map((e, i) => (
-
-                <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                <div>
+                  <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                </div>
               ))}
             </div>
 
@@ -215,8 +230,11 @@ const Apperance = () => {
             </div>
             <div id='hello' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {sara.map((e, i) => (
+                <div>
+                  <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
 
-                <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                </div>
               ))}
             </div>
 
@@ -225,8 +243,11 @@ const Apperance = () => {
             </div>
             <div id='gazia' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {tamannah.map((e, i) => (
+                <div>
+                  <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
 
-                <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                </div>
               ))}
             </div>
             {/* <div className='view-all tw-mx-auto tw-mt-8' style={{ 'position': 'relative', 'border': '3px solid #fff' }}>
@@ -242,8 +263,8 @@ const Apperance = () => {
             <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
             <div>
               <div className='columns-1'>
-                <img className='mx-auto' src={fo2} alt='g' ></img>
-                <img className='mx-auto' src={fo21} alt='g' ></img>
+                {/* <img className='mx-auto' src={fo2} alt='g' ></img> */}
+                <img className='mx-auto' src={logo} alt='g' ></img>
                 <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
                   <img className='mx-auto' src={fb} alt='g' ></img>
                   <img className='mx-auto' src={insta} alt='g' ></img>
