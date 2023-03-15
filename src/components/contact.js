@@ -11,13 +11,27 @@ import logo from '../assets/img/logoo.svg';
 import logo1 from '../assets/img/home.svg';
 
 const Contact = () => {
+
+    const download = () => {
+        fetch('Florian-Hurel.pdf').then(e => {
+            const url = e.url;
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'Florian-Hurel.pdf', // File name with type
+            );
+            document.body.appendChild(link);
+            link.click();
+            link.parentNode.removeChild(link);
+
+        })
+    }
     return (
         <>
             <div className='tw-w-full'>
                 <Header>
                 </Header>
                 <div>
-                    <div class="tw-flex tw-flex-col-reverse min-[900px]:tw-flex-row tw-mx-[10px]  min-[900px]:tw-mx-[200px] tw-my-[50px]">
+                    <div class="tw-flex tw-flex-col-reverse min-[900px]:tw-flex-row tw-mx-[10px]  min-[900px]:tw-mx-[200px] tw-my-[150px]">
                         <div className='min-[900px]:tw-w-1/2  tw-h-auto ' style={{ 'background': '#fff', 'border': '1px solid #000' }}>
                             <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-m-[20px]">
                                 <div className="">
@@ -58,7 +72,7 @@ const Contact = () => {
                                     />
                                 </div>
                             </div>
-                            <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-m-[20px]">
+                            {/* <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-m-[20px]">
                                 <div className="">
                                     <label htmlFor="Message" className="tw-block tw-text-sm tw-font-medium tw-leading-6 tw-text-gray-900">
                                         Message
@@ -71,17 +85,17 @@ const Contact = () => {
                                         className="tw-mt-2 tw-block tw-w-full tw-rounded-md  tw-shadow tw-appearance-none tw-border tw-rounded tw-py-2 tw-px-3 tw-text-gray-700 tw-leading-tight focus:tw-outline-none focus:tw-shadow-outline"
                                     />
                                 </div>
-                            </div>
+                            </div> */}
                             <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-m-[20px]">
                                 <div className="">
-                                    <label htmlFor="Additional Details" className="tw-block tw-text-sm tw-font-medium tw-leading-6 tw-text-gray-900">
-                                        Additional Details
+                                    <label htmlFor="Message" className="tw-block tw-text-sm tw-font-medium tw-leading-6 tw-text-gray-900">
+                                        Message
                                     </label>
                                     <textarea
                                         rows="5"
                                         type="text"
-                                        name="Additional Details"
-                                        id="Additional Details"
+                                        name="Message"
+                                        id="Message"
                                         autoComplete="given-name"
                                         className="tw-mt-2 tw-block tw-w-full tw-rounded-md  tw-shadow tw-appearance-none tw-border tw-rounded tw-py-2 tw-px-3 tw-text-gray-700 tw-leading-tight focus:tw-outline-none focus:tw-shadow-outline"
                                     />
@@ -98,9 +112,14 @@ const Contact = () => {
                             <div class="tw-flex tw-flex-col">
                                 {/* <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[12px] tw=leading-[16px] tw-text-[#E9145A]'>Got a Question?</div> */}
                                 <div className='mx-auto tw-font-sans tw-font-bold tw-text-[36px] tw=leading-[49px] tw-text-[#000000]'>Contact Florian</div>
-                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#000] ' style={{'textAlign':'center'}}>We’re here to help and answer any question you might have. We look forward to hearing from you</div>
+                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#000] ' style={{ 'textAlign': 'center' }}>We’re here to help and answer any question you might have. We look forward to hearing from you</div>
+                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#000] ' style={{ 'textAlign': 'center' }}>
+                                    <button class="tw-bg-black hover:tw-bg-white tw-text-white hover:tw-text-black tw-font-bold tw-py-2 tw-px-4 tw-rounded" onClick={download}>
+                                        Download profile
+                                    </button>
+                                </div>
                                 <div className='tw-mt-[30px] tw-hidden min-[900px]:tw-block'>
-                                    <img src={logo} alt='ssss'/>
+                                    <img src={logo} alt='ssss' />
                                 </div>
                             </div>
                         </div>

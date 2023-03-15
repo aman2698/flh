@@ -241,7 +241,7 @@ const Hair = () => {
                         </div>
 
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
                             Hair & Care
                         </div>
                         <div id='hair' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -249,18 +249,18 @@ const Hair = () => {
                                 <video onClick={e => play(e, 'hair', 0)} poster={hair1}>
                                     <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
                                 </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Hair & care by shraddha</span>
+                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', }}>Shraddha for Hair & care</span>
                             </div>
                             <div className='tw-my-auto'>
                             <video onClick={e => play(e, 'hair', 1)} poster={hair2}>
                                 <source src='https://www.youtube.com/embed/R58kGs01FBM?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Hair & care by Amayra dastur</span>
+                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex'}}>Amayra for Hair & care</span>
                             </div>
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
                             Godrej
                         </div>
                         <div id='Godrej' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -268,68 +268,68 @@ const Hair = () => {
                             <video onClick={e => play(e, 'Godrej', 0)} poster={godrej1}>
                                 <source src='https://www.youtube.com/embed/hKyNjBpuOjQ?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Godrej by Anushka</span>
+                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', }}>Anushka for Godrej</span>
                             </div>                            
                             <div>
                             <video onClick={e => play(e, 'Godrej', 1)} poster={godrej2}>
                                 <source src='https://www.youtube.com/embed/NBI69E-HGkU?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Godrej by Silpa</span>
+                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex'}}>Silpa for Godrej</span>
                             </div>
 
 
                         </div>
 
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Dabur
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Anushka for Dabur
                         </div>
                         <div id='dabur' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <div>
                             <video onClick={e => play(e, 'dabur', 0)} poster={dabur1}>
                                 <source src='https://www.youtube.com/embed/GbwTDTa3KgA?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Dabur by Anushka</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}></span> */}
                             </div>
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            TRESemme
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                           Alia for TRESemme
                         </div>
                         <div id='tresemme' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <div>
                             <video onClick={e => play(e, 'tresemme', 0)} poster={tres1}>
                                 <source src='https://www.youtube.com/embed/8fGpeQaWKBE?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>TRESemme by Alia</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>TRESemme by Alia</span> */}
                             </div>                            
                             <div>
                             <video onClick={e => play(e, 'tresemme', 1)} poster={tres2}>
                                 <source src='https://www.youtube.com/embed/8fGpeQaWKBE?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>TRESemme by Alia</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>TRESemme by Alia</span> */}
                             </div>
 
 
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Pantene
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Kiara for Pantene
                         </div>
                         <div id='pantene' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <div>
                             <video onClick={e => play(e, 'pantene', 0)} poster={pan1}>
                                 <source src='https://www.youtube.com/embed/pYUML21X1fM?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Pantene by Kiara</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Pantene by </span> */}
                             </div>
  
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Kesh King
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Silpa for Kesh King
                         </div>
                         <div id='kesh' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
                             {/* {bazaar.map((e,i) => (
@@ -339,13 +339,13 @@ const Hair = () => {
                             <video onClick={e => play(e, 'kesh', 0)} poster={kesh1}>
                                 <source src='https://www.youtube.com/embed/mLW1u4ERU6o?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Kesh King by Silpa</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Kesh King by Silpa</span> */}
                             </div>
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Dove
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Nidhi for Dove
                         </div>
                         <div id='dove' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             {/* {BRIDE.map((e,i) => (
@@ -355,33 +355,33 @@ const Hair = () => {
                             <video onClick={e => play(e, 'dove', 0)} poster={dove1}>
                                 <source src='https://www.youtube.com/embed/x5lvN1pSKNE?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Dove by Nidhi</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Dove by Nidhi</span> */}
                             </div>
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Mama Earth
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Sara for Mama Earth
                         </div>
                         <div id='mama' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <div>
                             <video onClick={e => play(e, 'mama', 0)} poster={mama1}>
                                 <source src='https://www.youtube.com/embed/PbR98T2peEY?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Mama Earth by Sara</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Mama Earth by Sara</span> */}
                             </div>                            
                             <div>
                             <video onClick={e => play(e, 'mama', 1)} poster={mama2}>
                                 <source src='https://www.youtube.com/embed/wso1IbTklTo?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Mama Earth by Sara</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Mama Earth by Sara</span> */}
                             </div>
 
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Tirumalaa
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Madhuri for Tirumalaa
                         </div>
                         <div id='Tirumalaa' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             {/* {HELLO.map((e,i) => (
@@ -392,39 +392,39 @@ const Hair = () => {
                             <video onClick={e => play(e, 'Tirumalaa', 0)} poster={tiru1}>
                                 <source src='https://www.youtube.com/embed/-bD4cqf0pzg?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Tirumalaa by Madhuri</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Tirumalaa by Madhuri</span> */}
                             </div>
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Parachute
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Tamanna for Parachute
                         </div>
                         <div id='Parachute' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <div>
                             <video onClick={e => play(e, 'Parachute', 0)} poster={para1}>
                                 <source src='https://www.youtube.com/embed/37ZXneJcYro?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Parachute by Tamanna</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Parachute by Tamanna</span> */}
                             </div>
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Schwarzkopf
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Mira for Schwarzkopf
                         </div>
                         <div id='Schwarzkopf' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <div>
                             <video onClick={e => play(e, 'Schwarzkopf', 0)} poster={sch1}>
                                 <source src='https://www.youtube.com/embed/cEOJw1OpJWI?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Schwarzkopf by Mira</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Schwarzkopf by Mira</span> */}
                             </div>                            
                             <div>
                             <video onClick={e => play(e, 'Schwarzkopf', 1)} poster={sch2}>
                                 <source src='https://www.youtube.com/embed/AepxyLNoQeI?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Schwarzkopf by Mira</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Schwarzkopf by Mira</span> */}
                             </div>
 
 
@@ -433,8 +433,8 @@ const Hair = () => {
               ))} */}
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Streak
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                           Vaani for Streak
                         </div>
                         <div id='strek' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             {streak.map((e, i) => (

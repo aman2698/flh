@@ -35,7 +35,7 @@ const Apperance = () => {
     document.getElementById('modal-image').style.display = 'block'
     document.getElementsByTagName('body')[0].classList.add('tw-overflow-y-hidden')
     setTimeout(() => {
-      var img = document.getElementById(id).children;
+      var img = document.getElementById(id).getElementsByTagName('img');
       let arr = []
       for (let i = 0; i <= img.length - 1; i++) {
         arr.push(`${img[i].src}`)
@@ -64,6 +64,7 @@ const Apperance = () => {
   const kangna = importAll(require.context('../../assets/img/CA/KANGNA', false, /\.(png|jpe?g|JPG|svg)$/));
   const sara = importAll(require.context('../../assets/img/CA/SARA ALI KHAN', false, /\.(png|jpe?g|JPG|svg)$/));
   const tamannah = importAll(require.context('../../assets/img/CA/TAMANNAH/CANNES 2022', false, /\.(png|jpe?g|JPG|svg)$/));
+  const tamannahforfilfare = importAll(require.context('../../assets/img/CA/TAMANNAH/FILMFARE 2022', false, /\.(png|jpe?g|JPG|svg)$/));
   console.log(daisy);
   const displayName = (e) =>{
     let name = e.split('/')
@@ -189,63 +190,77 @@ const Apperance = () => {
             </div>
 
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
               Daisy
             </div>
             <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {daisy.map((e, i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
-                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  {/* <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span> */}
                 </div>
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-              Chapaak by Deepika
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+              Deepika for Chapaak
             </div>
             <div id='bazaar' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
               {deepika.map((e, i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '100%', 'height': '400px', 'objectFit': 'contain', 'margin': 'auto' }}></img>
-                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  {/* <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span> */}
                 </div>
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            {/* <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
               Kangna
             </div>
             <div id='bride' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {kangna.map((e, i) => (
                 <div>
-                  <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
-                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
-                </div>
+                  <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img> */}
+                  {/* <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span> */}
+                {/* </div>
               ))}
-            </div>
+            </div> */}
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
               Sara ali khan
             </div>
             <div id='hello' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {sara.map((e, i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
-                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  {/* <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span> */}
 
                 </div>
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-              Tamannah
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+            Tamannah bhatia for CANNES 2022
             </div>
             <div id='gazia' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {tamannah.map((e, i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
-                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                  {/* <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span> */}
+
+                </div>
+              ))}
+            </div>
+
+
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+              Tamannah bhatia for FILMFARE 2022
+            </div>
+            <div id='gazia' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+              {tamannahforfilfare.map((e, i) => (
+                <div>
+                  <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                  {/* <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span> */}
 
                 </div>
               ))}

@@ -120,6 +120,7 @@ const Campaigns = () => {
 
     const closeModal = () => {
         setvideoArray([])
+        document.getElementById('nav').style.display = 'block'
         document.getElementById('modal').style.display = 'none'
         document.getElementsByTagName('body')[0].classList.remove('tw-overflow-y-hidden')
     }
@@ -239,8 +240,8 @@ const Campaigns = () => {
                         </div>
 
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Nooraniyat by Sara ali khan
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                           Sara ali khan for Nooraniyat
                         </div>
                         <div id='Nooraniyat' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
@@ -250,7 +251,7 @@ const Campaigns = () => {
                             ))}
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
                         Reliance Jewels
                         </div>
                         <div id='reliance' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -262,8 +263,8 @@ const Campaigns = () => {
                         </div>
 
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Cadbury
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                            Aishwariya for Cadbury
                         </div>
                         <div id='cadbury' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
@@ -272,7 +273,7 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
                             Ceris
                         </div>
                         <div id='ceris' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -282,8 +283,8 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Colgate
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                           Sara ali khan for Colgate
                         </div>
                         <div id='colgate' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
@@ -292,8 +293,8 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            REXONA
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Sara ali khan for REXONA
                         </div>
                         <div id='rexona' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
                             {/* {bazaar.map((e,i) => (
@@ -304,7 +305,7 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
                             PUMA
                         </div>
                         <div id='puma' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -316,8 +317,8 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Fixderma
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                           Vaani kapoor for Fixderma
                         </div>
                         <div id='Fixderma' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             {/* {HELLO.map((e,i) => (
@@ -329,8 +330,8 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            FBB
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                           Varun dhawan and Sara ali khan for FBB
                         </div>
                         <div id='fbb' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'fbb', 0)} poster={fbb}>
@@ -338,8 +339,8 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            One Plus
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        shahid kapoor for One Plus
                         </div>
                         <div id='one' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'one', 0)} poster={one}>
@@ -347,8 +348,8 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Nourish
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Silpa setty for Nourish
                         </div>
                         <div id='Nourish' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Nourish', 0)} poster={nourish}>
@@ -356,8 +357,8 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Mama Earth
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                           Silpa setty for Mama Earth
                         </div>
                         <div id='mama' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'mama', 0)} poster={mama}>
@@ -365,8 +366,8 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Sketchers
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                           Ananya pandey for Sketchers
                         </div>
                         <div id='Sketchers' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Sketchers', 0)} poster={sketchers}>
@@ -374,8 +375,8 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Melange
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                           Deepika for Melange
                         </div>
                         <div id='Melange' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Melange', 0)} poster={melange}>
@@ -383,8 +384,8 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            JIO
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                            Ranveer singh for JIO
                         </div>
                         <div id='jio' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'jio', 0)} poster={jio}>
@@ -392,8 +393,8 @@ const Campaigns = () => {
                             </video>
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Flipkart
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Deepika for Flipkart
                         </div>
                         <div id='flipkart' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'flipkart', 0)} poster={flipkart}>

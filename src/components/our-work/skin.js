@@ -130,7 +130,7 @@ const Skin = () => {
               <div class="carousel-inner">
                 {/* mobile view */}
                 <div class="carousel-item active ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="First slide" />
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
                   <div class="carousel-caption" style={{
                     'fontSize': '44px',
                     'color': '#fff',
@@ -142,7 +142,7 @@ const Skin = () => {
                     <h5>Skin</h5>
                   </div>
                 </div>
-                <div class="carousel-item ">
+                {/* <div class="carousel-item ">
                   <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Second slide" />
                   <div class="carousel-caption" style={{
                     'fontSize': '44px',
@@ -154,8 +154,8 @@ const Skin = () => {
                   }}>
                     <h5>Skin</h5>
                   </div>
-                </div>
-                <div class="carousel-item ">
+                </div> */}
+                {/* <div class="carousel-item ">
                   <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Third slide" />
                    <div class="carousel-caption" style={{
                     'fontSize': '44px',
@@ -167,7 +167,7 @@ const Skin = () => {
                   }}>
                     <h5>Skin</h5>
                   </div>
-                </div>
+                </div> */}
               </div>
 
             </div>
@@ -178,7 +178,7 @@ const Skin = () => {
               <div class="carousel-inner">
                 {/* mobile view */}
                 <div class="carousel-item active ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="First slide" />
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
                   <div class="carousel-caption" style={{
                     'fontSize': '30px',
                     'color': '#fff',
@@ -190,7 +190,7 @@ const Skin = () => {
                     <h5>Skin</h5>
                   </div>
                 </div>
-                <div class="carousel-item ">
+                {/* <div class="carousel-item ">
                   <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Second slide" />
                   <div class="carousel-caption" style={{
                     'fontSize': '30px',
@@ -202,8 +202,8 @@ const Skin = () => {
                   }}>
                     <h5>Skin</h5>
                   </div>
-                </div>
-                <div class="carousel-item ">
+                </div> */}
+                {/* <div class="carousel-item ">
                   <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Third slide" />
                   <div class="carousel-caption" style={{
                     'fontSize': '30px',
@@ -215,7 +215,7 @@ const Skin = () => {
                   }}>
                     <h5>Skin</h5>
                   </div>
-                </div>
+                </div> */}
               </div>
 
             </div>
@@ -232,76 +232,76 @@ const Skin = () => {
                         </div>
 
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Glow & Lovely
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Manya for Glow & Lovely
                         </div>
                         <div id='glow' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
                         <div>
                         <video onClick={e => play(e, 'glow', 0)} poster={glow1}>
                                 <source src='https://www.youtube.com/embed/LzUDs54BpGs?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Glow & Lovely by Manya</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Glow & Lovely by Manya</span> */}
                             </div>
                             <div>
                             <video onClick={e => play(e, 'glow', 1)} poster={glow2}>
                                 <source src='https://www.youtube.com/embed/-ZGn04ob4Nk?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Glow & Lovely by Manya</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Glow & Lovely by Manya</span> */}
                             </div>
                             <div>
                             <video onClick={e => play(e, 'glow', 2)} poster={glow3}>
                                 <source src='https://www.youtube.com/embed/sLSlt7Fx8mU?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Glow & Lovely by Manya</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Glow & Lovely by Manya</span> */}
                             </div>
  
                             
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Lakme
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                            Ananya pandey for Lakme
                         </div>
                         <div id='lakme' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
                         <div>
                         <video onClick={e => play(e, 'lakme', 0)} poster={lakme}>
                                 <source src='https://www.youtube.com/embed/EEXXcqRUquo?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Lakme by Ananya</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Lakme by Ananya</span> */}
                             </div>
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Biotique
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                          Sara ali khan for Biotique
                         </div>
                         <div id='Biotique' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
                         <div>
                         <video onClick={e => play(e, 'Biotique', 0)} poster={bio1}>
                                 <source src='https://www.youtube.com/embed/4j_iTSV74_Q?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span> */}
                             </div>
                             <div>
 
                             <video onClick={e => play(e, 'Biotique', 1)} poster={bio2}>
                                 <source src='https://www.youtube.com/embed/4aAgyGLnngs?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span> */}
                             </div>
                             <div>
                             <video onClick={e => play(e, 'Biotique', 2)} poster={bio3}>
                                 <source src='https://www.youtube.com/embed/6dH51aKh3rA?autoplay=1' type="video/mp4" />
                             </video>
-                                <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span> */}
                             </div>
 
 
                         </div>
 
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '14px', 'lineHeight': '19px' }}>
-                            Maybelline by Sara
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        Sara ali khan for Maybelline
                         </div>
                         <div id='Maybelline' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
