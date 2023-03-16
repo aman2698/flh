@@ -1,9 +1,9 @@
 import React from 'react'
-import brand1 from '../assets/img/brand/bazar.svg';
+import brand1 from '../assets/img/brand/bazar.png';
 import brand2 from '../assets/img/brand/famina.png';
-import brand3 from '../assets/img/brand/grazia.png';
-import brand4 from '../assets/img/brand/vogue.svg';
-import brand5 from '../assets/img/brand/brand5.svg';
+import brand3 from '../assets/img/brand/dark-grazia.png';
+import brand4 from '../assets/img/brand/vogue.png';
+import brand5 from '../assets/img/brand/bazar.png';
 import logo from '../assets/img/home.svg';
 import a1 from '../assets/img/apperance/1.JPG';
 import a2 from '../assets/img/apperance/2.JPG';
@@ -76,7 +76,7 @@ const BrandWorkWith = () => {
     document.getElementById('modal-image').style.display = 'block'
     document.getElementsByTagName('body')[0].classList.add('tw-overflow-y-hidden')
     setTimeout(() => {
-      var img = document.getElementById(id).children;
+      var img = document.getElementById(id).getElementsByTagName('img');
       let arr = []
       for (let i = 0; i <= img.length - 1; i++) {
         arr.push(`${img[i].src}`)
@@ -169,9 +169,9 @@ const BrandWorkWith = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
+    // speed: 2000,
     autoplaySpeed: 2000,
-    cssEase: "linear",
+    // cssEase: "linear",
     arrows: false
   };
   const settings2 = {
@@ -194,49 +194,31 @@ const BrandWorkWith = () => {
   return (
     <>
       <div className='brandWorkWith' id='ss'>
-        <div className='tw-grid tw-mx-10 min-[900px]:tw-mx-48'>
+        <div className='tw-grid tw-mx-2 min-[900px]:tw-mx-48'>
           <div className='tw-columns-1'>
-            <div className='tw-font-sans tw-font-bold tw-text-2xl tw-mt-4 min-[900px]:tw-mt-[55px] tw-text-white underline-small' style={{ 'textTransform': 'uppercase' }}>
-              Brands worked with
+            <div className=' title tw-text-[20px] tw-mt-4 min-[900px]:tw-mt-[30px] underline-small' style={{ 'textTransform': 'uppercase','textAlign':'center' }}>
+              <span style={{'textAlign':'center'}}>Brands worked with</span>
             </div>
           </div>
           <div className='tw-hidden min-[900px]:tw-grid tw-grid-cols-2 min-[900px]:tw-grid-cols-4 tw-gap-4 tw-my-[45px] '>
-            <img src={brand1} alt='d' style={{ 'margin': 'auto' }}></img>
-            <img src={brand2} alt='d' style={{ 'margin': 'auto' }}></img>
-            <img src={brand3} alt='d' style={{ 'margin': 'auto' }}></img>
-            <img src={brand4} alt='d' style={{ 'margin': 'auto' }}></img>
+            <img src={brand1} alt='d' style={{ 'margin': 'auto',    'border': '1px solid #f2e7eb', }}></img>
+            <img src={brand2} alt='d' style={{ 'margin': 'auto','border': '1px solid #f2e7eb', }}></img>
+            <img src={brand3} alt='d' style={{ 'margin': 'auto','border': '1px solid #f2e7eb', }}></img>
+            <img src={brand4} alt='d' style={{ 'margin': 'auto','border': '1px solid #f2e7eb', }}></img>
           </div>
           <div className='min-[900px]:tw-hidden tw-w-full tw-gap-4 tw-my-12 '>
-            {/* <div id="carouselExampleIndicators2" className="carousel slide" data-ride="carousel" data-interval="5000">
-
-              <div className="carousel-inner" style={{ 'margin': 'auto', 'width': '50%' }}>
-                <div className="carousel-item active">
-                  <img src={brand5} alt='d' className='mx-auto' ></img>
-                </div>
-                <div className="carousel-item">
-                  <img src={brand2} alt='d' className='mx-auto' ></img>
-                </div>
-                <div className="carousel-item">
-                  <img src={brand5} alt='d' className='mx-auto' ></img>
-                </div>
-                <div className="carousel-item">
-                  <img src={brand2} alt='d' className='mx-auto' ></img>
-                </div>
-              </div>
-
-            </div> */}
-            <Slider {...settings} style={{ 'width': '80vw' }}>
+            <Slider {...settings} style={{ 'width': '95vw' }}>
               <div>
-                <img src={brand1} alt='d' style={{ 'margin': 'auto', 'width': '70%' }}></img>
+                <img src={brand1} className='border-img' alt='d' style={{ 'margin': 'auto', 'width': '70%' }}></img>
               </div>
               <div>
-                <img src={brand2} alt='d' style={{ 'margin': 'auto', 'width': '70%' }}></img>
+                <img src={brand2} alt='d' className='border-img' style={{ 'margin': 'auto', 'width': '70%' }}></img>
               </div>
               <div>
-                <img src={brand3} alt='d' style={{ 'margin': 'auto', 'width': '70%' }}></img>
+                <img src={brand3} alt='d' className='border-img' style={{ 'margin': 'auto', 'width': '70%' }}></img>
               </div>
               <div>
-                <img src={brand4} alt='d' style={{ 'margin': 'auto', 'width': '70%' }}></img>
+                <img src={brand4} alt='d' className='border-img' style={{ 'margin': 'auto', 'width': '70%' }}></img>
               </div>
             </Slider>
           </div>
@@ -250,10 +232,10 @@ const BrandWorkWith = () => {
           </div>
         <div className='tw-col-span-3' >
           <div className="vertical-line tw-mx-8"></div>
-          <span className='min-[900px]:tw-text-2xl tw-text-lg tw-font-sans tw-font-normal'>
+          <p className='min-[900px]:tw-text-[20px] tw-text-lg tw-font-sans tw-font-normal'>
             Florian has been an educator for the longest time with a total international experience of 17 + years making him A Global Ambassador for Hair Giants “Schwarzkopf Professional”
 
-          </span>
+          </p>
         </div>
       </div>
 
@@ -271,9 +253,9 @@ const BrandWorkWith = () => {
             </div>
           </div>
           <div className='tw-columns-1'>
-            <div className='tw-font-sans tw-font-normal min-[900px]:tw-text-2xl tw-text-lg  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-black min-[900px]:tw-text-white' style={{ 'textTransform': 'lowercase' }}>
+            <p className='tw-font-sans tw-font-normal min-[900px]:tw-text-[20px] tw-text-lg  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-black min-[900px]:tw-text-white' style={{ 'textTransform': 'lowercase' }}>
             Speaking of his many years of international experience, Florian himself has developed a system that he shares with aspiring young, seasoned, and established artists through his educational platform, "FLORIAN HUREL ACADEMY," which he runs as an entrepreneur. FLORIAN CONTINUES TO DO BUSINESS IN THE EDUCATION AND FITNESS SECTORS OF THE INDUSTRY AND OWNS FLORIAN HUREL ACADEMY AND FLOFITBOX MUMBAI
-            </div>
+            </p>
           </div>
           <div className='tw-grid tw-grid-cols-4 tw-gap-2 tw-my-[45px]' >
             <a href='https://florianhurelacademy.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={flhAcademy} alt='g' ></img></a>
@@ -286,9 +268,16 @@ const BrandWorkWith = () => {
       </div>
 
       {/* our work */}
-      <div id='our-work' className='tw-grid tw-mx-0 min-[900px]:tw-mx-40 tw-mt-10 min-[900px]:tw-h-[700px]'>
+      <div id='our-work' className='tw-grid tw-mx-0 min-[900px]:tw-mx-16 tw-mt-10 min-[900px]:tw-h-[700px]'>
         <div className='tw-columns-1 w-full'>
-          <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small tw-mx-10 min-[900px]:tw-mx-0' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase' }}>our work</div>
+          {/* <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small tw-mx-10 min-[900px]:tw-mx-0' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase' }}>our work</div> */}
+          <div class=" ">
+                <div class=" tw-mx-4">
+                    <div class="title mb-30"> <span>What We Do</span>
+                        <h2>Our Work</h2>
+                    </div>
+                </div>
+            </div>
           <CarouselOwrWork />
           {/* <div className='view-all tw-mx-auto tw-mt-8' style={{ 'position': 'relative', 'border': '2px solid #000' }}>
             <span className='tw-font-sans tw-font-semibold' style={{ 'position': 'absolute', 'fontSize': '24px', 'padding': '8px 1px 1px 21px' }}>VIEW ALL</span>
@@ -315,9 +304,9 @@ const BrandWorkWith = () => {
             </div>
           </div>
           <div className='tw-columns-1'>
-            <div className='tw-font-sans tw-font-normal min-[900px]:tw-text-2xl tw-text-lg  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-white' style={{ 'textTransform': 'lowercase' }}>
+            <p className='tw-font-sans tw-font-normal min-[900px]:tw-text-2xl tw-text-[20px]  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-white' style={{ 'textTransform': 'lowercase' }}>
             Speaking of his many years of international experience, Florian himself has developed a system that he shares with aspiring young, seasoned, and established artists through his educational platform, "FLORIAN HUREL ACADEMY," which he runs as an entrepreneur. FLORIAN CONTINUES TO DO BUSINESS IN THE EDUCATION AND FITNESS SECTORS OF THE INDUSTRY AND OWNS FLORIAN HUREL ACADEMY AND FLOFITBOX MUMBAI
-            </div>
+            </p>
           </div>
           <div className='tw-grid tw-my-[45px]' >
             <Slider {...settings} style={{ 'width': '80vw' }}>
@@ -371,13 +360,13 @@ const BrandWorkWith = () => {
       </div>
 
       <div className='tw-block min-[900px]:tw-hidden tw-w-full' style={{ 'background': '#fff' }}>
-        <div className='tw-grid tw-mx-8 min-[900px]:tw-mx-40' >
+        <div className='tw-grid tw-mx-2 min-[900px]:tw-mx-40' >
           <div className='tw-columns-1'>
             <div className='tw-font-sans tw-font-bold tw-text-2xl tw-mt-4 underline-small' style={{ 'color': '#232323', 'textTransform': 'uppercase' }}>
             Direction
             </div>
           </div>
-          <div id='' className='tw-flex tw-flex-row tw-gap-3 tw-mx-8 min-[900px]:tw-mx-48 tw-my-10 mx-auto'>
+          <div id='' className='tw-flex tw-flex-row tw-gap-3 tw-mx-2 min-[900px]:tw-mx-48 tw-my-10 mx-auto'>
             {/* <div class="">///// */}
             {/* <div class="tw-basis-[8%] m-auto">
               <a href="#carouselExampleIndicators6" role="button" data-slide="prev">
@@ -386,7 +375,7 @@ const BrandWorkWith = () => {
               </a>
             </div> */}
             <div class="tw-basis-[100%]">
-            <Slider {...settings2} style={{ 'width': '80vw', 'margin':'auto' }}>
+            <Slider {...settings2} style={{ 'width': '95vw', 'margin':'auto' }}>
               <div>
               <video onClick={e => play(e, 'video1', 0)} poster={t1}>
                       <source src='https://www.youtube.com/embed/V3v-hYQC_D8?autoplay=1' type="video/mp4" />
@@ -451,9 +440,9 @@ const BrandWorkWith = () => {
 
       {/* Appearance */}
       <div className='tw-bg-[#232323] min-[900px]:tw-bg-white tw-h-auto'>
-        <div className='tw-grid tw-mx-10 min-[900px]:tw-mx-40 min-[900px]:tw-my-10 tw-py-4 '>
+        <div className='tw-grid tw-mx-2 min-[900px]:tw-mx-40 min-[900px]:tw-my-10 tw-py-4 '>
           <div className='tw-columns-1 '>
-            <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small tw-text-white min-[900px]:tw-text-black' style={{ 'marginBottom': '15px' }}>Appearance</div>
+            <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small tw-text-white min-[900px]:tw-text-black' style={{ 'marginBottom': '15px', 'textTransform':'uppercase' }}>Appearance</div>
             <div id='image1' className='tw-hidden min-[900px]:tw-grid min-[900px]:tw-grid-cols-4 tw-grid-cols-1 tw-gap-2  tw-mx-8 min-[900px]:tw-mx-48 tw-my-10 mx-auto'>
               <img className='mx-auto' onClick={e => playImage(e, 'image1', 0)} src={a1} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
               <img className='mx-auto' onClick={e => playImage(e, 'image1', 1)} src={a2} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
@@ -462,7 +451,7 @@ const BrandWorkWith = () => {
             </div>
             <div className='tw-block min-[900px]:tw-hidden'>
               <div id='' className='tw-flex tw-flex-row tw-gap-3 tw-mx-8 min-[900px]:tw-mx-48 tw-my-10 mx-auto'>
-                {/* <div class="">///// */}
+              
                 <div class="tw-basis-[8%] m-auto">
                   <a href="#carouselExampleIndicators1" role="button" data-slide="prev">
                     <img src={leftw} alt='dd'></img>
@@ -476,25 +465,21 @@ const BrandWorkWith = () => {
                       <div class="carousel-item active">
                         <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
                           <img className="tw-w-[100%] tw-h-[400px] mx-auto tw-object-cover" src={a1} alt="Image 2" />
-                          {/* <div class="centered tw-font-sans tw-font-bold">Commercial</div> */}
                         </div>
                       </div>
                       <div class="carousel-item">
                         <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
                           <img className="tw-w-[100%] tw-h-[400px] mx-auto tw-object-cover" src={a2} alt="Image 2" />
-                          {/* <div class="centered tw-font-sans tw-font-bold">Commercial</div> */}
                         </div>
                       </div>
                       <div class="carousel-item">
                         <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
                           <img className="tw-w-[100%] tw-h-[400px] mx-auto  tw-object-cover" src={a3} alt="Image 2" />
-                          {/* <div class="centered tw-font-sans tw-font-bold">Commercial</div> */}
                         </div>
                       </div>
                       <div class="carousel-item">
                         <div className="tw-basis-full min-[900px]:tw-basis-1/3" style={{ 'position': 'relative' }}>
                           <img className="tw-w-[100%] tw-h-[400px] mx-auto tw-object-cover" src={a4} alt="Image 2" />
-                          {/* <div class="centered tw-font-sans tw-font-bold">Commercial</div> */}
                         </div>
                       </div>
                     </div>
@@ -507,7 +492,6 @@ const BrandWorkWith = () => {
                     <img src={rightw} alt='dd'></img>
                   </a>
                 </div>
-                {/* </div> */}
               </div>
 
             </div>
@@ -575,8 +559,9 @@ const BrandWorkWith = () => {
       <div className='tw-grid min-[900px]:tw-hidden tw-mx-4 tw-py-4'>
         <div className='tw-columns-1 '>
           <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small' style={{ 'marginBottom': '15px' }}>Commercial</div>
-          <div className='tw-block min-[900px]:tw-hidden'>
-          <Slider {...settings2} style={{ 'width': '80vw', 'margin':'auto' }}>
+          <div className='tw-flex tw-flex-row min-[900px]:tw-hidden'>
+          <div class="tw-basis-[100%]">
+          <Slider {...settings2} style={{ 'width': '92vw', 'margin':'auto' }}>
               <div>
               <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 0)} poster={commercial[0]}>
                     <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
@@ -607,6 +592,7 @@ const BrandWorkWith = () => {
                   </video>
               </div>
             </Slider>
+            </div>
             {/* <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel" data-interval="3000" data-touch="true">
               <ol className="carousel-indicators" style={{ 'color': 'black', 'bottom': '-50px' }}>
                 <li data-target="#carouselExampleIndicators3" data-slide-to="0" className="active"><img src={dash}></img>&nbsp;&nbsp;&nbsp;</li>

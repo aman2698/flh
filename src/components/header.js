@@ -8,6 +8,7 @@ import useCollapse from 'react-collapsed';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import cross from '../assets/img/times.svg';
+import flh from '../assets/img/flh.svg';
 
 const Header = () => {
     const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
@@ -15,6 +16,8 @@ const Header = () => {
     const [ourWork, setourWork] = React.useState(false);
     const [blog, setblog] = React.useState(false);
     const [campaign, setcampaign] = React.useState(false);
+    const [flhIcon, setflhIcon] = React.useState(flh);
+
     const navigate = useNavigate();
     React.useEffect(() => {
         // if (navbar) {
@@ -37,18 +40,47 @@ const Header = () => {
         }
     }
 
+    React.useEffect(() => {
+        window.addEventListener("scroll", () => {
+            let scrollTop = window.scrollY;
+            let docHeight = document.body.offsetHeight;
+            let winHeight = window.innerHeight;
+            let scrollPercent = scrollTop / (docHeight - winHeight);
+            let scrollPercentRounded = Math.round(scrollPercent * 100);
+            // console.log(scrollPercentRounded);
+            // setpercent(scrollPercentRounded)
+            if (scrollPercentRounded < 10) {
+                document.getElementById('nav').style.position = 'fixed'
+                document.getElementById('nav').style.background = 'transparent'
+                document.getElementById('menu').style.color = '#fff'
+                setflhIcon(flh)
+
+            }else{
+                document.getElementById('nav').style.position = 'sticky'
+                document.getElementById('nav').style.background = '#fff'
+                document.getElementById('menu').style.color = '#000'
+                setflhIcon(logo)
+            }
+            // percentLabel.innerHTML = scrollPercentRounded;
+          });
+
+      
+          return () => {
+          };
+    }, [])
+
     return (
-        <header id='nav' className=' overlay' style={{    'position': 'sticky',
+        <header id='nav' className='overlay' style={{    'position': 'fixed',
             'top': '0',
             'left': '0',
-            'background': '#fff',
+            'background': 'transparent',
             'width': '100%'}}>
             <div className='tw-hidden min-[900px]:tw-flex min-[900px]:tw-flex-row ' style={{ height: '60px', margin: '0px 20px' }}>
                 <div className='tw-basis-1/3 tw-my-auto tw-mx-auto tw-font-bold tw-font-sans' style={{ 'fontSize': '20px' }} >
-                    <span style={{'cursor':'pointer'}} onClick={e => setNavbar(!navbar)}>MENU</span>
+                    <span style={{'cursor':'pointer','color':'#fff'}} id='menu' onClick={e => setNavbar(!navbar)}>MENU</span>
                 </div>
                 <div className='tw-basis-1/3 tw-my-auto' style={{ textAlign: '-webkit-center', }}>
-                    <img src={logo} alt='home'></img>
+                    <img src={flhIcon} alt='home'></img>
                 </div>
                 <div className='tw-basis-1/3 tw-my-auto'>
                     <div style={{ display: 'flex', float: 'right' }}>
@@ -63,7 +95,7 @@ const Header = () => {
                     <span onClick={e => setNavbar(!navbar)}>MENU</span>
                 </div> */}
                 <div className='tw-basis-2/3 tw-my-auto' style={{ textAlign: '-webkit-center', }}>
-                    <img className='tw-float-left' src={logo} alt='home'></img>
+                    <img className='tw-float-left' src={flhIcon} alt='home'></img>
                 </div>
                 <div className='tw-basis-1/3 tw-my-auto'>
                     {!navbar && <img className='tw-float-right' src={togg} onClick={e => setNavbar(!navbar)} alt='home'></img>}

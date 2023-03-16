@@ -8,10 +8,26 @@ import { useNavigate } from 'react-router-dom';
 import jQuery from "jquery";
 import Slider from "react-slick";
 import Carousel from 'react-spring-3d-carousel';
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-
+// import 'slick-carousel/slick/slick.css'
+// import 'slick-carousel/slick/slick-theme.css'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { config } from "react-spring";
+const settings2 = {
+   
+    arrows: false,
+    dots: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      pauseOnHover: true,
+      className:'center',
+      centerPadding: "60px",
+    //   centerMode: true,
+  };
 const CarouselOwrWork = () => {
 
     const [sliderRef, setSliderRef] = useState(null)
@@ -57,82 +73,119 @@ const CarouselOwrWork = () => {
             // }
         ]
     };
+
+    const options = {
+        loop: true,
+        mouseDrag:false,
+        center: true,
+        items: 1,
+        margin: 0,
+        autoplay: true,
+        dots: false,
+        touchDrag:false,
+        freeDrag:false,
+        pullDrag:false,
+        // autoplayTimeout: 8500,
+        // smartSpeed: 450,
+        nav: false,
+        // responsive: {
+        //     0: {
+        //         items: 1
+        //     },
+        //     // 600: {
+        //     //     items: 2
+        //     // },
+        //     900: {
+        //         items: 3
+        //     }
+        // }
+    };
     const slides = [
         {
             key: 1,
-            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }}  alt="1" />,
+            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }}  alt="1" />,
             onClick: () => rediectSkin()
         },
         {
             key: 2,
-            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="2" />,
+            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="2" />,
             onClick: () => rediectcomm()
 
         },
         {
             key: 132,
-            content: <img src={comm} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="3" />,
+            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="3" />,
             onClick: () => rediectcomm()
 
         },
         {
             key: 13,
-            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="4" />,
+            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="4" />,
             onClick: () => rediectCA()
 
         },
         {
             key: 41,
-            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="5" />,
+            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="5" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 531,
-            content: <img src={comm} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="6" />,
+            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="6" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 3221,
-            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="7" />,
+            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="7" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 111,
-            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="8" />,
+            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="8" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 5231,
-            content: <img src={comm} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="6" />,
+            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="6" />,
             onClick: () => rediectSkin()
 
         },
-        {
-            key: 356651,
-            content: <img src={skin} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="7" />,
-            onClick: () => rediectSkin()
-
-        },
-        {
-            key: 13211,
-            content: <img src={hair} style={{ 'width': '80%', 'height': '500px','objectFit':'cover' }} alt="8" />,
-            onClick: () => rediectSkin()
-
-        }
     ];
     const callback = function (index) {
         if (index === -1 ||index === 1) {
              return {
                 'opacity':0.5,
-                'width':'400px'
+                'width':'500px',
+    //             '-webkit-filter': 'grayscale(90%)',
+    // '-webkit-transition': '.4s ease-in-out',
+    // '-moz-filter': 'grayscale(90%)',
+    // '-moz-transition': '.4s ease-in-out',
+    // '-o-filter': 'grayscale(90%)',
+    // '-o-transition': '.4s ease-in-out',
              }
         }else if(index === 0){
             return {
                 'opacity':1,
+                // 'position': 'relative',
+                // 'display': 'inline-block',
+                // 'width': '100%',
+                // 'vertical-align': 'middle',
+                // 'background-color': '#f9f9f9',
+                // '-webkit-background-size': 'cover',
+                // 'background-size': 'cover',
+                // '-webkit-clip-path': 'inset(0 0 0 0)',
+                // 'clip-path': 'inset(0 0 0 0)',
+                // '-webkit-transition': 'all 1.25s cubic-bezier(.01, .71, .26, .94)',
+                // '-moz-transition': 'all 1.25s cubic-bezier(.01, .71, .26, .94)',
+                // 'transition': 'all 1.25s cubic-bezier(.01, .71, .26, .94)',
+    //             '&:hover':{
+    //                 '-webkit-clip-path': 'inset(15px 15px 15px 15px)',
+    // 'clip-path': 'inset(15px 15px 15px 15px)',
+    //             }
              }
         }else{
             return {
@@ -159,6 +212,39 @@ const CarouselOwrWork = () => {
             'goToSlide': state.goToSlide - 1|| 0
           });
       };
+
+      const testiMonials = [
+        {
+            name: 'Skin Commercial',
+            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+            address: 'USA',
+            img: skin
+        },
+        {
+            name: 'Campaigns',
+            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+            address: 'USA',
+            img: comm
+        },
+        {
+            name: 'Hair Commercial',
+            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+            address: 'USA',
+            img: hair
+        },
+        // {
+        //     name: '',
+        //     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+        //     address: 'USA',
+        //     img: hair
+        // },
+        // {
+        //     name: 'Kevin Canlas',
+        //     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+        //     address: 'USA',
+        //     img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
+        // },
+    ]
     
     return (
         <>
@@ -168,55 +254,7 @@ const CarouselOwrWork = () => {
                     <span className="" aria-hidden="true"><img src={left} alt='dd'></img></span>
                 </div></div>
                 <div class="tw-basis-[90%] min-[900px]:tw-basis-5/6 tw-w-[100%] tw-h-[500px] mx-auto">
-                    {/* <Slider ref={setSliderRef} {...settings} className='tw-hidden min-[900px]:tw-grid tw-w-[30vh] min-[900px]:tw-w-[100vh] tw-mx-auto tw-h-[600px] min-[900px]:tw-h-[600px] center' style={{
-
-                    }}>
-                        <div class="main">
-
-                            <img src={skin} className='mx-auto main_image' style={{ 'width': '90%', 'height': '400px', }} alt="1" />
-                            <span className='text-over-image centered tw-font-sans tw-font-bold' style={{ "zIndex": '1000000000000000000000000000000' }}>Skin Commercial</span>
-                        </div>
-                        <div>
-                            <img src={comm} className='mx-auto' style={{ 'width': '90%', 'height': '400px', }} alt="1" />
-                            <span className='text-over-image centered tw-font-sans tw-font-bold' style={{ "zIndex": '1000000000000000000000000000000' }}>&nbsp;&nbsp;Commercial</span>
-
-                        </div>
-                        <div>
-                            <img src={hair} onClick={rediectHair} className='mx-auto' style={{ 'width': '90%', 'height': '400px', }} alt="1" />
-                            <span className='text-over-image centered tw-font-sans tw-font-bold' style={{ "zIndex": '1000000000000000000000000000000' }}>Hair commercial</span>
-
-                        </div>
-                        <div>
-                            <img src={skin} className='mx-auto' style={{ 'width': '90%', 'height': '400px', }} alt="1" />
-                            <span className='text-over-image centered tw-font-sans tw-font-bold' style={{ "zIndex": '1000000000000000000000000000000' }}>Skin Commercial</span>
-
-                        </div>
-                        <div>
-                            <img src={comm} className='mx-auto' style={{ 'width': '90%', 'height': '400px', }} alt="1" />
-                            <span className='text-over-image centered tw-font-sans tw-font-bold' style={{ "zIndex": '1000000000000000000000000000000' }}>&nbsp;&nbsp;Commercial</span>
-
-                        </div>
-                        <div>
-                            <img src={hair} onClick={rediectHair} className='mx-auto' style={{ 'width': '90%', 'height': '400px', }} alt="1" />
-                            <span className='text-over-image centered tw-font-sans tw-font-bold' style={{ "zIndex": '1000000000000000000000000000000' }}>Hair commercial</span>
-
-                        </div>
-                        <div>
-                            <img src={skin} className='mx-auto' style={{ 'width': '90%', 'height': '400px', }} alt="1" />
-                            <span className='text-over-image centered tw-font-sans tw-font-bold' style={{ "zIndex": '1000000000000000000000000000000' }}>Skin Commercial</span>
-
-                        </div>
-                        <div>
-                            <img src={comm} className='mx-auto' style={{ 'width': '90%', 'height': '400px', }} alt="1" />
-                            <span className='text-over-image centered tw-font-sans tw-font-bold' style={{ "zIndex": '1000000000000000000000000000000' }}>&nbsp;&nbsp;Commercial</span>
-
-                        </div>
-                        <div>
-                            <img src={hair} onClick={rediectHair} className='mx-auto' style={{ 'width': '90%', 'height': '400px', }} alt="1" />
-                            <span className='text-over-image centered tw-font-sans tw-font-bold' style={{ "zIndex": '1000000000000000000000000000000' }}>Hair commercial</span>
-
-                        </div>
-                    </Slider> */}
+                    
                  <Carousel slides={slides}   goToSlide={state.goToSlide}
         offsetRadius={state.offsetRadius}
         enableSwipe= 'true'
@@ -235,9 +273,10 @@ const CarouselOwrWork = () => {
                         <span className="" aria-hidden="true"><img src={right} alt='dd'></img></span>
                     </div>
                 </div>
+                
             </div>
-            <div className=' min-[900px]:tw-hidden'>
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div className=' min-[900px]:tw-hidden tw-flex tw-flex-row' id="" >
+                {/* <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -271,8 +310,43 @@ const CarouselOwrWork = () => {
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only"></span>
                     </a>
-                </div>
+                </div> */}
+                 {/* <div className="row">
+                    <div className="col-md-12"> */}
+                <div class="tw-basis-[100%]">
+                        <Slider {...settings2}  style={{ 'width': '95vw', 'margin':'auto' }}>
+              
+              {
+                                testiMonials.length === 0 ?
+                                    <div class="item">
+                                        <div class="shadow-effect">
+                                            <img class="img-circle" src={hair} />
+
+                                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> */}
+                                        </div>
+                                        <div class="testimonial-name">
+                                            <h5>Rajon Rony</h5>
+                                            {/* <small>ITALY</small> */}
+                                        </div>
+                                    </div> :
+                                    testiMonials.map(testiMonialDetail => {
+                                        return (
+                   
+                                    <div class=" gfg tw-mx-4" >
+                                    <img src={testiMonialDetail.img} alt=""/> 
+                                    <h3 class="second-txt">
+            {testiMonialDetail.name}
+        </h3>
+                                </div>
+                                        )
+                                    })
+                            }
+              
+            </Slider>
             </div>
+                    </div>
+                {/* </div>
+            </div> */}
 
         </>
 

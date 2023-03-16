@@ -518,3 +518,12 @@ background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
 
   }
 }
+
+.ddddddddddd.slick-active img  {
+  /* img{ */
+    display: block;
+    width: 95% !important;
+    height: 400px !important;
+
+  /* } */
+}
