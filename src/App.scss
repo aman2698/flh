@@ -254,11 +254,12 @@ animation-duration: 1s;
 
  .brandWorkWith{
   @media only screen and (max-width: 900px) {
-    background-color: #f7f7f7;
+    background-color: linear-gradient(269.46deg, rgba(217, 217, 217, 0.0304) 2.1%, rgba(217, 217, 217, 0.1152) 44.82%, rgba(217, 217, 217, 0) 95.91%);
     height: 200px;
 
   }
-  background: #f7f7f7;
+  background: linear-gradient(270deg, #4A4A4A 0.59%, #484848 14.03%, #474747 25.44%, #464646 33.68%, #525252 50.81%, #474747 75.54%, #474747 91.27%, #464646 99.17%, #484848 99.17%);;
+  // background: linear-gradient(269.46deg, rgba(217, 217, 217, 0.0304) 2.1%, rgba(217, 217, 217, 0.1152) 44.82%, rgba(217, 217, 217, 0) 95.91%);
   height: 261px;
   width: 100%;
  }
@@ -854,4 +855,23 @@ a{
   &:hover{
     border: 1px solid yellow;
   }
+}
+
+.border-florian{
+  border-image: linear-gradient(#D9D9D9 29.85%, rgba(217, 217, 217, 0.01) 64.92%,rgba(217, 217, 217, 0.78) 93.68%) 44;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.quotes{
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+
+color: #FFFFFF;
+
+opacity: 0.06;
 }

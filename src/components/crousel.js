@@ -1,14 +1,14 @@
 import React from 'react'
-import image1 from '../assets/img/carousel/2.JPG'
-import image2 from '../assets/img/carousel/1.JPG'
-import image3 from '../assets/img/carousel/3.JPG'
+import image2 from '../assets/img/carousel/2.png'
+import image1 from '../assets/img/carousel/1.png'
+import image3 from '../assets/img/carousel/3.png'
 import giff from '../assets/img/circle.gif'
 import cross from '../assets/img/times.svg';
 import left from '../assets/img/left-arrow.svg';
 import right from '../assets/img/right-arrow.svg';
 import logo from '../assets/img/logo.svg';
 import hone from '../assets/img/home.jpeg';
-import nome2 from '../assets/img/carousel/1.JPG';
+import nome2 from '../assets/img/carousel/2.png';
 
 const Crousel = () => {
     let [path, setPath] = React.useState('')
@@ -125,8 +125,8 @@ const Crousel = () => {
 
     return (
         <div className='crousel-component'>
-            <div className="tw-hidden min-[900px]:tw-grid min-[900px]:tw-grid-cols-1">
-            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-touch="true">
+            <div className="tw-hidden min-[900px]:tw-grid min-[900px]:tw-grid-cols-3" style={{'background':'linear-gradient(270deg, #4A4A4A 0.59%, #484848 14.03%, #474747 25.44%, #464646 33.68%, #525252 50.81%, #474747 75.54%, #474747 91.27%, #464646 99.17%, #484848 99.17%)','height':'85vh'}}>
+            {/* <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-touch="true">
   <div class="carousel-inner" style={{'height':'100vh'}}>
     <div class="carousel-item active" >
       <img class="d-block w-100 " src={hone} style={{'height':'100vh', 'objectFit':'cover'}} alt="First slide"/>
@@ -138,7 +138,26 @@ const Crousel = () => {
       <img class="d-block w-100 " src={hone} style={{'height':'100vh', 'objectFit':'cover'}} alt="Third slide"/>
     </div>
   </div>
+</div> */}
+ 
+          <div>  
+          <img style={{
+    'height': '85vh',
+    'width': '34vw'
+}} src={image1}></img> 
+          </div>
+          <div>      
+            <img style={{'height':'85vh'}} src={image2}></img>
+            </div>
+            <div>
+            <img style={{
+    'height': '85vh',
+    'width': '34vw'
+}} src={image3}></img>
 </div>
+          {/* <div>         <img src={image3}></img>
+</div> */}
+
             </div>
             <div className='tw-grid min-[900px]:tw-hidden'>
             <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-touch="true">
