@@ -351,7 +351,7 @@ a {
 /* ffffffffffff */
 
 .btn-7 {
-  color: #ffff;
+  color: #ffff !important;
 }
 .btn-7 span {
   position: absolute;
@@ -360,6 +360,7 @@ a {
   height: 0;
   border-radius: 50%;
   background-color: #fff;
+  color: #000;
   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
   transform: translate(-50%, -50%);
   z-index: -1;
@@ -367,7 +368,8 @@ a {
 
 }
 .btn-7:hover {
-  color: #000;
+  color: #fff !important;
+  background-color: #000;
   z-index: 100;
 }
 .btn-7:hover span {
@@ -375,7 +377,8 @@ a {
   height: 562.5px;
 }
 .btn-7:active {
-  background-color: #000;
+  background-color: #fff;
+  color: #000;
 }
 /* wrap-black */
 

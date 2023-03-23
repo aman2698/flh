@@ -14,6 +14,10 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { config } from "react-spring";
+import a1 from '../assets/img/apperance/1.JPG';
+import a2 from '../assets/img/apperance/2.JPG';
+import a3 from '../assets/img/apperance/3.JPG';
+import a4 from '../assets/img/apperance/4.JPG';
 const settings2 = {
 
     arrows: false,
@@ -28,7 +32,7 @@ const settings2 = {
     centerPadding: "60px",
     //   centerMode: true,
 };
-const CarouselOwrWork = () => {
+const CarouselApp = () => {
 
     const [sliderRef, setSliderRef] = useState(null)
     const navigate = useNavigate();
@@ -103,54 +107,54 @@ const CarouselOwrWork = () => {
     const slides = [
         {
             key: 1,
-            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="1" />,
+            content: <img src={a1} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="1" />,
             onClick: () => rediectSkin()
         },
         {
             key: 2,
-            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="2" />,
+            content: <img src={a2} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="2" />,
             onClick: () => rediectcomm()
 
         },
         {
             key: 132,
-            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" />,
+            content: <img src={a3} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" />,
             onClick: () => rediectcomm()
 
         },
         {
             key: 13,
-            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="4" />,
+            content: <img src={a4} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="4" />,
             onClick: () => rediectCA()
 
         },
         {
             key: 41,
-            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="5" />,
+            content: <img src={a1} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="5" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 531,
-            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
+            content: <img src={a2} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 3221,
-            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="7" />,
+            content: <img src={a3} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="7" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 111,
-            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="8" />,
+            content: <img src={a4} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="8" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 5231,
-            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
+            content: <img src={a3} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
             onClick: () => rediectSkin()
 
         },
@@ -207,19 +211,19 @@ const CarouselOwrWork = () => {
             name: 'Skin Commercial',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
-            img: skin
+            img: a1
         },
         {
             name: 'Campaigns',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
-            img: comm
+            img: a2
         },
         {
             name: 'Hair Commercial',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
-            img: hair
+            img: a3
         },
         // {
         //     name: '',
@@ -303,7 +307,7 @@ const CarouselOwrWork = () => {
                 {/* <div className="row">
                     <div className="col-md-12"> */}
                 <div class="tw-basis-[100%]">
-                    <Slider {...settings2} style={{ 'width': '99vw', 'margin': 'auto' }}>
+                    <Slider {...settings2} style={{ 'width': '95vw', 'margin': 'auto' }}>
 
                         {
                             testiMonials.length === 0 ?
@@ -321,7 +325,7 @@ const CarouselOwrWork = () => {
                                 testiMonials.map(testiMonialDetail => {
                                     return (
 
-                                        <div class=" gfg tw-mx-auto" >
+                                        <div class=" gfg tw-mx-4" >
                                             <img src={testiMonialDetail.img} alt="" />
                                             <h3 class="second-txt">
                                                 {testiMonialDetail.name}
@@ -342,4 +346,4 @@ const CarouselOwrWork = () => {
     );
 };
 
-export default CarouselOwrWork;
+export default CarouselApp;

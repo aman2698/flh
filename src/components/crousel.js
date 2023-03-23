@@ -9,7 +9,7 @@ import right from '../assets/img/right-arrow.svg';
 import logo from '../assets/img/logo.svg';
 import hone from '../assets/img/home.jpeg';
 import nome2 from '../assets/img/carousel/2.png';
-
+import mobile from '../assets/img/mobile.png';
 const Crousel = () => {
     let [path, setPath] = React.useState('')
     let [count, setcount] = React.useState(1)
@@ -161,16 +161,16 @@ const Crousel = () => {
             </div>
             <div className='tw-grid min-[900px]:tw-hidden'>
             <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-touch="true">
-  <div class="carousel-inner" style={{'height':'100vh'}}>
+  <div class="carousel-inner" >
     <div class="carousel-item active" >
-      <img class="d-block w-100 " src={nome2} style={{'height':'100vh', 'objectFit':'cover'}} alt="First slide"/>
+      <img class="d-block w-100 " src={mobile} style={{ 'objectFit':'contain'}} alt="First slide"/>
+    </div>
+    {/* <div class="carousel-item">
+      <img class="d-block w-100 " src={mobile} style={{'height':'100vh', 'objectFit':'contain'}} alt="Second slide"/>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 " src={nome2} style={{'height':'100vh', 'objectFit':'cover'}} alt="Second slide"/>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100 " src={nome2} style={{'height':'100vh', 'objectFit':'cover'}} alt="Third slide"/>
-    </div>
+      <img class="d-block w-100 " src={mobile} style={{'height':'100vh', 'objectFit':'contain'}} alt="Third slide"/>
+    </div> */}
   </div>
 </div>
             </div>

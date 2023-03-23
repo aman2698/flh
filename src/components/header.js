@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import cross from '../assets/img/times.svg';
 import flh from '../assets/img/flh.svg';
+import mobile from '../assets/img/mobile.png';
 
 const Header = () => {
     const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
@@ -100,7 +101,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='min-[900px]:tw-hidden tw-flex tw-flex-row ' style={{ height: '60px', margin: '20px' }}>
+            <div className='min-[900px]:tw-hidden tw-flex tw-flex-row tw-mx-[15px]' style={{ height: '60px'}}>
                 {/* <div className='tw-basis-1/3 tw-my-auto tw-mx-auto tw-font-bold tw-font-sans' style={{ 'fontSize': '20px' }} >
                     <span onClick={e => setNavbar(!navbar)}>MENU</span>
                 </div> */}
