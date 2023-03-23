@@ -155,6 +155,12 @@ const CarouselOwrWork = () => {
 
         },
     ];
+
+    useEffect(() => {
+        onChangeInputplus()
+
+    }, [])
+
     const callback = function (index) {
         if (index === -1 || index === 1) {
             return {
@@ -323,7 +329,7 @@ const CarouselOwrWork = () => {
                                     return (
 
                                         <div class=" gfg tw-mx-auto" >
-                                            <img src={testiMonialDetail.img} alt="" />
+                                            <img style={{'borderRadius':'20px'}} src={testiMonialDetail.img} alt="" />
                                             <h3 class="second-txt">
                                                 {testiMonialDetail.name}
                                             </h3>

@@ -45,6 +45,7 @@ import home from '../assets/img/home.jpeg';
 import florian from "../assets/img/florian.svg";
 import line from "../assets/img/lines.svg";
 import CarouselApp from './crouselApp';
+import fff from "../assets/img/fff.svg";
 //commercial import
 import flh1 from '../assets/img/flh.svg';
 
@@ -197,10 +198,10 @@ const BrandWorkWith = () => {
   const commercial = importAll(require.context('../assets/img/commercial', false, /\.(png|jpe?g|JPG|svg)$/));
   return (
     <>
-      <div className='brandWorkWith tw-h-[300px]' id='ss' >
+      <div className='brandWorkWith min-[900px]:tw-h-[300px] tw-h-auto' id='ss' >
         <div className='tw-grid tw-mx-2 min-[900px]:tw-mx-36'>
           <div className='tw-columns-1'>
-            <div className=' tw-text-[48px] tw-mt-4 min-[900px]:tw-mt-[30px] tw-leading-[60px] tw-text-[#fff] ' style={{ 'textTransform': 'uppercase', 'textAlign': 'center', 'opacity': '0.3' }}>
+            <div className=' min-[900px]:tw-text-[48px] tw-text-[25px] tw-mt-4 min-[900px]:tw-mt-[30px] min-[900px]:tw-leading-[60px] tw-leading-[30px] tw-italic tw-text-[#fff] ' style={{ 'textTransform': 'uppercase', 'textAlign': 'right', 'opacity': '0.3' }}>
               Brands worked with
             </div>
           </div>
@@ -341,8 +342,10 @@ const BrandWorkWith = () => {
       </div>
       </div>    
       </div>
-      <div className='tw-pt-[30px] min-[900px]:tw-hidden tw-block' style={{'background':`linear-gradient(180deg, #3E3E3E 20.02%, #1A1919 73.58%)`,'backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)'}}>
-      {/* <div className='tw-pt-[30px] min-[900px]:tw-hidden tw-block' style={{'background':`url(${line}),linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)`,'backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)'}}> */}
+
+
+      <div className='tw-pt-[30px] min-[900px]:tw-hidden tw-block' style={{'background':`linear-gradient(180deg, #1A1919 20.02%, #3e3e3e 73.58%)`,'backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)'}}>
+      <div className='tw-pt-[30px] min-[900px]:tw-hidden tw-block backgroungg3' style={{'backgroundSize':'cover','backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)','zIndex':'2','position':'relative'}}>
       <div  className='tw-grid tw-mx-0 min-[900px]:tw-mx-16 tw-pt-4 min-[900px]:tw-h-auto ' >
         <div className='tw-columns-1 w-full '>
           {/* <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small tw-mx-10 min-[900px]:tw-mx-0' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase' }}>our work</div> */}
@@ -366,10 +369,10 @@ const BrandWorkWith = () => {
 
         </div>
       </div>
-
+</div>
       </div>
 
-      <div className='tw-block min-[900px]:tw-hidden tw-w-full' style={{'background':'linear-gradient(180deg, #3E3E3E 0%, #3E3E3E 50%, #212121 100%)'}} >
+      <div className='tw-block min-[900px]:tw-hidden tw-w-full' style={{'background':'linear-gradient(180deg, #3E3E3E 0%, #3E3E3E 50%, #212121 100%)',marginTop:'-1px'}} >
         <div className='tw-grid tw-mx-4 min-[900px]:tw-mx-48   tw-py-[50px]' >
           <div className='border-florian'>
             <div className=''>
@@ -378,11 +381,16 @@ const BrandWorkWith = () => {
               </p>
             </div>
             <div className='tw-columns-1 tw-mx-2'>
-              <p className='tw-font-sans tw-font-[300] min-[900px]:tw-text-2xl tw-italic tw-text-[20px]  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-white' style={{ 'textTransform': 'lowercase','textAlign':'left' }}>
-              <span className='quotes'>"</span>
-                Speaking of his many years of international experience, Florian himself has developed a system that he shares with aspiring young, seasoned, and established artists through his educational platform, "FLORIAN HUREL ACADEMY," which he runs as an entrepreneur. FLORIAN CONTINUES TO DO BUSINESS IN THE EDUCATION AND FITNESS SECTORS OF THE INDUSTRY AND OWNS FLORIAN HUREL ACADEMY AND FLOFITBOX MUMBAI<span className='quotes'>"</span>
+              <p className='tw-font-sans tw-font-[300] min-[900px]:tw-text-2xl tw-italic tw-text-[20px]  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-white' style={{'textAlign':'left' }}>
+              {/* <span className='quotes'>"</span> */}
+                {/* Speaking of his many years of international experience, Florian himself has developed a system that he shares with aspiring young, seasoned, and established artists through his educational platform, "FLORIAN HUREL ACADEMY," which he runs as an entrepreneur. FLORIAN CONTINUES TO DO BUSINESS IN THE EDUCATION AND FITNESS SECTORS OF THE INDUSTRY AND OWNS FLORIAN HUREL ACADEMY AND FLOFITBOX MUMBAI */}
+                Speaking of his International Experience of so many years, Florian himself has developed a Method of his own which he passes out to young, experienced and aspiring artists through his educational platform “Florian Hurel Academy” as a entrepreneur, Florian holds on to business within the education and fitness sectors of the Industry owning Florian Hurel Academy and FloFitBox Mumbai.
               </p>
             </div>
+          <div  style={{'position':'relative'}}>
+
+            <img className='asdfg' src={fff}></img>
+          </div>
             {/* <div className='tw-grid tw-my-[45px]' >
               <Slider {...settings} style={{ 'width': '80vw' }}>
                 <div>
@@ -404,49 +412,52 @@ const BrandWorkWith = () => {
         </div>
 
         <div className='tw-block min-[900px]:tw-hidden tw-w-full'>
-        <div className='tw-grid tw-mx-2 min-[900px]:tw-mx-40' >
-          <div className='tw-columns-1'>
-            <div className='tw-font-sans tw-font-normal tw-text-[48px] tw-mt-4 tw-text-white ' style={{ 'color': '#fff', 'textTransform': 'uppercase' ,'opacity':'0.26',float:'right'}}>
-              Direction
-            </div>
-          </div>
-          <div id='' className='tw-flex tw-flex-row tw-gap-3 tw-mx-2 min-[900px]:tw-mx-48 tw-my-10 mx-auto' style={{'marginTop':'20px'}}>
-            <div class="tw-basis-[100%]">
-              <Slider {...settings2} style={{ 'width': '95vw', 'margin': 'auto' }}>
-                <div>
-                  <video onClick={e => play(e, 'video1', 0)} poster={t1}>
-                    <source src='https://www.youtube.com/embed/V3v-hYQC_D8?autoplay=1' type="video/mp4" />
-                  </video>
+          <div className='backgroungg4' style={{'position':'relative'}}>
+            <div className='tw-grid tw-mx-2 min-[900px]:tw-mx-40' >
+              <div className='tw-columns-1'>
+                <div className='tw-font-sans tw-font-normal tw-text-[48px] tw-mt-4 tw-text-white ' style={{ 'color': '#fff', 'textTransform': 'uppercase' ,'opacity':'0.26',float:'right'}}>
+                  Direction
                 </div>
-                <div>
-                  <video onClick={e => play(e, 'video1', 1)} poster={t2}>
-                    <source src='https://www.youtube.com/embed/mXkdtM86REY?autoplay=1' type="video/mp4" />
-                  </video>
+              </div>
+              <div id='' className='tw-flex tw-flex-row tw-gap-3 tw-mx-2 min-[900px]:tw-mx-48 tw-my-10 mx-auto' style={{'marginTop':'20px'}}>
+                <div class="tw-basis-[100%]">
+                  <Slider {...settings2} style={{ 'width': '95vw', 'margin': 'auto' }}>
+                    <div>
+                      <video onClick={e => play(e, 'video1', 0)} poster={t1}>
+                        <source src='https://www.youtube.com/embed/V3v-hYQC_D8?autoplay=1' type="video/mp4" />
+                      </video>
+                    </div>
+                    <div>
+                      <video onClick={e => play(e, 'video1', 1)} poster={t2}>
+                        <source src='https://www.youtube.com/embed/mXkdtM86REY?autoplay=1' type="video/mp4" />
+                      </video>
+                    </div>
+                    <div>
+                      <video onClick={e => play(e, 'video1', 2)} poster={t3}>
+                        <source src='https://www.youtube.com/embed/7VNpvlF4xCw?autoplay=1' type="video/mp4" />
+                      </video></div>
+                  </Slider>
                 </div>
-                <div>
-                  <video onClick={e => play(e, 'video1', 2)} poster={t3}>
-                    <source src='https://www.youtube.com/embed/7VNpvlF4xCw?autoplay=1' type="video/mp4" />
-                  </video></div>
-              </Slider>
+              </div>
+              <div className='tw-columns-1'>
+              </div>
             </div>
+
           </div>
-          <div className='tw-columns-1'>
-          </div>
-        </div>
 
       </div>
       </div>
 
       {/* film */}
       <div className='tw-hidden min-[900px]:tw-block ' style={{ 'background': '#1A1A1A' }}>
-        <div className='backgroungg2 tw-h-[600px]' style={{position:'relative'}}>
-        <div className='tw-grid tw-mx-10 md:tw-mx-16 tw-pt-8 ' >
+        <div className='backgroungg2 tw-h-auto' style={{position:'relative'}}>
+        <div className='tw-grid tw-mx-10 md:tw-mx-16 tw-pt-16 ' style={{'position':'relative','zIndex':'999999'}} >
           <div className='tw-columns-1'>
-            <div className='tw-font-sans tw-font-normal tw-italic tw-text-[96px] tw-leading-[121px] tw-mt-4 md:tw-mt-8 ' style={{ 'color': '#fff', 'textTransform': 'uppercase','opacity':'0.5' }}>
+            <div className='tw-font-sans tw-font-normal tw-italic tw-text-[96px] tw-leading-[80px] tw-mt-4 md:tw-mt-8 ' style={{ 'color': '#fff', 'textTransform': 'uppercase','opacity':'0.5' }}>
               Direction
             </div>
           </div>
-          <div id='video1' className='tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8  tw-mx-8 md:tw-mx-48 tw-my-10 mx-auto'>
+          <div id='video1' className='tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8  tw-mx-8 md:tw-mx-48 tw-mb-10 mx-auto'>
             <video onClick={e => play(e, 'video1', 0)} poster={t1}>
               <source src='https://www.youtube.com/embed/V3v-hYQC_D8?autoplay=1' type="video/mp4" />
             </video>
@@ -457,13 +468,16 @@ const BrandWorkWith = () => {
               <source src='https://www.youtube.com/embed/7VNpvlF4xCw?autoplay=1' type="video/mp4" />
             </video>
           </div>
-          <div className='tw-columns-1'>
+          <div className='row'>
             {/* <div class="mx-auto">
               <div class="wrap">
                 <a class="btn-7" href="#">VIEW ALL<span></span></a>
               </div>
             </div> */}
-            <div className='tw-font-sans tw-font-normal tw-italic tw-text-[96px] tw-text-white min-[900px]:tw-text-white' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase','opacity':'0.17','float':'right' }}>Appearance</div>
+            <div className='col-md-12'>
+
+            <div className='tw-font-sans tw-font-normal tw-italic tw-text-[96px] tw-text-white min-[900px]:tw-text-white' style={{ 'textTransform': 'uppercase','opacity':'0.17','textAlign':'end'}}>Appearance</div>
+            </div>
 
           </div>
         </div>
@@ -475,20 +489,20 @@ const BrandWorkWith = () => {
 
 
       {/* Appearance */}
-      <div className='tw-bg-[#232323] min-[900px]:tw-bg-[linear-gradient(180deg, #1A1A1A 0%, #545454 100%)] tw-h-auto min-[900px]:tw-mt-[-70px] tw-pt-[30px]' style={{'background':'#1A1A1A','opacity':'0.78'}}>
+      <div className='tw-bg-[#232323] min-[900px]:tw-bg-[linear-gradient(180deg, #1A1A1A 0%, #545454 100%)] tw-h-auto min-[900px]:tw-mt-[0px] tw-pt-[1px]' style={{'background':'#1A1A1A','opacity':'0.78'}}>
         <div className='tw-grid tw-mx-2 min-[900px]:tw-mx-16  tw-py-4 '>
-          <div className='tw-columns-1 '>
+          <div className='row m-0 '>
           <div className=' tw-block min-[900px]:tw-hidden tw-font-sans tw-font-normal tw-italic tw-text-[46px] tw-text-white min-[900px]:tw-text-white' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase','opacity':'0.17',float:'right' }}>Appearance</div>
 
-            <div id='image1' className='tw-hidden min-[900px]:tw-block '>
+            <div id='image1' className='tw-hidden min-[900px]:tw-block col-md-12 p-0'>
               {/* <img className='mx-auto' onClick={e => playImage(e, 'image1', 0)} src={a1} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
               <img className='mx-auto' onClick={e => playImage(e, 'image1', 1)} src={a2} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
               <img className='mx-auto' onClick={e => playImage(e, 'image1', 2)} src={a3} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img>
               <img className='mx-auto' onClick={e => playImage(e, 'image1', 3)} src={a4} alt='g' style={{ 'width': '90%', 'height': '400px', 'objectFit': 'cover' }}></img> */}
               <CarouselApp/>
             </div>
-            <div className='tw-block min-[900px]:tw-hidden'>
-              <div id='' className='tw-flex tw-flex-row tw-gap-3 tw-mx-8 tw-mt-[80px] min-[900px]:tw-mx-48 tw-my-10 mx-auto'>
+            <div className='tw-block min-[900px]:tw-hidden col-md-12 p-0'>
+              <div id='' className='tw-flex tw-flex-row tw-gap-3 tw-mx-8  min-[900px]:tw-mx-48 mx-auto'>
 
                 {/* <div class="tw-basis-[8%] m-auto">
                   <a href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -552,57 +566,192 @@ const BrandWorkWith = () => {
 
       </div>
 
-     
+      <div className='min-[900px]:tw-hidden tw-block' style={{ 'background': 'linear-gradient(0deg, #484646 0%, #1a1a1a 100%)', 'marginTop': '-1px' }}>
+      <div className='backgroungg5 ' style={{position:'relative'}}>
+        <div className='tw-grid min-[900px]:tw-hidden tw-px-4 tw-py-4' style={{ }}>
+          <div className='tw-columns-1 '>
+            <div className='tw-font-sans tw-font-normal tw-italic tw-text-[46px] tw-text-white' style={{ 'marginBottom': '15px', 'float': 'right', 'opacity': '0.26' }}>Commercial</div>
+            <div className='tw-flex tw-flex-row min-[900px]:tw-hidden tw-mt-[65px]'>
+              <div class="tw-basis-[100%]">
+                <Slider {...settings2} style={{ 'width': '92vw', 'margin': 'auto' }}>
+                  <div>
+                    <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 0)} poster={commercial[0]}>
+                      <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
+                    </video>
+                  </div>
+                  <div>
+                    <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 1)} poster={commercial[1]}>
+                      <source src='https://www.youtube.com/embed/R58kGs01FBM?autoplay=1' type="video/mp4" />
+                    </video>
+                  </div>
+                  <div>
+                    <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 2)} poster={commercial[2]}>
+                      <source src='https://www.youtube.com/embed/hKyNjBpuOjQ?autoplay=1' type="video/mp4" />
+                    </video></div>
+                  <div>
+                    <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 3)} poster={commercial[3]}>
+                      <source src='https://www.youtube.com/embed/aZWl4QY-LOA?autoplay=1' type="video/mp4" />
+                    </video>
+                  </div>
+                  <div>
+                    <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 2)} poster={commercial[6]}>
+                      <source src='https://www.youtube.com/embed/EEXXcqRUquo?autoplay=1' type="video/mp4" />
+                    </video>
+                  </div>
+                  <div>
+                    <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 7)} poster={commercial[7]}>
+                      <source src='https://www.youtube.com/embed/sLSlt7Fx8mU?autoplay=1' type="video/mp4" />
+                    </video>
+                  </div>
+                </Slider>
+              </div>
 
-      <div className='tw-grid min-[900px]:tw-hidden tw-px-4 tw-py-4' style={{'background': 'linear-gradient(0deg, #1A1A1A 0%, #545454 100%)','marginTop':'0px'}}>
-        <div className='tw-columns-1 '>
-          <div className='tw-font-sans tw-font-normal tw-italic tw-text-[46px] tw-text-white' style={{ 'marginBottom': '15px','float':'right','opacity':'0.26' }}>Commercial</div>
-          <div className='tw-flex tw-flex-row min-[900px]:tw-hidden tw-mt-[65px]'>
-            <div class="tw-basis-[100%]">
-              <Slider {...settings2} style={{ 'width': '92vw', 'margin': 'auto' }}>
-                <div>
-                  <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 0)} poster={commercial[0]}>
-                    <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
-                  </video>
-                </div>
-                <div>
-                  <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 1)} poster={commercial[1]}>
-                    <source src='https://www.youtube.com/embed/R58kGs01FBM?autoplay=1' type="video/mp4" />
-                  </video>
-                </div>
-                <div>
-                  <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 2)} poster={commercial[2]}>
-                    <source src='https://www.youtube.com/embed/hKyNjBpuOjQ?autoplay=1' type="video/mp4" />
-                  </video></div>
-                <div>
-                  <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 3)} poster={commercial[3]}>
-                    <source src='https://www.youtube.com/embed/aZWl4QY-LOA?autoplay=1' type="video/mp4" />
-                  </video>
-                </div>
-                <div>
-                  <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 2)} poster={commercial[6]}>
-                    <source src='https://www.youtube.com/embed/EEXXcqRUquo?autoplay=1' type="video/mp4" />
-                  </video>
-                </div>
-                <div>
-                  <video className='tw-w-[100%] tw-h-[200px] mx-auto' onClick={e => play(e, 'video2', 7)} poster={commercial[7]}>
-                    <source src='https://www.youtube.com/embed/sLSlt7Fx8mU?autoplay=1' type="video/mp4" />
-                  </video>
-                </div>
-              </Slider>
             </div>
-
-          </div>
-          <div class="mx-auto tw-mt-8">
-            <div class="wrap">
-              <a class="btn-7" onClick={() => navigate("/hair")}>VIEW ALL<span></span></a>
+            <div class="mx-auto tw-mt-8">
+              <div class="wrap">
+                <a class="btn-7" onClick={() => navigate("/hair")}>VIEW ALL<span></span></a>
+              </div>
             </div>
           </div>
         </div>
+
+
+        <div className='tw-grid min-[900px]:tw-mx-10 tw-mx-2 min-[900px]:tw-mx-16 min-[900px]:tw-mb-10 tw-pt-4'>
+
+
+
+
+          <div className='tw-columns-1 '>
+            <div className='tw-font-sans tw-font-normal tw-italic min-[900px]:tw-text-[96px] tw-text-[36px] min-[900px]:tw-leading-[121px] tw-leading-[45px] tw-text-white min-[900px]:tw-text-white underline-small' style={{ 'marginBottom': '15px', 'opacity': '0.17', float: 'right', 'textAlign': 'end', 'textTransform': 'uppercase' }}>Newsletter & <br /> awards</div>
+            <div className='tw-hidden min-[900px]:tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-2  tw-mx-8 min-[900px]:tw-mx-16 min-[900px]:tw-mt-[275px] tw-my-10 mx-auto' >
+              <div className="card" style={{'background':'rgba(248, 248, 248, 0.2)'}}>
+                <img className='mx-auto my-3' src={b1} alt='g' style={{ 'width': '90%', 'height': '300px', 'objectFit': 'cover' }}></img>
+
+                <div className="card-body">
+                  <p className="card-text tw-font-sans tw-font-normal">Hair and makeup artist Florian Hurel: “My journey in Bollywood began when I worked with Priyanka Chopra Jonas”</p>
+                  <a href="https://urbanasian.com/news/2021/09/hair-and-makeup-artist-florian-hurel-my-journey-in-bollywood-began-when-i-worked-with-priyanka-chopra-jonas/" className="tw-float-right" rel="noreferrer" target='_blank'>Read more</a>
+                </div>
+              </div>
+              <div className="card">
+                <img className='mx-auto my-3' src={b2} alt='g' style={{ 'width': '90%', 'height': '300px', 'objectFit': 'cover' }}></img>
+
+                <div className="card-body">
+                  <p className="card-text tw-font-sans tw-font-normal" >Celebrity hair and makeup artist Florian Hurel talks about being a part of online live hairstyling event which created Guinness World Records</p>
+                  <a href="https://timesofindia.indiatimes.com/life-style/beauty/celebrity-hair-and-makeup-artist-florian-hurel-talks-about-being-a-part-of-online-live-hairstyling-event-which-created-guinness-world-records/articleshow/76203984.cms" className="tw-float-right" rel="noreferrer" target='_blank'>Read more</a>
+                </div>
+              </div>
+              <div className="card">
+                <img className='mx-auto my-3' src={b3} alt='g' style={{ 'width': '90%', 'height': '300px', 'objectFit': 'cover' }}></img>
+
+                <div className="card-body">
+                  <p className="card-text tw-font-sans tw-font-normal">Florian Hurel: The best award to me is my team’s success</p>
+                  <a href="https://urbanasian.com/lifestyle/health/2022/11/florian-hurel-the-best-award-to-me-is-my-teams-success/" className="tw-float-right " rel="noreferrer" target='_blank'>Read more</a>
+                </div>
+              </div>
+            </div>
+            <div className='tw-flex tw-flex-row tw-gap-3 min-[900px]:tw-hidden tw-mx-2 min-[900px]:tw-mx-48 tw-my-10 mx-auto tw-mt-[130px]'>
+              <div class="tw-basis-[100%]">
+                <Slider {...settings2} style={{ 'width': '95vw', 'margin': 'auto' }}>
+                  <div>
+                    <div className="card mx-auto tw-h-[100px]" >
+                      <img className='mx-auto my-3' src={b1} alt='g' style={{ 'width': '90%', 'height': '300px', 'objectFit': 'cover' }}></img>
+
+                      <div className="card-body tw-h-[200px]">
+                        <p className="card-text tw-font-sans tw-font-normal">Hair and makeup artist Florian Hurel: “My journey in Bollywood began when I worked with Priyanka Chopra Jonas”</p>
+                        <a href="https://urbanasian.com/news/2021/09/hair-and-makeup-artist-florian-hurel-my-journey-in-bollywood-began-when-i-worked-with-priyanka-chopra-jonas/" className="tw-float-right" rel="noreferrer" target='_blank'>Read more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="card mx-auto tw-h-[100px]">
+                      <img className='mx-auto my-3' src={b2} alt='g' style={{ 'width': '90%', 'height': '300px', 'objectFit': 'cover' }}></img>
+
+                      <div className="card-body tw-h-[200px]">
+                        <p className="card-text tw-font-sans tw-font-normal" >Celebrity hair and makeup artist Florian Hurel talks about being a part of online live hairstyling event which created Guinness World Records</p>
+                        <a href="https://timesofindia.indiatimes.com/life-style/beauty/celebrity-hair-and-makeup-artist-florian-hurel-talks-about-being-a-part-of-online-live-hairstyling-event-which-created-guinness-world-records/articleshow/76203984.cms" className="tw-float-right" rel="noreferrer" target='_blank'>Read more</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="card mx-auto tw-h-[100px]">
+                      <img className='mx-auto my-3' src={b3} alt='g' style={{ 'width': '90%', 'height': '300px', 'objectFit': 'cover' }}></img>
+
+                      <div className="card-body tw-h-[200px]">
+                        <p className="card-text tw-font-sans tw-font-normal">Florian Hurel: The best award to me is my team’s success</p>
+                        <a href="https://urbanasian.com/lifestyle/health/2022/11/florian-hurel-the-best-award-to-me-is-my-teams-success/" className="tw-float-right " rel="noreferrer" target='_blank'>Read more</a>
+                      </div>
+                    </div></div>
+                </Slider>
+              </div>
+
+              {/* </div> */}
+              {/* <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+          </a> */}
+              {/* </div> */}
+
+
+
+            </div>
+            <div class="tw-hidden min-[900px]:tw-block mx-auto">
+              <div class="wrap">
+                <a class="btn-6" onClick={() => navigate("/blogs")}>VIEW ALL<span></span></a>
+              </div>
+            </div>
+            <div class="tw-block min-[900px]:tw-hidden mx-auto">
+              <div class="wrap">
+                <a href='/blogs' class="btn-7" onClick={() => navigate("/blogs")}>VIEW ALL<span></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='tw-w-full' >
+
+          <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
+            <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
+            <div>
+              <div className='columns-1'>
+                <img className='mx-auto' src={flh1} alt='g' ></img>
+                {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
+                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
+                  <img className='mx-auto' src={fb} alt='g' ></img>
+                  <img className='mx-auto' src={insta} alt='g' ></img>
+                  <img className='mx-auto' src={twitter} alt='g' ></img>
+                </div>
+              </div>
+            </div>
+            <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo3} alt='g' ></img>
+          </div>
+          <hr className='w-full tw-hidden min-[900px]:tw-block' />
+          <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
+            <div></div>
+            <div className='mx-auto tw-text-[#fff]'>&#169;Copyrights 2023</div>
+            <div className='mx-auto tw-text-[#fff]'>Privacy policy / Cookies policy / Terms of use</div>
+          </div>
+          <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
+            {/* <div></div> */}
+            <div className='mx-auto tw-text-white'>&#169;Copyrights 2023
+            </div>
+            <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
+          </div>
+        </div>
+       </div>
+
+
       </div>
 
+     
+
+
+
       {/* Newsletter and awards */}
-      <div className='tw-bg-[#232323] min-[900px]:tw-bg-[linear-gradient(0deg, #1A1A1A 0%, #545454 100%)] tw-h-auto min-[900px]:tw-mt-[0px]' style={{'background': 'linear-gradient(0deg, #1A1A1A 0%, #545454 100%)'}}>
+      <div className='tw-bg-[#232323] tw-hidden min-[900px]:tw-block min-[900px]:tw-bg-[linear-gradient(0deg, #1A1A1A 0%, #545454 100%)] tw-h-auto min-[900px]:tw-mt-[0px]' style={{'background': 'linear-gradient(0deg, #1A1A1A 0%, #545454 100%)'}}>
 
       <div className='tw-hidden min-[900px]:tw-block tw-w-full tw-pb-4' >
         <div className='tw-grid tw-mx-10 md:tw-mx-16 tw-mb-10 tw-pb-8' >
@@ -649,14 +798,14 @@ const BrandWorkWith = () => {
 
       </div>
 
-
+      <div className='backgroungg2 ' style={{position:'relative'}}>
         <div className='tw-grid min-[900px]:tw-mx-10 tw-mx-2 min-[900px]:tw-mx-16 min-[900px]:tw-mb-10 tw-pt-4'>
 
 
 
 
           <div className='tw-columns-1 '>
-            <div className='tw-font-sans tw-font-normal tw-italic min-[900px]:tw-text-[96px] tw-text-[36px] min-[900px]:tw-leading-[121px] tw-leading-[45px] tw-text-white min-[900px]:tw-text-white underline-small' style={{ 'marginBottom': '15px','opacity':'0.17',float:'right','textAlign':'end' }}>Newsletter & <br/> awards</div>
+            <div className='tw-font-sans tw-font-normal tw-italic min-[900px]:tw-text-[96px] tw-text-[36px] min-[900px]:tw-leading-[121px] tw-leading-[45px] tw-text-white min-[900px]:tw-text-white underline-small' style={{ 'marginBottom': '15px','opacity':'0.17',float:'right','textAlign':'end','textTransform':'uppercase' }}>Newsletter & <br/> awards</div>
             <div className='tw-hidden min-[900px]:tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-2  tw-mx-8 min-[900px]:tw-mx-16 min-[900px]:tw-mt-[275px] tw-my-10 mx-auto'>
               <div className="card">
                 <img className='mx-auto my-3' src={b1} alt='g' style={{ 'width': '90%', 'height': '300px', 'objectFit': 'cover' }}></img>
@@ -748,6 +897,7 @@ const BrandWorkWith = () => {
 
 
         <div className='tw-w-full' >
+      
         <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
           <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
           <div>
@@ -774,6 +924,7 @@ const BrandWorkWith = () => {
           <div className='mx-auto tw-text-white'>&#169;Copyrights 2023
           </div>
           <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
+        </div>
         </div>
       </div>
       </div>

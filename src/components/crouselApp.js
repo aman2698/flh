@@ -159,6 +159,11 @@ const CarouselApp = () => {
 
         },
     ];
+    useEffect(() => {
+        onChangeInputplus()
+
+    }, [])
+    
     const callback = function (index) {
         if (index === -1 || index === 1) {
             return {
@@ -248,7 +253,7 @@ const CarouselApp = () => {
                 <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">                    <div className="" onClick={onChangeInputminus} style={{'text-align': '-webkit-center' }}>
                     <span className="" aria-hidden="true"><img src={left} alt='dd'></img></span>
                 </div></div>
-                <div class="tw-basis-[90%] min-[900px]:tw-basis-5/6 tw-w-[100%] tw-h-[500px] mx-auto">
+                <div class="tw-basis-[90%] min-[900px]:tw-basis-5/6 tw-w-[100%] tw-h-[600px] mx-auto">
 
                     <Carousel slides={slides} goToSlide={state.goToSlide}
                         offsetRadius={state.offsetRadius}
