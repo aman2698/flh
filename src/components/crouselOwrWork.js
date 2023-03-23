@@ -103,54 +103,54 @@ const CarouselOwrWork = () => {
     const slides = [
         {
             key: 1,
-            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="1" />,
+            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="1" />,
             onClick: () => rediectSkin()
         },
         {
             key: 2,
-            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="2" />,
+            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="2" />,
             onClick: () => rediectcomm()
 
         },
         {
             key: 132,
-            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" />,
+            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" />,
             onClick: () => rediectcomm()
 
         },
         {
             key: 13,
-            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="4" />,
+            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="4" />,
             onClick: () => rediectCA()
 
         },
         {
             key: 41,
-            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="5" />,
+            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="5" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 531,
-            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
+            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 3221,
-            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="7" />,
+            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="7" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 111,
-            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="8" />,
+            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="8" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 5231,
-            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
+            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
             onClick: () => rediectSkin()
 
         },
@@ -158,8 +158,9 @@ const CarouselOwrWork = () => {
     const callback = function (index) {
         if (index === -1 || index === 1) {
             return {
-                // 'opacity': 0.5,
-                'width': '500px',
+                'opacity': 1,
+                'width': '600px',
+                'height':'600px',
                 'border-radius':'20px',
                 'filter': 'brightness(0.5)'
                 //             '-webkit-filter': 'grayscale(90%)',
@@ -242,7 +243,7 @@ const CarouselOwrWork = () => {
                 <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">                    <div className="" onClick={onChangeInputminus} style={{'text-align': '-webkit-center' }}>
                     <span className="" aria-hidden="true"><img src={left} alt='dd'></img></span>
                 </div></div>
-                <div class="tw-basis-[90%] min-[900px]:tw-basis-5/6 tw-w-[100%] tw-h-[500px] mx-auto">
+                <div class="tw-basis-[90%] min-[900px]:tw-basis-5/6 tw-w-[100%] tw-h-[700px] mx-auto">
 
                     <Carousel slides={slides} goToSlide={state.goToSlide}
                         offsetRadius={state.offsetRadius}

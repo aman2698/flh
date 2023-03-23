@@ -43,7 +43,7 @@ import b2 from '../assets/img/blog/2.webp';
 import b3 from '../assets/img/blog/3.jpg';
 import home from '../assets/img/home.jpeg';
 import florian from "../assets/img/florian.svg";
-import line from "../assets/img/bg-line.svg";
+import line from "../assets/img/lines.svg";
 import CarouselApp from './crouselApp';
 //commercial import
 import flh1 from '../assets/img/flh.svg';
@@ -228,7 +228,7 @@ const BrandWorkWith = () => {
           </div>
         </div>
       </div>
-      <div className='' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 0%, #212121 71.15%)' }}>
+      <div className='' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 0%, #212121 50%,  #3E3E3E 100%)' }}>
         {/* <div id='home' className='tw-my-auto'>
         <video onClick={e => play(e, 'home', 0)} poster={home}>
             <source src='https://player.vimeo.com/video/805016119?h=0fd1008446' type="video/mp4" />
@@ -306,24 +306,30 @@ const BrandWorkWith = () => {
       </div> */}
 
       {/* our work */}
-      <div className='tw-pt-[30px] tw-hidden min-[900px]:tw-block' style={{'background':`linear-gradient(180deg, #3E3E3E 20.02%, #1A1919 73.58%)`,'backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)'}}>
-      {/* <div style={{'background':`url(${line}),linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)`,'backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)'}}> */}
+      <div className=' tw-hidden min-[900px]:tw-block' style={{'background':`linear-gradient(180deg, #3E3E3E 20.02%, #1A1919 73.58%)`,'backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)'}}>
+      <div className='tw-pt-[30px] tw-hidden min-[900px]:tw-block backgroungg' style={{'backgroundSize':'cover','backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)','zIndex':'2','position':'relative'}}>
       <div  className='tw-grid tw-mx-0 min-[900px]:tw-mx-16 tw-pt-10 min-[900px]:tw-h-auto ' >
-        <div className='border-florian'>
-        <div className='tw-columns-1 w-full '>
+        <div className='border-florian' style={{'zIndex':'0'}}>
+        <div className='row tw-pb-[20px] w-full '>
           {/* <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small tw-mx-10 min-[900px]:tw-mx-0' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase' }}>our work</div> */}
+          <div className='col-md-12 p-0'>
+
           <div class="" style={{    'float': 'right',
     'marginTop': '-70px',
-    'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #3e3e3e 73.58%)','padding':'3px 12px', marginRight:'-6px'}}>
+    'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #3e3e3e 73.58%)','padding':'3px 12px', marginRight:'-6px','zIndex':'1'}}>
             <div class=" tw-mx-4 ">
                 <span className='tw-font-sans tw-italic tw-font-normal tw-text-[96px] tw-text-[#fff]' style={{'opacity':'0.17'}}>OUR WORK</span>
             </div>
           </div>
+          </div>
+          <div className='col-md-12 p-0'>
           <CarouselOwrWork />
+
+          </div>
           {/* <div className='view-all tw-mx-auto tw-mt-8' style={{ 'position': 'relative', 'border': '2px solid #000' }}>
             <span className='tw-font-sans tw-font-semibold' style={{ 'position': 'absolute', 'fontSize': '24px', 'padding': '8px 1px 1px 21px' }}>VIEW ALL</span>
           </div> */}
-          <div class="mx-auto tw-mt-[20px]">
+          <div class="mx-auto col-md-12 p-0 tw-mt-[20px]">
             <div class="wrap">
               <a class="btn-7 " onClick={() => navigate("/campaigns")}>VIEW ALL<span style={{'color':'#fff'}}>VIEW ALL</span></a>
             </div>
@@ -333,7 +339,7 @@ const BrandWorkWith = () => {
 
         </div>
       </div>
-
+      </div>    
       </div>
       <div className='tw-pt-[30px] min-[900px]:tw-hidden tw-block' style={{'background':`linear-gradient(180deg, #3E3E3E 20.02%, #1A1919 73.58%)`,'backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)'}}>
       {/* <div className='tw-pt-[30px] min-[900px]:tw-hidden tw-block' style={{'background':`url(${line}),linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)`,'backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)'}}> */}
@@ -432,10 +438,11 @@ const BrandWorkWith = () => {
       </div>
 
       {/* film */}
-      <div className='tw-hidden min-[900px]:tw-block tw-w-full' style={{ 'background': '#1A1A1A' }}>
-        <div className='tw-grid tw-mx-10 md:tw-mx-16 tw-pt-8' >
+      <div className='tw-hidden min-[900px]:tw-block ' style={{ 'background': '#1A1A1A' }}>
+        <div className='backgroungg2 tw-h-[600px]' style={{position:'relative'}}>
+        <div className='tw-grid tw-mx-10 md:tw-mx-16 tw-pt-8 ' >
           <div className='tw-columns-1'>
-            <div className='tw-font-sans tw-font-normal tw-italic tw-text-[96px] tw-leading-[121px] tw-mt-4 md:tw-mt-8 ' style={{ 'color': '#fff', 'textTransform': 'uppercase','opacity':'0.17' }}>
+            <div className='tw-font-sans tw-font-normal tw-italic tw-text-[96px] tw-leading-[121px] tw-mt-4 md:tw-mt-8 ' style={{ 'color': '#fff', 'textTransform': 'uppercase','opacity':'0.5' }}>
               Direction
             </div>
           </div>
@@ -461,12 +468,14 @@ const BrandWorkWith = () => {
           </div>
         </div>
 
+        </div>
+
       </div>
 
 
 
       {/* Appearance */}
-      <div className='tw-bg-[#232323] min-[900px]:tw-bg-[linear-gradient(180deg, #1A1A1A 0%, #545454 100%)] tw-h-auto min-[900px]:tw-mt-[-40px] tw-pt-[30px]' style={{'background':'linear-gradient(180deg, #1A1A1A 0%, #545454 100%)'}}>
+      <div className='tw-bg-[#232323] min-[900px]:tw-bg-[linear-gradient(180deg, #1A1A1A 0%, #545454 100%)] tw-h-auto min-[900px]:tw-mt-[-70px] tw-pt-[30px]' style={{'background':'#1A1A1A','opacity':'0.78'}}>
         <div className='tw-grid tw-mx-2 min-[900px]:tw-mx-16  tw-py-4 '>
           <div className='tw-columns-1 '>
           <div className=' tw-block min-[900px]:tw-hidden tw-font-sans tw-font-normal tw-italic tw-text-[46px] tw-text-white min-[900px]:tw-text-white' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase','opacity':'0.17',float:'right' }}>Appearance</div>
@@ -520,7 +529,11 @@ const BrandWorkWith = () => {
               </div>
 
             </div>
-            <div class="tw-hidden min-[900px]:tw-block mx-auto">
+          
+          </div>
+          <div className='row'>
+            <div className='col-md-12'>
+          <div class="tw-hidden min-[900px]:tw-block mx-auto">
               <div class="wrap" style={{'marginTop':'50px'}}>
                 <a class="btn-7" onClick={() => navigate("/celebrity")}>VIEW ALL<span></span></a>
               </div>
@@ -530,54 +543,13 @@ const BrandWorkWith = () => {
                 <a href='/celebrity' class="btn-7" onClick={() => navigate("/celebrity")}>VIEW ALL<span></span></a>
               </div>
             </div>
+
+            </div>
           </div>
         </div>
         
  {/* Commercial */}
- <div className='tw-hidden min-[900px]:tw-block tw-w-full tw-pb-4' >
-        <div className='tw-grid tw-mx-10 md:tw-mx-16 tw-mb-10 tw-pb-8' >
-          <div className='tw-columns-1'>
-            <div className='tw-font-sans tw-font-normal tw-italic tw-text-[96px] tw-leading-[121px] tw-mb-4' style={{ 'color': '#fff', 'textTransform': 'uppercase','opacity':'0.17' }}>
-              Commercial
-            </div>
-          </div>
-          <div id='video2' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-1 tw-gap-8  tw-mx-8 md:tw-mx-48 tw-my-10 mx-auto'>
-            <video onClick={e => play(e, 'video2', 0)} poster={commercial[0]}>
-              <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
-            </video>
-            <video onClick={e => play(e, 'video2', 1)} poster={commercial[1]}>
-              <source src='https://www.youtube.com/embed/R58kGs01FBM?autoplay=1' type="video/mp4" />
-            </video>
-            <video onClick={e => play(e, 'video2', 2)} poster={commercial[2]}>
-              <source src='https://www.youtube.com/embed/hKyNjBpuOjQ?autoplay=1' type="video/mp4" />
-            </video>
-            <video onClick={e => play(e, 'video2', 3)} poster={commercial[3]}>
-              <source src='https://www.youtube.com/embed/aZWl4QY-LOA?autoplay=1' type="video/mp4" />
-            </video>
-            <video onClick={e => play(e, 'video2', 4)} poster={commercial[4]}>
-              <source src='https://www.youtube.com/embed/PbR98T2peEY?autoplay=1' type="video/mp4" />
-            </video>
-            <video onClick={e => play(e, 'video2', 5)} poster={commercial[5]}>
-              <source src='https://www.youtube.com/embed/x5lvN1pSKNE?autoplay=1' type="video/mp4" />
-            </video>
-            <video onClick={e => play(e, 'video2', 6)} poster={commercial[6]}>
-              <source src='https://www.youtube.com/embed/EEXXcqRUquo?autoplay=1' type="video/mp4" />
-            </video>
-            <video onClick={e => play(e, 'video2', 7)} poster={commercial[7]}>
-              <source src='https://www.youtube.com/embed/sLSlt7Fx8mU?autoplay=1' type="video/mp4" />
-            </video>
-          </div>
-          <div className='tw-columns-1 tw-w-full'>
-            <div class="mx-auto">
-              <div class="wrap">
-                <a href='/hair' class="btn-7" onClick={() => navigate("/hair")}>VIEW ALL<span></span></a>
-              </div>
-            </div>
 
-          </div>
-        </div>
-
-      </div>
       </div>
 
      
@@ -630,8 +602,59 @@ const BrandWorkWith = () => {
       </div>
 
       {/* Newsletter and awards */}
-      <div className='tw-bg-[#232323] min-[900px]:tw-bg-[linear-gradient(0deg, #1A1A1A 0%, #545454 100%)] tw-h-auto min-[900px]:tw-mt-[-50px]' style={{'background': 'linear-gradient(0deg, #1A1A1A 0%, #545454 100%)'}}>
+      <div className='tw-bg-[#232323] min-[900px]:tw-bg-[linear-gradient(0deg, #1A1A1A 0%, #545454 100%)] tw-h-auto min-[900px]:tw-mt-[0px]' style={{'background': 'linear-gradient(0deg, #1A1A1A 0%, #545454 100%)'}}>
+
+      <div className='tw-hidden min-[900px]:tw-block tw-w-full tw-pb-4' >
+        <div className='tw-grid tw-mx-10 md:tw-mx-16 tw-mb-10 tw-pb-8' >
+          <div className='tw-columns-1'>
+            <div className='tw-font-sans tw-font-normal tw-italic tw-text-[96px] tw-leading-[121px] tw-mb-4' style={{ 'color': '#fff', 'textTransform': 'uppercase','opacity':'0.17' }}>
+              Commercial
+            </div>
+          </div>
+          <div id='video2' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-1 tw-gap-8  tw-mx-8 md:tw-mx-48 tw-my-10 mx-auto'>
+            <video onClick={e => play(e, 'video2', 0)} poster={commercial[0]}>
+              <source src='https://www.youtube.com/embed/eXQJNyLEYqY?autoplay=1' type="video/mp4" />
+            </video>
+            <video onClick={e => play(e, 'video2', 1)} poster={commercial[1]}>
+              <source src='https://www.youtube.com/embed/R58kGs01FBM?autoplay=1' type="video/mp4" />
+            </video>
+            <video onClick={e => play(e, 'video2', 2)} poster={commercial[2]}>
+              <source src='https://www.youtube.com/embed/hKyNjBpuOjQ?autoplay=1' type="video/mp4" />
+            </video>
+            <video onClick={e => play(e, 'video2', 3)} poster={commercial[3]}>
+              <source src='https://www.youtube.com/embed/aZWl4QY-LOA?autoplay=1' type="video/mp4" />
+            </video>
+            <video onClick={e => play(e, 'video2', 4)} poster={commercial[4]}>
+              <source src='https://www.youtube.com/embed/PbR98T2peEY?autoplay=1' type="video/mp4" />
+            </video>
+            <video onClick={e => play(e, 'video2', 5)} poster={commercial[5]}>
+              <source src='https://www.youtube.com/embed/x5lvN1pSKNE?autoplay=1' type="video/mp4" />
+            </video>
+            <video onClick={e => play(e, 'video2', 6)} poster={commercial[6]}>
+              <source src='https://www.youtube.com/embed/EEXXcqRUquo?autoplay=1' type="video/mp4" />
+            </video>
+            <video onClick={e => play(e, 'video2', 7)} poster={commercial[7]}>
+              <source src='https://www.youtube.com/embed/sLSlt7Fx8mU?autoplay=1' type="video/mp4" />
+            </video>
+          </div>
+          <div className='tw-columns-1 tw-w-full'>
+            <div class="mx-auto">
+              <div class="wrap">
+                <a href='/hair' class="btn-7" onClick={() => navigate("/hair")}>VIEW ALL<span></span></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
         <div className='tw-grid min-[900px]:tw-mx-10 tw-mx-2 min-[900px]:tw-mx-16 min-[900px]:tw-mb-10 tw-pt-4'>
+
+
+
+
           <div className='tw-columns-1 '>
             <div className='tw-font-sans tw-font-normal tw-italic min-[900px]:tw-text-[96px] tw-text-[36px] min-[900px]:tw-leading-[121px] tw-leading-[45px] tw-text-white min-[900px]:tw-text-white underline-small' style={{ 'marginBottom': '15px','opacity':'0.17',float:'right','textAlign':'end' }}>Newsletter & <br/> awards</div>
             <div className='tw-hidden min-[900px]:tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-2  tw-mx-8 min-[900px]:tw-mx-16 min-[900px]:tw-mt-[275px] tw-my-10 mx-auto'>

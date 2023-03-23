@@ -112,49 +112,49 @@ const CarouselApp = () => {
         },
         {
             key: 2,
-            content: <img src={a2} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="2" />,
+            content: <img src={a2} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="2" />,
             onClick: () => rediectcomm()
 
         },
         {
             key: 132,
-            content: <img src={a3} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" />,
+            content: <img src={a3} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" />,
             onClick: () => rediectcomm()
 
         },
         {
             key: 13,
-            content: <img src={a4} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="4" />,
+            content: <img src={a4} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="4" />,
             onClick: () => rediectCA()
 
         },
         {
             key: 41,
-            content: <img src={a1} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="5" />,
+            content: <img src={a1} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="5" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 531,
-            content: <img src={a2} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
+            content: <img src={a2} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 3221,
-            content: <img src={a3} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="7" />,
+            content: <img src={a3} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="7" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 111,
-            content: <img src={a4} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="8" />,
+            content: <img src={a4} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="8" />,
             onClick: () => rediectSkin()
 
         },
         {
             key: 5231,
-            content: <img src={a3} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
+            content: <img src={a3} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
             onClick: () => rediectSkin()
 
         },
@@ -163,7 +163,9 @@ const CarouselApp = () => {
         if (index === -1 || index === 1) {
             return {
                 // 'opacity': 0.5,
-                'width': '500px',
+                'opacity': 1,
+                'width': '600px',
+                'height':'600px',
                 'border-radius':'20px',
                 'filter': 'brightness(0.5)'
                 //             '-webkit-filter': 'grayscale(90%)',
