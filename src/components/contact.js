@@ -8,7 +8,7 @@ import fb from '../assets/img/fb.svg';
 import insta from '../assets/img/instagram.svg';
 import twitter from '../assets/img/twitter.svg';
 import logo from '../assets/img/logoo.svg';
-import logo1 from '../assets/img/home.svg';
+import logo1 from '../assets/img/flh.svg';
 
 const Contact = () => {
 
@@ -27,7 +27,7 @@ const Contact = () => {
     }
     return (
         <>
-            <div className='tw-w-full'>
+            <div className='tw-w-full' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
                 <Header>
                 </Header>
                 <div>
@@ -111,9 +111,9 @@ const Contact = () => {
                         <div className='min-[900px]:tw-w-1/2 tw-mx-[30px] tw-my-auto tw-mb-[20px] min-[900px]:tw-mb-auto'>
                             <div class="tw-flex tw-flex-col">
                                 {/* <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[12px] tw=leading-[16px] tw-text-[#E9145A]'>Got a Question?</div> */}
-                                <div className='mx-auto tw-font-sans tw-font-bold tw-text-[36px] tw=leading-[49px] tw-text-[#000000]'>Contact Florian</div>
-                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#000] ' style={{ 'textAlign': 'center' }}>We’re here to help and answer any question you might have. We look forward to hearing from you</div>
-                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#000] ' style={{ 'textAlign': 'center' }}>
+                                <div className='mx-auto tw-font-sans tw-font-bold tw-text-[36px] tw=leading-[49px] tw-text-[#fff] '>Contact Florian</div>
+                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#fff] ' style={{ 'textAlign': 'center' }}>We’re here to help and answer any question you might have. We look forward to hearing from you</div>
+                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#fff] ' style={{ 'textAlign': 'center' }}>
                                     <button class="tw-bg-black hover:tw-bg-white tw-text-white hover:tw-text-black tw-font-bold tw-py-2 tw-px-4 tw-rounded" onClick={download}>
                                         Download profile
                                     </button>
@@ -127,7 +127,7 @@ const Contact = () => {
                 </div>
 
                 {/* footer */}
-                <div className='tw-w-full' style={{ 'background': 'rgba(229, 229, 229, 0.5)' }}>
+                <div className='tw-w-full'>
                     <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
                         <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
                         <div>
@@ -146,14 +146,14 @@ const Contact = () => {
                     <hr className='w-full tw-hidden min-[900px]:tw-block' />
                     <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
                         <div></div>
-                        <div className='mx-auto'>&#169;Copyrights 2023</div>
-                        <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+                        <div className='mx-auto tw-text-white'>&#169;Copyrights 2023</div>
+                        <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
                     </div>
                     <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
                         {/* <div></div> */}
-                        <div className='mx-auto'>&#169;Copyrights 2023
+                        <div className='mx-auto tw-text-white'>&#169;Copyrights 2023
                         </div>
-                        <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+                        <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
                     </div>
                 </div>
 

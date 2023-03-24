@@ -2,6 +2,8 @@ import { useState, useRef, useEffect, useCallback } from 'react';
 import skin from '../assets/img/our-work/skin.jpg';
 import hair from '../assets/img/our-work/hair.JPG';
 import comm from '../assets/img/our-work/commercial.JPEG';
+import a4 from '../assets/img/our-work/4.jpg';
+import a2 from '../assets/img/our-work/2.jpg';
 import left from '../assets/img/left-arrow.svg';
 import right from '../assets/img/right-arrow.svg';
 import { useNavigate } from 'react-router-dom';
@@ -103,57 +105,57 @@ const CarouselOwrWork = () => {
     const slides = [
         {
             key: 1,
-            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="1" />,
+            content: <div><img src={skin} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="1" /> <span className="overlay-name">SKIN APPEARANCE</span> </div>,
             onClick: () => rediectSkin()
         },
         {
             key: 2,
-            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="2" />,
+            content: <div><img src={hair} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="2" /> <span className="overlay-name">CELEBRITY APPEARANCE</span> </div>,
             onClick: () => rediectcomm()
 
         },
         {
             key: 132,
-            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" />,
+            content: <div><img src={comm} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" /> <span className="overlay-name">HAIR APPEARANCE</span> </div>,
             onClick: () => rediectcomm()
 
         },
         {
             key: 13,
-            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="4" />,
+            content: <div><img src={a4} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="4" /> <span className="overlay-name">CAMPAIGN</span> </div>,
             onClick: () => rediectCA()
 
         },
         {
             key: 41,
-            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="5" />,
+            content: <div><img src={a2} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="5" /> <span className="overlay-name">MAGZINE COVER</span> </div>,
             onClick: () => rediectSkin()
 
         },
-        {
-            key: 531,
-            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
-            onClick: () => rediectSkin()
+        // {
+        //     key: 531,
+        //     content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
+        //     onClick: () => rediectSkin()
 
-        },
-        {
-            key: 3221,
-            content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="7" />,
-            onClick: () => rediectSkin()
+        // },
+        // {
+        //     key: 3221,
+        //     content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="7" />,
+        //     onClick: () => rediectSkin()
 
-        },
-        {
-            key: 111,
-            content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="8" />,
-            onClick: () => rediectSkin()
+        // },
+        // {
+        //     key: 111,
+        //     content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="8" />,
+        //     onClick: () => rediectSkin()
 
-        },
-        {
-            key: 5231,
-            content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
-            onClick: () => rediectSkin()
+        // },
+        // {
+        //     key: 5231,
+        //     content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
+        //     onClick: () => rediectSkin()
 
-        },
+        // },
     ];
 
     useEffect(() => {
@@ -211,22 +213,34 @@ const CarouselOwrWork = () => {
 
     const testiMonials = [
         {
-            name: 'Skin Commercial',
+            name: 'SKIN APPEARANCE',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
             img: skin
         },
         {
-            name: 'Campaigns',
+            name: 'HAIR APPEARANCE',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
             img: comm
         },
         {
-            name: 'Hair Commercial',
+            name: 'CELEBRITY APPEARANCE',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
             img: hair
+        },
+        {
+            name: 'MAGZINE COVER',
+            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+            address: 'USA',
+            img: a2
+        },
+        {
+            name: 'CAMPAIGN',
+            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+            address: 'USA',
+            img: a4
         },
         // {
         //     name: '',

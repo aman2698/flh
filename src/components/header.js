@@ -77,7 +77,8 @@ const Header = () => {
             'top': '0',
             'left': '0',
             'background': 'linear-gradient(270deg, #4A4A4A 0.59%, #484848 14.03%, #474747 25.44%, #464646 33.68%, #525252 50.81%, #474747 75.54%, #474747 91.27%, #464646 99.17%, #484848 99.17%)',
-            'width': '100%'
+            'width': '100%',
+            zIndex:'99999999999999999'
         }}>
             <div className='tw-hidden min-[900px]:tw-flex min-[900px]:tw-flex-row ' style={{ height: '60px', margin: '0px 20px' }}>
                 <div className='tw-basis-1/4 tw-my-auto tw-mx-auto tw-font-bold tw-font-sans' style={{ 'fontSize': '20px' }} >
@@ -89,8 +90,8 @@ const Header = () => {
                 </div>
                 <div className='tw-basis-1/4 tw-my-auto'>
                     <div style={{ display: 'flex',justifyContent:'space-between' }}>
-                    <span className='tw-font-sans tw-text-[24px] tw-font-normal tw-text-[#fff]' style={{ 'cursor': 'pointer', 'color': '#fff', 'textTransform':'uppercase' }} id='menu' onClick={e => setNavbar(!navbar)}>contact</span>
-                    <span className='tw-font-sans tw-text-[24px] tw-font-normal tw-text-[#fff]' style={{ 'cursor': 'pointer', 'color': '#fff' }} id='menu' onClick={e => setNavbar(!navbar)}>GALLARY</span>
+                    <span className='tw-font-sans tw-text-[24px] tw-font-normal tw-text-[#fff]' style={{ 'cursor': 'pointer', 'color': '#fff', 'textTransform':'uppercase' }} id='menu' onClick={e => navigate("/contact")}>contact</span>
+                    <span className='tw-font-sans tw-text-[24px] tw-font-normal tw-text-[#fff]' style={{ 'cursor': 'pointer', 'color': '#fff' }} id='menu' onClick={e => navigate("/celebrity")}>GALLARY</span>
 
                         {/* <img src={insta} alt='home' style={{ marginRight: '5px' }}></img>
                         <img src={fb} alt='home' style={{ marginRight: '5px' }}></img>
@@ -101,7 +102,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='min-[900px]:tw-hidden tw-flex tw-flex-row tw-mx-[15px]' style={{ height: '60px'}}>
+            <div className='min-[900px]:tw-hidden tw-flex tw-flex-row ' style={{ height: '60px',margin: '0px 20px'}}>
                 {/* <div className='tw-basis-1/3 tw-my-auto tw-mx-auto tw-font-bold tw-font-sans' style={{ 'fontSize': '20px' }} >
                     <span onClick={e => setNavbar(!navbar)}>MENU</span>
                 </div> */}
@@ -118,7 +119,7 @@ const Header = () => {
                 navbar &&
                 <>
                     <div
-                        className={`tw-flex-1 tw-justify-self-center overlay-content tw-h-[100vh] min-[900px]:tw-h-auto slide-right min-[900px]:tw-hidden`} style={{ 'marginTop': '2.7em' }}
+                        className={`tw-flex-1 tw-justify-self-center overlay-content tw-h-[100vh] min-[900px]:tw-h-auto slide-right  min-[900px]:tw-hidden`} style={{'zIndex':'999','position':'relative' }}
                     >
                         <ul className="tw-items-center tw-justify-center">
                             <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-4 " style={{

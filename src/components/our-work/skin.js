@@ -118,12 +118,12 @@ const Skin = () => {
         document.getElementsByTagName('body')[0].classList.remove('tw-overflow-y-hidden')
     }
     return (
-        <>
+        <div className='min-[900px]:tw-relative tw-h-auto' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
             <div className='tw-w-full'>
                 <Header />
 
                 {/* Commercial */}
-                <div className='tw-w-full'>
+                <div className='tw-w-full backgroungg7' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
                 <div className='tw-hidden min-[900px]:tw-block'>
             <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
 
@@ -225,14 +225,14 @@ const Skin = () => {
                             {/* <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
                                 Skin
                             </div> */}
-                            <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
+                            <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1 tw-text-white' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
                                 {/* Glow & Lovely  --  Lakme  --  Biotique  --  Maybelline */}
                                 He understands the importance of using high-quality products and techniques to achieve flawless skin and works closely with each client to create a look that highlights their natural beauty.
                             </div>
                         </div>
 
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                         Manya for Glow & Lovely
                         </div>
                         <div id='glow' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
@@ -259,7 +259,7 @@ const Skin = () => {
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                             Ananya pandey for Lakme
                         </div>
                         <div id='lakme' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
@@ -272,7 +272,7 @@ const Skin = () => {
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                           Sara ali khan for Biotique
                         </div>
                         <div id='Biotique' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
@@ -300,7 +300,7 @@ const Skin = () => {
                         </div>
 
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                         Sara ali khan for Maybelline
                         </div>
                         <div id='Maybelline' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -319,7 +319,7 @@ const Skin = () => {
                 </div>
 
                 {/* footer */}
-                <div className='tw-w-full' style={{ 'background': 'rgba(229, 229, 229, 0.5)' }}>
+                <div className='tw-w-full' >
         <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
           <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
           <div>
@@ -338,14 +338,14 @@ const Skin = () => {
         <hr className='w-full tw-hidden min-[900px]:tw-block' />
         <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
           <div></div>
-          <div className='mx-auto'>&#169;Copyrights 2023</div>
-          <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+          <div className='mx-auto tw-text-white'>&#169;Copyrights 2023</div>
+          <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
         </div>
         <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
           {/* <div></div> */}
-          <div className='mx-auto'>&#169;Copyrights 2023
+          <div className='mx-auto tw-text-white'>&#169;Copyrights 2023
           </div>
-          <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+          <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
         </div>
       </div>
             </div>
@@ -426,7 +426,7 @@ const Skin = () => {
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

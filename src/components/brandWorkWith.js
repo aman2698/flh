@@ -263,8 +263,8 @@ const BrandWorkWith = () => {
           </div> */}
           <div className='tw-columns-1'>
             <p className='tw-font-sans tw-font-normal min-[900px]:tw-text-[26px] tw-leading-[35px]  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-[#fff] min-[900px]:tw-text-[#fff]' style={{ 'textTransform': 'lowercase' }}>
-              <span className='quotes'>"</span>
-              Speaking of his many years of international experience, Florian himself has developed a system that he shares with aspiring young, seasoned, and established artists through his educational platform, "FLORIAN HUREL ACADEMY," which he runs as an entrepreneur. FLORIAN CONTINUES TO DO BUSINESS IN THE EDUCATION AND FITNESS SECTORS OF THE INDUSTRY AND OWNS FLORIAN HUREL ACADEMY AND FLOFITBOX MUMBAI<span className='quotes'>"</span>
+              {/* <span className='quotes'>"</span> */}
+              Speaking of his International Experience of so many years, Florian himself has developed a Method of his own which he passes out to young, experienced and aspiring artists through his educational platform “Florian Hurel Academy” as a entrepreneur, Florian holds on to business within the education and fitness sectors of the Industry owning Florian Hurel Academy and FloFitBox Mumbai.
             </p>
           </div>
           <div className='tw-grid tw-grid-cols-4 tw-gap-2 tw-my-[45px]' >
@@ -883,7 +883,7 @@ const BrandWorkWith = () => {
             </div>
             <div class="tw-hidden min-[900px]:tw-block mx-auto">
               <div class="wrap">
-                <a class="btn-6" onClick={() => navigate("/blogs")}>VIEW ALL<span></span></a>
+                <a class="btn-7" onClick={() => navigate("/blogs")}>VIEW ALL<span></span></a>
               </div>
             </div>
             <div class="tw-block min-[900px]:tw-hidden mx-auto">

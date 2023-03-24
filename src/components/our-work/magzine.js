@@ -76,12 +76,12 @@ const Magzine = () => {
     return name;
   }
   return (
-    <>
+    <div className='min-[900px]:tw-relative tw-h-auto' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
       <div className='tw-w-full'>
         <Header />
 
         {/* Commercial */}
-        <div className='tw-w-full'>
+        <div className='tw-w-full backgroungg7' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
         <div className='tw-hidden min-[900px]:tw-block'>
             <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
 
@@ -183,14 +183,14 @@ const Magzine = () => {
               {/* <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
                 Magazine Cover
               </div> */}
-              <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
+              <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1 tw-text-white' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
                 {/* Vogue  --  Harpers Bazaar -- Bride  --  Hello  --  Grazia  --  Cosmopolitan  --  Femina wedding  --  Flimfare   --  Wedding vows */}
                 His talent and versatility as an artist have allowed him to work across different genres, from fashion and beauty to film and television. he has collaborated on a variety of projects, including feature films, music videos, and commercials.
               </div>
             </div>
 
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
               Vogue
             </div>
             <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -214,7 +214,7 @@ const Magzine = () => {
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
               Bride
             </div>
             <div id='bride' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -226,7 +226,7 @@ const Magzine = () => {
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
               Hello
             </div>
             <div id='hello' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -238,7 +238,7 @@ const Magzine = () => {
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
              Grazia
             </div>
             <div id='gazia' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -250,7 +250,7 @@ const Magzine = () => {
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
               Cosmopolitan
             </div>
             <div id='cos' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -262,7 +262,7 @@ const Magzine = () => {
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
               Femina wedding
             </div>
             <div id='femina' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -274,7 +274,7 @@ const Magzine = () => {
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
               Flimfare
             </div>
             <div id='filmfare' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -286,7 +286,7 @@ const Magzine = () => {
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px','marginBottom':'18px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
               Wedding vows
             </div>
             <div id='vows' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -305,7 +305,7 @@ const Magzine = () => {
         </div>
 
         {/* footer */}
-        <div className='tw-w-full' style={{ 'background': 'rgba(229, 229, 229, 0.5)' }}>
+        <div className='tw-w-full' >
         <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
           <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
           <div>
@@ -370,7 +370,7 @@ const Magzine = () => {
 
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

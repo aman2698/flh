@@ -127,12 +127,12 @@ const Hair = () => {
         document.getElementsByTagName('body')[0].classList.remove('tw-overflow-y-hidden')
     }
     return (
-        <>
+        <div className='min-[900px]:tw-relative tw-h-auto' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
             <div className='tw-w-full'>
                 <Header />
 
                 {/* Commercial */}
-                <div className='tw-w-full'>
+                <div className='tw-w-full backgroungg7' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
                     <div className='tw-hidden min-[900px]:tw-block'>
                         <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
 
@@ -234,14 +234,14 @@ const Hair = () => {
                             {/* <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
                                 Hair Commercial
                             </div> */}
-                            <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
+                            <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1 tw-text-white' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
                                 {/* Hair & Care  --  Godrej  --  Dabur  --  TRESemme  --  Pantene  --  Kash King -- Dove  --  Mamaearth  --  Tirumalaa  --  Parachute  --  Schwarzkopf   --  Streak */}
                                 He understands the importance of using high-quality products and techniques to achieve beautiful, healthy-looking hair and works closely with each client to create a look that highlights their natural beauty.
                             </div>
                         </div>
 
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                             Hair & Care
                         </div>
                         <div id='hair' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -260,7 +260,7 @@ const Hair = () => {
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                             Godrej
                         </div>
                         <div id='Godrej' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -281,7 +281,7 @@ const Hair = () => {
                         </div>
 
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                         Anushka for Dabur
                         </div>
                         <div id='dabur' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -294,7 +294,7 @@ const Hair = () => {
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                            Alia for TRESemme
                         </div>
                         <div id='tresemme' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -315,7 +315,7 @@ const Hair = () => {
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                         Kiara for Pantene
                         </div>
                         <div id='pantene' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -328,7 +328,7 @@ const Hair = () => {
  
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                         Silpa for Kesh King
                         </div>
                         <div id='kesh' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
@@ -344,7 +344,7 @@ const Hair = () => {
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                         Nidhi for Dove
                         </div>
                         <div id='dove' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -360,7 +360,7 @@ const Hair = () => {
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                         Sara for Mama Earth
                         </div>
                         <div id='mama' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -380,7 +380,7 @@ const Hair = () => {
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                         Madhuri for Tirumalaa
                         </div>
                         <div id='Tirumalaa' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -397,7 +397,7 @@ const Hair = () => {
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                         Tamanna for Parachute
                         </div>
                         <div id='Parachute' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -410,7 +410,7 @@ const Hair = () => {
 
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                         Mira for Schwarzkopf
                         </div>
                         <div id='Schwarzkopf' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -433,7 +433,7 @@ const Hair = () => {
               ))} */}
                         </div>
 
-                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px' }}>
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                            Vaani for Streak
                         </div>
                         <div id='strek' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -448,7 +448,7 @@ const Hair = () => {
                 </div>
 
                 {/* footer */}
-                <div className='tw-w-full' style={{ 'background': 'rgba(229, 229, 229, 0.5)' }}>
+                <div className='tw-w-full'>
                     <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
                         <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
                         <div>
@@ -467,14 +467,14 @@ const Hair = () => {
                     <hr className='w-full tw-hidden min-[900px]:tw-block' />
                     <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
                         <div></div>
-                        <div className='mx-auto'>&#169;Copyrights 2023</div>
-                        <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+                        <div className='mx-auto tw-text-white'>&#169;Copyrights 2023</div>
+                        <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
                     </div>
                     <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
                         {/* <div></div> */}
-                        <div className='mx-auto'>&#169;Copyrights 2023
+                        <div className='mx-auto tw-text-white'>&#169;Copyrights 2023
                         </div>
-                        <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+                        <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
                     </div>
                 </div>
             </div>
@@ -551,7 +551,7 @@ const Hair = () => {
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

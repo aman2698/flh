@@ -17,12 +17,12 @@ import b4 from '../assets/img/blog/4.jpg';
 
 const Blog = () => {
   return (
-    <>
-      <div className='tw-w-full'>
+    <div className='min-[900px]:tw-relative tw-h-auto' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
+      <div className='tw-w-full backgroungg8'>
         <Header />
-        <div className='tw-grid tw-mx-4 min-[900px]:tw-mx-40 tw-my-10'>
+        <div className='tw-grid tw-mx-4 min-[900px]:tw-mx-40 tw-my-10 ' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
           <div className='tw-columns-1 '>
-            <div className='tw-font-sans tw-font-bold tw-text-2xl' style={{ 'marginBottom': '15px' }}>Our Blog</div>
+            <div className='tw-font-sans tw-font-bold fontt' style={{ 'marginBottom': '15px' }}>Our Blog</div>
             <div className='tw-grid min-[900px]:tw-grid-cols-4 tw-grid-cols-1 tw-gap-8  tw-mx-auto min-[900px]:tw-mx-48 tw-my-10 mx-auto'>
               <div className="card mx-auto">
                 <img className='mx-auto my-3' src={b1} alt='g' style={{ 'width': '90%', 'height': '300px', 'objectFit': 'cover' }}></img>
@@ -73,7 +73,7 @@ const Blog = () => {
         </div>
 
         {/* footer */}
-        <div className='tw-w-full' style={{ 'background': 'rgba(229, 229, 229, 0.5)' }}>
+        <div className='tw-w-full' >
           <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
             <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
             <div>
@@ -92,18 +92,18 @@ const Blog = () => {
           <hr className='w-full tw-hidden min-[900px]:tw-block' />
           <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
             <div></div>
-            <div className='mx-auto'>&#169;Copyrights 2023</div>
-            <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+            <div className='mx-auto tw-text-white'>&#169;Copyrights 2023</div>
+            <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
           </div>
           <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
             {/* <div></div> */}
-            <div className='mx-auto'>&#169;Copyrights 2023
+            <div className='mx-auto tw-text-white'>&#169;Copyrights 2023
             </div>
-            <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+            <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
