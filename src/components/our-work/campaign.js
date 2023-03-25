@@ -340,7 +340,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            shahid kapoor for One Plus
+                            mira kapoor for One Plus
                         </div>
                         <div id='one' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'one', 0)} poster={one}>
@@ -386,7 +386,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            Ranveer singh for JIO
+                        Deepika for JIO
                         </div>
                         <div id='jio' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'jio', 0)} poster={jio}>

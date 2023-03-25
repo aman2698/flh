@@ -32,7 +32,7 @@ import tiru1 from '../../assets/img/hair/11.jpg'
 import para1 from '../../assets/img/hair/12.jpg'
 import sch1 from '../../assets/img/hair/13.jpg'
 import sch2 from '../../assets/img/hair/14.jpg'
-import logo from '../../assets/img/home.svg';
+import logo from '../../assets/img/flh.svg';
 
 
 const Hair = () => {
@@ -132,8 +132,8 @@ const Hair = () => {
                 <Header />
 
                 {/* Commercial */}
-                <div className='tw-w-full backgroungg7' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
-                    <div className='tw-hidden min-[900px]:tw-block'>
+                <div className='tw-w-full backgroungg7 ' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
+                    <div className='tw-hidden min-[900px]:tw-block tw-relative'>
                         <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
 
                             <div class="carousel-inner">
@@ -229,7 +229,7 @@ const Hair = () => {
 
                         </div>
                     </div>
-                    <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8' >
+                    <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8 tw-relative z-10' >
                         <div className='tw-columns-1 tw-pb-4'>
                             {/* <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
                                 Hair Commercial
@@ -398,7 +398,7 @@ const Hair = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                        Tamanna for Parachute
+                        Tamanna Sharma for Parachute
                         </div>
                         <div id='Parachute' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <div>
@@ -411,7 +411,7 @@ const Hair = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                        Mira for Schwarzkopf
+                        Schwarzkopf
                         </div>
                         <div id='Schwarzkopf' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <div>
@@ -421,10 +421,9 @@ const Hair = () => {
                                 {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Schwarzkopf by Mira</span> */}
                             </div>                            
                             <div>
-                            <video onClick={e => play(e, 'Schwarzkopf', 1)} poster={sch2}>
+                            {/* <video onClick={e => play(e, 'Schwarzkopf', 1)} poster={sch2}>
                                 <source src='https://www.youtube.com/embed/AepxyLNoQeI?autoplay=1' type="video/mp4" />
-                            </video>
-                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Schwarzkopf by Mira</span> */}
+                            </video> */}
                             </div>
 
 
@@ -434,7 +433,7 @@ const Hair = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                           Vaani for Streak
+                           Vaani for Streax
                         </div>
                         <div id='strek' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             {streak.map((e, i) => (

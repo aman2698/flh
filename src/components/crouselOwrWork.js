@@ -105,7 +105,7 @@ const CarouselOwrWork = () => {
     const slides = [
         {
             key: 1,
-            content: <div><img src={skin} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="1" /> <span className="overlay-name">SKIN APPEARANCE</span> </div>,
+            content: <div><img src={skin} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="1" /> <span className="overlay-name">SKIN COMMERCIAL</span> </div>,
             onClick: () => rediectSkin()
         },
         {
@@ -116,7 +116,7 @@ const CarouselOwrWork = () => {
         },
         {
             key: 132,
-            content: <div><img src={comm} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" /> <span className="overlay-name">HAIR APPEARANCE</span> </div>,
+            content: <div><img src={comm} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" /> <span className="overlay-name">HAIR COMMERCIAL</span> </div>,
             onClick: () => rediectcomm()
 
         },
@@ -213,13 +213,13 @@ const CarouselOwrWork = () => {
 
     const testiMonials = [
         {
-            name: 'SKIN APPEARANCE',
+            name: 'SKIN COMMERCIAL',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
             img: skin
         },
         {
-            name: 'HAIR APPEARANCE',
+            name: 'HAIR COMMERCIAL',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
             img: comm

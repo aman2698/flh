@@ -10,7 +10,7 @@ import twitter from '../../assets/img/twitter.svg';
 import cross from '../../assets/img/times.svg';
 import left from '../../assets/img/left-arrow.svg';
 import right from '../../assets/img/right-arrow.svg';
-import logo from '../../assets/img/home.svg';
+import logo from '../../assets/img/flh.svg';
 
 const Magzine = () => {
   const [imageArray, setimageArray] = React.useState([])
@@ -178,7 +178,7 @@ const Magzine = () => {
 
             </div>
           </div>
-          <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8' >
+          <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8 tw-relative z-10' >
             <div className='tw-columns-1 tw-pb-4'>
               {/* <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
                 Magazine Cover
@@ -202,7 +202,7 @@ const Magzine = () => {
               ))}
             </div>
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4' style={{ 'fontSize': '24px', 'lineHeight': '19px', 'marginBottom':'18px' }}>
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{  'marginBottom':'18px' }}>
             Harper's Bazaar
             </div>
             <div id='bazaar' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
@@ -215,7 +215,7 @@ const Magzine = () => {
             </div>
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
-              Bride
+              Brides
             </div>
             <div id='bride' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {BRIDE.map((e,i) => (
@@ -324,14 +324,14 @@ const Magzine = () => {
         <hr className='w-full tw-hidden min-[900px]:tw-block' />
         <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
           <div></div>
-          <div className='mx-auto'>&#169;Copyrights 2023</div>
-          <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+          <div className='mx-auto tw-text-white'>&#169;Copyrights 2023</div>
+          <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
         </div>
         <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
           {/* <div></div> */}
-          <div className='mx-auto'>&#169;Copyrights 2023
+          <div className='mx-auto tw-text-white'>&#169;Copyrights 2023
           </div>
-          <div className='mx-auto'>Privacy policy / Cookies policy / Terms of use</div>
+          <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
         </div>
       </div>
       </div>
