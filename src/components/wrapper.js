@@ -40,7 +40,7 @@ const Wrapper = () => {
             <Crousel />
             <Bio />
             <BrandWorkWith />
-            <div class="footer tw-hidden min-[900px]:tw-block">
+            <div class="footer tw-hidden min-[900px]:tw-block " style={{'zIndex':'999999999'}}>
                 <img className='float-right' style={{'float':'right','transform':`rotate(${rotation}deg)`}} src={logo}></img>
                 <span style={{'position':'absolute','right':'2%','bottom':'35%', 'color':'#969696', 'fontSize':'22px'}} className="tw-font-sans tw-italic ">{percent}%</span>
                 </div>

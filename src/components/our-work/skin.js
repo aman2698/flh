@@ -18,6 +18,19 @@ import bio1 from '../../assets/img/skin/bio1.jpg'
 import bio2 from '../../assets/img/skin/bio2.jpg'
 import bio3 from '../../assets/img/skin/bio3.jpg'
 import logo from '../../assets/img/home.svg';
+import Slider from "react-slick";
+
+const settings2 = {
+
+  arrows: false,
+  dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  pauseOnHover: true
+};
 
 const Skin = () => {
     const [imageArray, setimageArray] = React.useState([])
@@ -69,6 +82,7 @@ const Skin = () => {
     }
 
     const may = importAll(require.context('../../assets/img/skin/may', false, /\.(png|jpe?g|JPG|svg)$/));
+    const bannerMobile = importAll(require.context('../../assets/img/skin/banner', false, /\.(png|jpe?g|JPG|svg)$/));
     // const reliance = importAll(require.context('../../assets/img/campign/reliance', false, /\.(png|jpe?g|JPG|svg)$/));
     // const bazaar = importAll(require.context('../../assets/img/magine-cover/BAZAAR', false, /\.(png|jpe?g|svg)$/));
     // const BRIDE = importAll(require.context('../../assets/img/magine-cover/BRIDE', false, /\.(png|jpe?g|svg)$/));
@@ -92,6 +106,21 @@ const Skin = () => {
             }
             setvideoArray(arr)
             setSelectedVideo(index)
+        }, 500);
+    }
+
+    const playLink = (link) => {
+        document.getElementById('nav').style.display = 'none'
+        document.getElementById('modal').style.display = 'block'
+        document.getElementsByTagName('body')[0].classList.add('tw-overflow-y-hidden')
+        setTimeout(() => {
+            // var img = document.getElementById(id).getElementsByTagName('video');
+            let arr = [link]
+            // for (let i = 0; i <= img.length - 1; i++) {
+            //     arr.push(`${img[i].getElementsByTagName("source")[0].src}`)
+            // }
+            setvideoArray(arr)
+            setSelectedVideo(0)
         }, 500);
     }
 
@@ -125,7 +154,7 @@ const Skin = () => {
                 {/* Commercial */}
                 <div className='tw-w-full backgroungg7' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
                 <div className='tw-hidden min-[900px]:tw-block'>
-            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div id="carouselExampleIndicators18987" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-touch="true">
 
               <div class="carousel-inner">
                 {/* mobile view */}
@@ -142,41 +171,26 @@ const Skin = () => {
                     <h5>Skin</h5>
                   </div>
                 </div>
-                {/* <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Second slide" />
-                  <div class="carousel-caption" style={{
-                    'fontSize': '44px',
-                    'color': '#fff',
-                    'background': 'rgba(0,0,0,0.6)',
-                    'padding': '2px 0px',
-                    'position': 'absolute',
-                    'left': '0px', 'bottom': '88px','width':'33%'
-                  }}>
-                    <h5>Skin</h5>
-                  </div>
-                </div> */}
-                {/* <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Third slide" />
-                   <div class="carousel-caption" style={{
-                    'fontSize': '44px',
-                    'color': '#fff',
-                    'background': 'rgba(0,0,0,0.6)',
-                    'padding': '2px 0px',
-                    'position': 'absolute',
-                    'left': '0px', 'bottom': '88px','width':'33%'
-                  }}>
-                    <h5>Skin</h5>
-                  </div>
-                </div> */}
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1')} src={bannerMobile[0]} alt="Second slide" />
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/dcaYJOACtRg?autoplay=1')} src={bannerMobile[1]} alt="Third slide" />
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/2JkSKSWnwP8?autoplay=1')} src={bannerMobile[2]} alt="Third slide" />
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/1kR-d8wlhpQ?autoplay=1')} src={bannerMobile[3]} alt="Third slide" />
+                </div>
               </div>
 
             </div>
           </div>
           <div className='min-[900px]:tw-hidden'>
-            <div id="carouselExampleIndicators10" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div id="carouselExampleIndicators10" class="carousel slide carousel-fade" data-ride="carousel" >
 
               <div class="carousel-inner">
-                {/* mobile view */}
                 <div class="carousel-item active ">
                   <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
                   <div class="carousel-caption" style={{
@@ -190,35 +204,22 @@ const Skin = () => {
                     <h5>Skin</h5>
                   </div>
                 </div>
-                {/* <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Second slide" />
-                  <div class="carousel-caption" style={{
-                    'fontSize': '30px',
-                    'color': '#fff',
-                    'background': 'rgba(0,0,0,0.6)',
-                    'padding': '2px 0px',
-                    'position': 'absolute',
-                    'left': '0px', 'bottom': '88px','width':'35%'
-                  }}>
-                    <h5>Skin</h5>
-                  </div>
-                </div> */}
-                {/* <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[0]} alt="Third slide" />
-                  <div class="carousel-caption" style={{
-                    'fontSize': '30px',
-                    'color': '#fff',
-                    'background': 'rgba(0,0,0,0.6)',
-                    'padding': '2px 0px',
-                    'position': 'absolute',
-                    'left': '0px', 'bottom': '88px','width':'35%'
-                  }}>
-                    <h5>Skin</h5>
-                  </div>
-                </div> */}
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1')} src={bannerMobile[0]} alt="Second slide" />
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/dcaYJOACtRg?autoplay=1')} src={bannerMobile[1]} alt="Third slide" />
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/2JkSKSWnwP8?autoplay=1')} src={bannerMobile[2]} alt="Third slide" />
+                </div>
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/1kR-d8wlhpQ?autoplay=1')} src={bannerMobile[3]} alt="Third slide" />
+                </div>
               </div>
 
             </div>
+  
           </div>
                     <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8' >
                         <div className='tw-columns-1 tw-pb-4'>
@@ -426,6 +427,8 @@ const Skin = () => {
 
                 </div>
             </div>
+
+            
         </div>
     )
 }
