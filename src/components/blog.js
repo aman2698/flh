@@ -22,7 +22,7 @@ const Blog = () => {
         <Header />
         <div className='tw-grid tw-mx-4 min-[900px]:tw-mx-40 tw-my-10 ' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
           <div className='tw-columns-1 '>
-            <div className='tw-font-sans tw-font-bold fontt' style={{ 'marginBottom': '15px' }}>Our Blog</div>
+            <div className='tw-font-sans tw-font-bold fontt' style={{ 'marginBottom': '15px','fontSize':'60px' }}>Our Blog</div>
             <div className='tw-grid min-[900px]:tw-grid-cols-4 tw-grid-cols-1 tw-gap-8  tw-mx-auto min-[900px]:tw-mx-48 tw-my-10 mx-auto'>
               <div className="card mx-auto">
                 <img className='mx-auto my-3' src={b1} alt='g' style={{ 'width': '90%', 'height': '300px', 'objectFit': 'cover' }}></img>

@@ -17,13 +17,13 @@ import lakme from '../../assets/img/skin/lakme.jpg'
 import bio1 from '../../assets/img/skin/bio1.jpg'
 import bio2 from '../../assets/img/skin/bio2.jpg'
 import bio3 from '../../assets/img/skin/bio3.jpg'
-import logo from '../../assets/img/home.svg';
+import logo from '../../assets/img/flh.svg';
 import Slider from "react-slick";
 
 const settings2 = {
 
   arrows: false,
-  dots: true,
+  dots: false,
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -154,10 +154,9 @@ const Skin = () => {
                 {/* Commercial */}
                 <div className='tw-w-full backgroungg7' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
                 <div className='tw-hidden min-[900px]:tw-block'>
-            <div id="carouselExampleIndicators18987" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-touch="true">
+            {/* <div id="carouselExampleIndicators18987" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-touch="true">
 
               <div class="carousel-inner">
-                {/* mobile view */}
                 <div class="carousel-item active ">
                   <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
                   <div class="carousel-caption" style={{
@@ -185,10 +184,43 @@ const Skin = () => {
                 </div>
               </div>
 
+            </div> */}
+                        <Slider {...settings2} style={{ 'width': '100vw' }}>
+            <div >
+                <div style={{'position':'relative'}}>
+
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'35%'
+                  }}>
+                    <h5>Skin</h5>
+                  </div>
+                </div>
             </div>
+            <div>
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1')} src={bannerMobile[0]} alt="Second slide" />
+            </div>
+            <div>
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/dcaYJOACtRg?autoplay=1')} src={bannerMobile[1]} alt="Third slide" />
+
+            </div>
+            <div>
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/2JkSKSWnwP8?autoplay=1')} src={bannerMobile[2]} alt="Third slide" />
+
+            </div>
+            <div>
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/1kR-d8wlhpQ?autoplay=1')} src={bannerMobile[3]} alt="Third slide" />
+            </div>
+
+          </Slider>
           </div>
           <div className='min-[900px]:tw-hidden'>
-            <div id="carouselExampleIndicators10" class="carousel slide carousel-fade" data-ride="carousel" >
+            {/* <div id="carouselExampleIndicators10" class="carousel slide carousel-fade" data-ride="carousel" >
 
               <div class="carousel-inner">
                 <div class="carousel-item active ">
@@ -218,10 +250,43 @@ const Skin = () => {
                 </div>
               </div>
 
+            </div> */}
+            <Slider {...settings2} style={{ 'width': '100vw' }}>
+            <div >
+                <div style={{'position':'relative'}}>
+
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
+                  <div class="carousel-caption" style={{
+                    'fontSize': '30px',
+                    'color': '#fff',
+                    'background': 'rgba(0,0,0,0.6)',
+                    'padding': '2px 0px',
+                    'position': 'absolute',
+                    'left': '0px', 'bottom': '88px','width':'35%'
+                  }}>
+                    <h5>Skin</h5>
+                  </div>
+                </div>
             </div>
+            <div>
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1')} src={bannerMobile[0]} alt="Second slide" />
+            </div>
+            <div>
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/dcaYJOACtRg?autoplay=1')} src={bannerMobile[1]} alt="Third slide" />
+
+            </div>
+            <div>
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/2JkSKSWnwP8?autoplay=1')} src={bannerMobile[2]} alt="Third slide" />
+
+            </div>
+            <div>
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/1kR-d8wlhpQ?autoplay=1')} src={bannerMobile[3]} alt="Third slide" />
+            </div>
+
+          </Slider>
   
           </div>
-                    <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8' >
+                    <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8 tw-relative' >
                         <div className='tw-columns-1 tw-pb-4'>
                             {/* <div className='tw-font-sans tw-font-bold tw-text-3xl tw-mt-4 tw-ml-8 md:tw-mt-8' style={{}}>
                                 Skin
