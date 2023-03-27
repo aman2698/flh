@@ -1,8 +1,9 @@
 import React from 'react'
-import brand1 from '../assets/img/brand/bazar.png';
+import brand1 from '../assets/img/brand/bazar.svg';
 import brand2 from '../assets/img/brand/famina.png';
-import brand3 from '../assets/img/brand/dark-grazia.png';
-import brand4 from '../assets/img/brand/vogue.png';
+import brand3 from '../assets/img/brand/grazia.png';
+import brand4 from '../assets/img/brand/vogue.svg';
+import brand6 from '../assets/img/brand/elle.png';
 import brand5 from '../assets/img/brand/bazar.png';
 import logo from '../assets/img/home.svg';
 import a1 from '../assets/img/apperance/1.JPG';
@@ -179,6 +180,17 @@ const BrandWorkWith = () => {
     // cssEase: "linear",
     arrows: false
   };
+  const settings4 = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    // speed: 2000,
+    autoplaySpeed: 2000,
+    // cssEase: "linear",
+    arrows: false
+  };
   const settings2 = {
 
     arrows: false,
@@ -205,11 +217,12 @@ const BrandWorkWith = () => {
               Brands worked with
             </div>
           </div>
-          <div className='tw-hidden min-[900px]:tw-grid tw-grid-cols-2 min-[900px]:tw-grid-cols-4 tw-gap-4 tw-my-[45px] '>
-            <img src={brand1} alt='d' style={{ 'margin': 'auto' }}></img>
-            <img src={brand2} alt='d' style={{ 'margin': 'auto' }}></img>
-            <img src={brand3} alt='d' style={{ 'margin': 'auto' }}></img>
-            <img src={brand4} alt='d' style={{ 'margin': 'auto' }}></img>
+          <div className='tw-hidden min-[900px]:tw-grid tw-grid-cols-2 min-[900px]:tw-grid-cols-5 tw-gap-4 tw-my-[45px] '>
+            <img src={brand1} alt='d' style={{ 'margin': 'auto',height:'39px' }}></img>
+            <img src={brand2} alt='d' style={{ 'margin': 'auto',height:'40px' }}></img>
+            <img src={brand3} alt='d' style={{ 'margin': 'auto',height:'38px' }}></img>
+            <img src={brand4} alt='d' style={{ 'margin': 'auto',height:'36px' }}></img>
+            <img src={brand6} alt='d' style={{ 'margin': 'auto',height:'36px' }}></img>
           </div>
           <div className='min-[900px]:tw-hidden tw-w-full tw-gap-4 tw-my-12 '>
             <Slider {...settings} style={{ 'width': '95vw' }}>
@@ -224,6 +237,9 @@ const BrandWorkWith = () => {
               </div>
               <div>
                 <img src={brand4} alt='d' className='border-img' style={{ 'margin': 'auto', 'width': '70%' }}></img>
+              </div>
+              <div>
+                <img src={brand6} alt='d' className='border-img' style={{ 'margin': 'auto', 'width': '60%','height':'50px' }}></img>
               </div>
             </Slider>
           </div>
@@ -268,10 +284,10 @@ const BrandWorkWith = () => {
             </p>
           </div>
           <div className='tw-grid tw-grid-cols-4 tw-gap-2 tw-my-[45px]' >
-            <a href='https://florianhurelacademy.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={flhAcademy} alt='g' ></img></a>
-            <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={flh} alt='g' ></img></a>
-            <a href='https://flofitbox.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={fo3} alt='g' ></img></a>
-            <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={salonspa} alt='g' ></img></a>
+            <a href='https://florianhurelacademy.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto tw-h-[45px]' src={flhAcademy} alt='g' ></img></a>
+            <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto tw-h-[21px]' src={flh} alt='g' ></img></a>
+            <a href='https://flofitbox.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto tw-h-[56px]' src={fo3} alt='g' ></img></a>
+            <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto tw-h-[50px]' src={salonspa} alt='g' ></img></a>
           </div>
         </div>
 
@@ -330,11 +346,11 @@ const BrandWorkWith = () => {
           {/* <div className='view-all tw-mx-auto tw-mt-8' style={{ 'position': 'relative', 'border': '2px solid #000' }}>
             <span className='tw-font-sans tw-font-semibold' style={{ 'position': 'absolute', 'fontSize': '24px', 'padding': '8px 1px 1px 21px' }}>VIEW ALL</span>
           </div> */}
-          <div class="mx-auto col-md-12 p-0 tw-mt-[20px]">
+          {/* <div class="mx-auto col-md-12 p-0 tw-mt-[20px]">
             <div class="wrap">
               <a class="btn-7 " onClick={() => navigate("/campaigns")}>VIEW ALL<span style={{'color':'#fff'}}>VIEW ALL</span></a>
             </div>
-          </div>
+          </div> */}
 
         </div>
 
@@ -361,11 +377,11 @@ const BrandWorkWith = () => {
           {/* <div className='view-all tw-mx-auto tw-mt-8' style={{ 'position': 'relative', 'border': '2px solid #000' }}>
             <span className='tw-font-sans tw-font-semibold' style={{ 'position': 'absolute', 'fontSize': '24px', 'padding': '8px 1px 1px 21px' }}>VIEW ALL</span>
           </div> */}
-          <div class="mx-auto tw-mt-[20px]">
+          {/* <div class="mx-auto tw-mt-[20px]">
             <div class="wrap">
               <a class="btn-7 " onClick={() => navigate("/campaigns")}>VIEW ALL<span style={{'color':'#fff'}}>VIEW ALL</span></a>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>
@@ -387,12 +403,9 @@ const BrandWorkWith = () => {
                 Speaking of his International Experience of so many years, Florian himself has developed a Method of his own which he passes out to young, experienced and aspiring artists through his educational platform “Florian Hurel Academy” as a entrepreneur, Florian holds on to business within the education and fitness sectors of the Industry owning Florian Hurel Academy and FloFitBox Mumbai.
               </p>
             </div>
-          <div  style={{'position':'relative'}}>
 
-            <img className='asdfg' src={fff}></img>
-          </div>
-            {/* <div className='tw-grid tw-my-[45px]' >
-              <Slider {...settings} style={{ 'width': '80vw' }}>
+            <div className='tw-grid tw-my-[45px]' >
+              <Slider {...settings4} style={{ 'width': '90vw' }}>
                 <div>
                   <a href='https://florianhurelacademy.com/' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' style={{ 'margin': 'auto', 'width': '70%' }} src={flhAcademy} alt='g' ></img></a>
                 </div>
@@ -406,8 +419,11 @@ const BrandWorkWith = () => {
                   <a href='#' rel="noreferrer" target='_blank'><img className='mx-auto my-auto' src={salonspa} style={{ 'margin': 'auto', 'width': '70%' }} alt='g' ></img></a>
                 </div>
               </Slider>
-            </div> */}
+            </div>
+            <div  style={{'position':'relative'}}>
 
+<img className='asdfg' src={fff}></img>
+</div>
           </div>
         </div>
 
@@ -719,7 +735,7 @@ const BrandWorkWith = () => {
               <div className='columns-1'>
                 <img className='mx-auto' src={flh1} alt='g' ></img>
                 {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
-                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
+                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-20 mt-4 '>
                   <img className='mx-auto' src={fb} alt='g' ></img>
                   <img className='mx-auto' src={insta} alt='g' ></img>
                   <img className='mx-auto' src={twitter} alt='g' ></img>
@@ -904,7 +920,7 @@ const BrandWorkWith = () => {
             <div className='columns-1'>
               <img className='mx-auto' src={flh1} alt='g' ></img>
               {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
-              <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
+              <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-20 mt-4 '>
                 <img className='mx-auto' src={fb} alt='g' ></img>
                 <img className='mx-auto' src={insta} alt='g' ></img>
                 <img className='mx-auto' src={twitter} alt='g' ></img>

@@ -8,8 +8,10 @@ import left from '../assets/img/left-arrow.svg';
 import right from '../assets/img/right-arrow.svg';
 import logo from '../assets/img/logo.svg';
 import hone from '../assets/img/home.jpeg';
+import home2 from '../assets/img/home2.png';
 import nome2 from '../assets/img/carousel/2.png';
 import mobile from '../assets/img/mobile.png';
+import mobile2 from '../assets/img/mobile2.png';
 import Slider from "react-slick";
 
 const settings2 = {
@@ -165,7 +167,7 @@ const Crousel = () => {
       <img class="d-block w-100 " src={hone} style={{'height':'100vh', 'objectFit':'cover'}} alt="Second slide"/>
     </div>
   </div> */}
-          <Slider {...settings2} style={{ 'width': '99vw' }}>
+          <Slider {...settings2} style={{ 'width': '100vw' }}>
             <div>
               <div className='min-[900px]:tw-grid min-[900px]:tw-grid-cols-3'>
                 <div>
@@ -187,7 +189,17 @@ const Crousel = () => {
               </div>
             </div>
             <div>
-              <img class="d-block w-100 " onClick={play} src={hone} style={{ 'height': '100vh', 'objectFit': 'cover' }} alt="Second slide" />
+              <div style={{'position':'relative'}}>
+              <img class="d-block w-100 " onClick={play} src={home2} style={{ 'height': '100vh', 'objectFit': 'cover' }} alt="Second slide" />
+                  <div className='overllay'>
+                    <div className='florian'>
+                    Florian Hurel
+                    </div>
+                    <div className='showreel'>
+                    SHOWREEL
+                    </div>
+                  </div>
+              </div>
             </div>
 
           </Slider>
@@ -205,7 +217,7 @@ const Crousel = () => {
       <img class="d-block w-100 " src={mobile} style={{ 'objectFit':'contain'}} alt="First slide"/>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 " src={hone} style={{'height':'100vh', 'objectFit':'cover'}} alt="Second slide"/>
+      <img class="d-block w-100 " onClick={play} src={mobile2} style={{'objectFit':'contain'}} alt="Second slide"/>
     </div>
     {/* <div class="carousel-item">
       <img class="d-block w-100 " src={mobile} style={{'height':'100vh', 'objectFit':'contain'}} alt="Third slide"/>

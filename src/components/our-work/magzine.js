@@ -68,6 +68,7 @@ const Magzine = () => {
   const GRAZIA = importAll(require.context('../../assets/img/magine-cover/GRAZIA', false, /\.(png|jpe?g|svg)$/));
   const HELLO = importAll(require.context('../../assets/img/magine-cover/HELLO', false, /\.(png|jpe?g|svg)$/));
   const WEDDINGVOWS = importAll(require.context('../../assets/img/magine-cover/WEDDINGVOWS', false, /\.(png|jpe?g|svg)$/));
+  const elle = importAll(require.context('../../assets/img/magine-cover/elle', false, /\.(png|jpe?g|svg|JPG|JPEG)$/));
 
   const displayName = (e) =>{
     let name = e.split('/')
@@ -185,7 +186,7 @@ const Magzine = () => {
               </div> */}
               <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1 tw-ml-8 md:tw-mt-1 tw-text-white' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
                 {/* Vogue  --  Harpers Bazaar -- Bride  --  Hello  --  Grazia  --  Cosmopolitan  --  Femina wedding  --  Flimfare   --  Wedding vows */}
-                His talent and versatility as an artist have allowed him to work across different genres, from fashion and beauty to film and television. he has collaborated on a variety of projects, including feature films, music videos, and commercials.
+                His talent and versatility as an artist have allowed him to work across different genres, from fashion and beauty to film and television. He has collaborated on a variety of projects, including feature films, music videos, and commercials.
               </div>
             </div>
 
@@ -202,6 +203,31 @@ const Magzine = () => {
               ))}
             </div>
 
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
+              Femina wedding
+            </div>
+            <div id='femina' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+              {FEMINA.map((e,i) => (
+                <div>
+                  <img className='mx-auto' onClick={e => playImage(e, 'femina', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
+              ELLE
+            </div>
+            <div id='elle' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+              {elle.map((e,i) => (
+                 <div>
+                <img className='mx-auto' onClick={e => playImage(e, 'elle', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                 </div>   
+              ))}
+            </div>
+
+
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{  'marginBottom':'18px' }}>
             Harper's Bazaar
             </div>
@@ -209,42 +235,6 @@ const Magzine = () => {
               {bazaar.map((e,i) => (
                 <div>
                   <img className='mx-auto' onClick={e => playImage(e, 'bazaar', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
-              Brides
-            </div>
-            <div id='bride' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
-              {BRIDE.map((e,i) => (
-                <div>
-                  <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
-              Hello
-            </div>
-            <div id='hello' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
-              {HELLO.map((e,i) => (
-                <div>
-                  <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
-                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
-             Grazia
-            </div>
-            <div id='gazia' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
-              {GRAZIA.map((e,i) => (
-                <div>
-                  <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
                   <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                 </div>
               ))}
@@ -263,18 +253,48 @@ const Magzine = () => {
             </div>
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
-              Femina wedding
+              Hello
             </div>
-            <div id='femina' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
-              {FEMINA.map((e,i) => (
+            <div id='hello' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+              {HELLO.map((e,i) => (
                 <div>
-                  <img className='mx-auto' onClick={e => playImage(e, 'femina', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                  <img className='mx-auto' onClick={e => playImage(e, 'hello', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
                   <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                 </div>
               ))}
             </div>
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
+              Brides
+            </div>
+            <div id='bride' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+              {BRIDE.map((e,i) => (
+                <div>
+                  <img className='mx-auto' onClick={e => playImage(e, 'bride', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                </div>
+              ))}
+            </div>
+
+
+
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
+             Grazia
+            </div>
+            <div id='gazia' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+              {GRAZIA.map((e,i) => (
+                <div>
+                  <img className='mx-auto' onClick={e => playImage(e, 'gazia', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin':'auto' }}></img>
+                  <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
+                </div>
+              ))}
+            </div>
+
+
+
+
+
+            {/* <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
               Flimfare
             </div>
             <div id='filmfare' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
@@ -284,7 +304,7 @@ const Magzine = () => {
                   <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' style={{ 'marginBottom':'18px' }}>
               Wedding vows
@@ -312,7 +332,7 @@ const Magzine = () => {
             <div className='columns-1'>
               <img className='mx-auto' src={logo} alt='g' ></img>
               {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
-              <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
+              <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-20 mt-4 '>
                 <img className='mx-auto' src={fb} alt='g' ></img>
                 <img className='mx-auto' src={insta} alt='g' ></img>
                 <img className='mx-auto' src={twitter} alt='g' ></img>

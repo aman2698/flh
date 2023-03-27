@@ -17,6 +17,9 @@ import lakme from '../../assets/img/skin/lakme.jpg'
 import bio1 from '../../assets/img/skin/bio1.jpg'
 import bio2 from '../../assets/img/skin/bio2.jpg'
 import bio3 from '../../assets/img/skin/bio3.jpg'
+import fema from '../../assets/img/skin/fema.jpg'
+import fix from '../../assets/img/skin/glox.jpg'
+import veet from '../../assets/img/skin/veet.jpg'
 import logo from '../../assets/img/flh.svg';
 import Slider from "react-slick";
 
@@ -376,6 +379,46 @@ const Skin = () => {
                             ))}
                         </div>
 
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
+                        Sara ali khan for FEMA
+                        </div>
+                        <div id='fema' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+
+                        <div>
+                            <video poster={fema}>
+                            {/* <video onClick={e => play(e, 'fema', 2)} poster={fema}> */}
+                                <source src='https://www.youtube.com/embed/6dH51aKh3rA?autoplay=1' type="video/mp4" />
+                            </video>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span> */}
+                            </div>
+                        </div>
+
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
+                        Vani kapoor for Fixderma
+                        </div>
+                        <div id='fixderma' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+                        <div>
+                            <video onClick={e => play(e, 'fixderma', 0)} poster={fix}>
+                                <source src='https://www.youtube.com/embed/guIhyeITCGw' type="video/mp4" />
+                            </video>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span> */}
+                            </div>
+                           
+                        </div>
+
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
+                            sara ali khan for VEET
+                        </div>
+                        <div id='veet' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div>
+                        <video onClick={e => play(e, 'veet', 0)} poster={veet}>
+                                <source src='https://www.youtube.com/embed/v=7cj0o1p7RtI?autoplay=1' type="video/mp4" />
+                            </video>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Lakme by Ananya</span> */}
+                            </div>
+
+                        </div>
+
 
 
 
@@ -392,7 +435,7 @@ const Skin = () => {
             <div className='columns-1'>
               <img className='mx-auto' src={logo} alt='g' ></img>
               {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
-              <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
+              <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-20 mt-4 '>
                 <img className='mx-auto' src={fb} alt='g' ></img>
                 <img className='mx-auto' src={insta} alt='g' ></img>
                 <img className='mx-auto' src={twitter} alt='g' ></img>

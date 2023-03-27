@@ -415,7 +415,7 @@ const Campaigns = () => {
                             <div className='columns-1'>
                                 <img className='mx-auto' src={logo} alt='g' ></img>
                                 {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
-                                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
+                                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-20 mt-4 '>
                                     <img className='mx-auto' src={fb} alt='g' ></img>
                                     <img className='mx-auto' src={insta} alt='g' ></img>
                                     <img className='mx-auto' src={twitter} alt='g' ></img>

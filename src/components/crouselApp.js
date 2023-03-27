@@ -2,8 +2,8 @@ import { useState, useRef, useEffect, useCallback } from 'react';
 import skin from '../assets/img/our-work/skin.jpg';
 import hair from '../assets/img/our-work/hair.JPG';
 import comm from '../assets/img/our-work/commercial.JPEG';
-import left from '../assets/img/left-arrow.svg';
-import right from '../assets/img/right-arrow.svg';
+import left from '../assets/img/leftw.svg';
+import right from '../assets/img/right.svg';
 import { useNavigate } from 'react-router-dom';
 import jQuery from "jquery";
 import Slider from "react-slick";
@@ -250,7 +250,7 @@ const CarouselApp = () => {
         <>
             <div className="tw-hidden min-[900px]:tw-flex tw-flex-row tw-mt-[110px]">
 
-                <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">                    <div className="" onClick={onChangeInputminus} style={{'text-align': '-webkit-center' }}>
+                <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">                    <div className="" onClick={onChangeInputminus} style={{'text-align': '-webkit-center','cursor':'pointer' }}>
                     <span className="" aria-hidden="true"><img src={left} alt='dd'></img></span>
                 </div></div>
                 <div class="tw-basis-[90%] min-[900px]:tw-basis-5/6 tw-w-[100%] tw-h-[600px] mx-auto">
@@ -269,7 +269,7 @@ const CarouselApp = () => {
 
                 </div>
                 <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">
-                    <div className="" onClick={onChangeInputplus} style={{'text-align': '-webkit-center' }}>
+                    <div className="" onClick={onChangeInputplus} style={{'text-align': '-webkit-center','cursor':'pointer' }}>
                         <span className="" aria-hidden="true"><img src={right} alt='dd'></img></span>
                     </div>
                 </div>

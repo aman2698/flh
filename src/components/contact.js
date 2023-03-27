@@ -9,6 +9,8 @@ import insta from '../assets/img/instagram.svg';
 import twitter from '../assets/img/twitter.svg';
 import logo from '../assets/img/logoo.svg';
 import logo1 from '../assets/img/flh.svg';
+import w from '../assets/img/w.jpeg';
+import Crousell from './crousel 2';
 
 const Contact = () => {
 
@@ -30,6 +32,7 @@ const Contact = () => {
             <div className='tw-w-full' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
                 <Header>
                 </Header>
+                <Crousell/>
                 <div>
                     <div class="tw-flex tw-flex-col-reverse min-[900px]:tw-flex-row tw-mx-[10px]  min-[900px]:tw-mx-[200px] tw-my-[150px]">
                         <div className='min-[900px]:tw-w-1/2  tw-h-auto ' style={{ 'background': '#fff', 'border': '1px solid #000' }}>
@@ -112,14 +115,20 @@ const Contact = () => {
                             <div class="tw-flex tw-flex-col">
                                 {/* <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[12px] tw=leading-[16px] tw-text-[#E9145A]'>Got a Question?</div> */}
                                 <div className='mx-auto tw-font-sans tw-font-bold tw-text-[36px] tw=leading-[49px] tw-text-[#fff] '>Contact Florian</div>
-                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#fff] ' style={{ 'textAlign': 'center' }}>We’re here to help and answer any question you might have. We look forward to hearing from you</div>
-                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#fff] ' style={{ 'textAlign': 'center' }}>
+                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#fff] ' style={{ 'textAlign': 'center' }}>We’re here to help and answer any question you might have. We look forward to hearing from you.</div>
+                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw-mt-[30px] tw=leading-[22px] tw-text-[#fff] ' style={{ 'textAlign': 'center' }}>
                                     <button class="tw-bg-black hover:tw-bg-white tw-text-white hover:tw-text-black tw-font-bold tw-py-2 tw-px-4 tw-rounded" onClick={download}>
                                         Download profile
                                     </button>
                                 </div>
+                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#fff]'>
+                                    <a href='https://wa.me/919167077150' target='_blank'>
+                                    <img style={{'height':'29px','marginTop':'10px','borderRadius':'3px'}} src={w}></img>
+
+                                    </a>
+                                </div>
                                 <div className='tw-mt-[30px] tw-hidden min-[900px]:tw-block'>
-                                    <img src={logo} alt='ssss' />
+                                    <img  src={logo} alt='ssss' />
                                 </div>
                             </div>
                         </div>
@@ -134,7 +143,7 @@ const Contact = () => {
                             <div className='columns-1'>
                                 <img className='mx-auto' src={logo1} alt='g' ></img>
                                 {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
-                                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
+                                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-20 mt-4 '>
                                     <img className='mx-auto' src={fb} alt='g' ></img>
                                     <img className='mx-auto' src={insta} alt='g' ></img>
                                     <img className='mx-auto' src={twitter} alt='g' ></img>

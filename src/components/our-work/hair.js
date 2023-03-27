@@ -329,7 +329,7 @@ const Hair = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                        Silpa for Kesh King
+                        Shilpa for Kesh King
                         </div>
                         <div id='kesh' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
                             {/* {bazaar.map((e,i) => (
@@ -398,7 +398,7 @@ const Hair = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                        Tamanna Sharma for Parachute
+                        Parachute
                         </div>
                         <div id='Parachute' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <div>
@@ -454,7 +454,7 @@ const Hair = () => {
                             <div className='columns-1'>
                                 <img className='mx-auto' src={logo} alt='g' ></img>
                                 {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
-                                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
+                                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-20 mt-4 '>
                                     <img className='mx-auto' src={fb} alt='g' ></img>
                                     <img className='mx-auto' src={insta} alt='g' ></img>
                                     <img className='mx-auto' src={twitter} alt='g' ></img>

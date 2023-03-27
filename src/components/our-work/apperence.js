@@ -183,24 +183,14 @@ const Apperance = () => {
               </div> */}
               <div className='tw-font-sans tw-font-light tw-text-xl tw-mt-1  md:tw-mt-1 tw-text-white' style={{ 'textAlign': 'justify', 'margin': '40px 0px 30px 0px' }}>
                 {/* <span>Daisy</span>  --  <span>Deepika</span> -- <span>Kangna</span>  --  <span>Sara ali khan</span>  --  <span>Tamannah</span> */}
-                Whether he is working with a celebrity Florian's dedication to his craft and commitment to his clients have earned him a reputation as one of the most talented hair and makeup artists in the industry.
-
+                {/* Whether he is working with a celebrity Florian's dedication to his craft and commitment to his clients have earned him a reputation as one of the most talented hair and makeup artists in the industry. */}
+                Whether he is working with a celebrity, Florian's dedication to his craft and commitment to his clients have earned him a reputation as one of the most talented hair and makeup artists in the industry.
 
               </div>
             </div>
 
 
-            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-              Daisy
-            </div>
-            <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
-              {daisy.map((e, i) => (
-                <div>
-                  <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
-                  {/* <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span> */}
-                </div>
-              ))}
-            </div>
+
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
               Deepika for Chapaak
@@ -265,6 +255,18 @@ const Apperance = () => {
                 </div>
               ))}
             </div>
+
+            <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
+              Daisy
+            </div>
+            <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
+              {daisy.map((e, i) => (
+                <div>
+                  <img className='mx-auto' onClick={e => playImage(e, 'vogue', i)} src={e} alt='g' style={{ 'width': '100%', 'height': 'auto', 'objectFit': 'contain', 'margin': 'auto' }}></img>
+                  {/* <span className='mx-auto ellipsImageName' style={{'display':'flex','justifyContent':'center'}}>{displayName(e)}</span> */}
+                </div>
+              ))}
+            </div>
             {/* <div className='view-all tw-mx-auto tw-mt-8' style={{ 'position': 'relative', 'border': '3px solid #fff' }}>
             <span className='tw-font-sans tw-font-bold' style={{ 'position': 'absolute', 'fontSize': '24px', 'padding': '8px 1px 1px 21px', 'color': '#fff' }}>VIEW ALL</span>
           </div> */}
@@ -280,7 +282,7 @@ const Apperance = () => {
               <div className='columns-1'>
                 {/* <img className='mx-auto' src={fo2} alt='g' ></img> */}
                 <img className='mx-auto' src={logo} alt='g' ></img>
-                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-40 mt-4 '>
+                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-20 mt-4 '>
                   <img className='mx-auto' src={fb} alt='g' ></img>
                   <img className='mx-auto' src={insta} alt='g' ></img>
                   <img className='mx-auto' src={twitter} alt='g' ></img>

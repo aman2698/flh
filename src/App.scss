@@ -1074,3 +1074,36 @@ opacity: 0.5;
   line-height: 27px;
   }
 }
+
+.overllay{
+  position: absolute;
+  right: 0px;
+  top: 55vh;
+  width: 400px;
+  background: rgba(217, 217, 217, 0.21);
+height: 200px;
+padding: 10px 10px;
+}
+
+.florian{
+  font-family: 'Exo';
+font-style: normal;
+font-weight: 500;
+font-size: 64px;
+line-height: 85px;
+/* identical to box height */
+
+text-align: right;
+
+color: #FFFFFF;
+}
+
+.showreel{
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 72px;
+  text-align: right;
+  color: #AFAFAF;
+}

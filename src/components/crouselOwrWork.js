@@ -4,8 +4,8 @@ import hair from '../assets/img/our-work/hair.JPG';
 import comm from '../assets/img/our-work/commercial.JPEG';
 import a4 from '../assets/img/our-work/4.jpg';
 import a2 from '../assets/img/our-work/2.jpg';
-import left from '../assets/img/left-arrow.svg';
-import right from '../assets/img/right-arrow.svg';
+import left from '../assets/img/leftw.svg';
+import right from '../assets/img/right.svg';
 import { useNavigate } from 'react-router-dom';
 import jQuery from "jquery";
 import Slider from "react-slick";
@@ -34,10 +34,12 @@ const CarouselOwrWork = () => {
 
     const [sliderRef, setSliderRef] = useState(null)
     const navigate = useNavigate();
-    const rediectHair = useCallback(() => navigate('/magzine', { replace: true }), [navigate]);
-    const rediectcomm = useCallback(() => navigate('/magzine', { replace: true }), [navigate]);
-    const rediectSkin = useCallback(() => navigate('/magzine', { replace: true }), [navigate]);
+    const rediectHair = useCallback(() => navigate('/hair', { replace: true }), [navigate]);
+    const rediectcomm = useCallback(() => navigate('/commercial', { replace: true }), [navigate]);
+    const rediectSkin = useCallback(() => navigate('/skin', { replace: true }), [navigate]);
     const rediectCA = useCallback(() => navigate('/celebrity', { replace: true }), [navigate]);
+    const rediectCampign = useCallback(() => navigate('/campaigns', { replace: true }), [navigate]);
+    const rediectMagine = useCallback(() => navigate('/magzine', { replace: true }), [navigate]);
     const settings = {
         dots: true,
         infinite: true,
@@ -111,7 +113,7 @@ const CarouselOwrWork = () => {
         {
             key: 2,
             content: <div><img src={hair} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="2" /> <span className="overlay-name">CELEBRITY APPEARANCE</span> </div>,
-            onClick: () => rediectcomm()
+            onClick: () => rediectHair()
 
         },
         {
@@ -123,39 +125,15 @@ const CarouselOwrWork = () => {
         {
             key: 13,
             content: <div><img src={a4} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="4" /> <span className="overlay-name">CAMPAIGN</span> </div>,
-            onClick: () => rediectCA()
+            onClick: () => rediectCampign()
 
         },
         {
             key: 41,
             content: <div><img src={a2} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="5" /> <span className="overlay-name">MAGZINE COVER</span> </div>,
-            onClick: () => rediectSkin()
+            onClick: () => rediectMagine()
 
         },
-        // {
-        //     key: 531,
-        //     content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
-        //     onClick: () => rediectSkin()
-
-        // },
-        // {
-        //     key: 3221,
-        //     content: <img src={skin} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="7" />,
-        //     onClick: () => rediectSkin()
-
-        // },
-        // {
-        //     key: 111,
-        //     content: <img src={hair} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="8" />,
-        //     onClick: () => rediectSkin()
-
-        // },
-        // {
-        //     key: 5231,
-        //     content: <img src={comm} className='img-grayscale item-inner' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="6" />,
-        //     onClick: () => rediectSkin()
-
-        // },
     ];
 
     useEffect(() => {
@@ -216,31 +194,36 @@ const CarouselOwrWork = () => {
             name: 'SKIN COMMERCIAL',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
-            img: skin
+            img: skin,
+            onClick: () => rediectSkin()
         },
         {
             name: 'HAIR COMMERCIAL',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
-            img: comm
+            img: comm,
+            onClick: () => rediectHair()
         },
         {
             name: 'CELEBRITY APPEARANCE',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
-            img: hair
+            img: hair,
+            onClick: () => rediectCA()
         },
         {
             name: 'MAGZINE COVER',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
-            img: a2
+            img: a2,
+            onClick: () => rediectMagine()
         },
         {
             name: 'CAMPAIGN',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
             address: 'USA',
-            img: a4
+            img: a4,
+            onClick: () => rediectCampign()
         },
         // {
         //     name: '',
@@ -258,9 +241,9 @@ const CarouselOwrWork = () => {
 
     return (
         <>
-            <div className="tw-hidden min-[900px]:tw-flex tw-flex-row tw-mt-[110px]">
+            <div className="tw-hidden min-[900px]:tw-flex tw-flex-row tw-my-[50px]">
 
-                <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">                    <div className="" onClick={onChangeInputminus} style={{'text-align': '-webkit-center' }}>
+                <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">                    <div className="" onClick={onChangeInputminus} style={{'text-align': '-webkit-center','cursor':'pointer' }}>
                     <span className="" aria-hidden="true"><img src={left} alt='dd'></img></span>
                 </div></div>
                 <div class="tw-basis-[90%] min-[900px]:tw-basis-5/6 tw-w-[100%] tw-h-[700px] mx-auto">
@@ -279,7 +262,7 @@ const CarouselOwrWork = () => {
 
                 </div>
                 <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">
-                    <div className="" onClick={onChangeInputplus} style={{'text-align': '-webkit-center' }}>
+                    <div className="" onClick={onChangeInputplus} style={{'text-align': '-webkit-center' ,'cursor':'pointer'}}>
                         <span className="" aria-hidden="true"><img src={right} alt='dd'></img></span>
                     </div>
                 </div>
@@ -343,7 +326,7 @@ const CarouselOwrWork = () => {
                                     return (
 
                                         <div class=" gfg tw-mx-auto" >
-                                            <img style={{'borderRadius':'20px'}} src={testiMonialDetail.img} alt="" />
+                                            <img style={{'borderRadius':'20px'}} src={testiMonialDetail.img} alt="" onClick={testiMonialDetail.onClick} />
                                             <h3 class="second-txt">
                                                 {testiMonialDetail.name}
                                             </h3>

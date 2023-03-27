@@ -81,22 +81,22 @@ const Header = () => {
             zIndex:'99999999999999999'
         }}>
             <div className='tw-hidden min-[900px]:tw-flex min-[900px]:tw-flex-row ' style={{ height: '60px', margin: '0px 20px' }}>
-                <div className='tw-basis-1/4 tw-my-auto tw-mx-auto tw-font-bold tw-font-sans' style={{ 'fontSize': '20px' }} >
+                <div className='tw-basis-[30%] tw-my-auto tw-mx-auto tw-font-bold tw-font-sans' style={{ 'fontSize': '20px' }} >
                     {/* <span style={{ 'cursor': 'pointer', 'color': '#fff' }} id='menu' onClick={e => setNavbar(!navbar)}>MENU</span> */}
                     <img src={flhIcon} alt='home'></img>
                 </div>
-                <div className='tw-basis-1/2 tw-my-auto' style={{ textAlign: '-webkit-center', }}>
+                <div className='tw-basis-[68%] tw-my-auto' style={{ textAlign: '-webkit-center', }}>
                     {/* <img src={flhIcon} alt='home'></img> */}
                 </div>
-                <div className='tw-basis-1/4 tw-my-auto'>
+                <div className='tw-basis-[2%] tw-my-auto'>
                     <div style={{ display: 'flex',justifyContent:'space-between' }}>
-                    <span className='tw-font-sans tw-text-[24px] tw-font-normal tw-text-[#fff]' style={{ 'cursor': 'pointer', 'color': '#fff', 'textTransform':'uppercase' }} id='menu' onClick={e => navigate("/contact")}>contact</span>
-                    <span className='tw-font-sans tw-text-[24px] tw-font-normal tw-text-[#fff]' style={{ 'cursor': 'pointer', 'color': '#fff' }} id='menu' onClick={e => navigate("/celebrity")}>GALLARY</span>
+                    {/* <span className='tw-font-sans tw-text-[24px] tw-font-normal tw-text-[#fff]' style={{ 'cursor': 'pointer', 'color': '#fff', 'textTransform':'uppercase' }} id='menu' onClick={e => navigate("/contact")}>contact</span> */}
+                    {/* <span className='tw-font-sans tw-text-[24px] tw-font-normal tw-text-[#fff]' style={{ 'cursor': 'pointer', 'color': '#fff' }} id='menu' onClick={e => navigate("/celebrity")}>GALLARY</span> */}
 
                         {/* <img src={insta} alt='home' style={{ marginRight: '5px' }}></img>
                         <img src={fb} alt='home' style={{ marginRight: '5px' }}></img>
                         <img src={twitter} alt='home'></img> */}
-                        {!navbar && <img className='tw-float-right' src={togg} onClick={e => setNavbar(!navbar)} alt='home'></img>}
+                        {!navbar && <img className='tw-float-right' style={{'width':'30px'}} src={togg} onClick={e => setNavbar(!navbar)} alt='home'></img>}
                         {navbar && <img className='tw-float-right' src={cross} onClick={e => setNavbar(!navbar)} alt='home'></img>}
 
                     </div>
@@ -109,8 +109,8 @@ const Header = () => {
                 <div className='tw-basis-2/3 tw-my-auto' style={{ textAlign: '-webkit-center', }}>
                     <img className='tw-float-left' src={flhIcon} alt='home'></img>
                 </div>
-                <div className='tw-basis-1/3 tw-my-auto'>
-                    {!navbar && <img className='tw-float-right' src={togg} onClick={e => setNavbar(!navbar)} alt='home'></img>}
+                <div className='tw-basis-1/3 tw-my-auto'> 
+                    {!navbar && <img className='tw-float-right' style={{'width':'30px'}} src={togg} onClick={e => setNavbar(!navbar)} alt='home'></img>}
                     {navbar && <img className='tw-float-right' src={cross} onClick={e => setNavbar(!navbar)} alt='home'></img>}
 
                 </div>
