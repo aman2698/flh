@@ -349,7 +349,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            Silpa setty for Nourish
+                            Shilpa setty for Nourish
                         </div>
                         <div id='Nourish' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Nourish', 0)} poster={nourish}>
@@ -358,7 +358,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            Silpa setty for Mama Earth
+                            Shilpa setty for Mama Earth
                         </div>
                         <div id='mama' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'mama', 0)} poster={mama}>
