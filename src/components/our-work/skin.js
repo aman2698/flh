@@ -186,7 +186,7 @@ const Skin = () => {
 
             </div> */}
                         <Slider {...settings2} style={{ 'width': '100vw' }}>
-            <div >
+            {/* <div >
                 <div style={{'position':'relative'}}>
 
             <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
@@ -201,7 +201,7 @@ const Skin = () => {
                     <h5>Skin</h5>
                   </div>
                 </div>
-            </div>
+            </div> */}
             <div>
             <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1')} src={bannerMobile[0]} alt="Second slide" />
             </div>
@@ -252,7 +252,7 @@ const Skin = () => {
 
             </div> */}
             <Slider {...settings2} style={{ 'width': '100vw' }}>
-            <div >
+            {/* <div >
                 <div style={{'position':'relative'}}>
 
             <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
@@ -267,7 +267,7 @@ const Skin = () => {
                     <h5>Skin</h5>
                   </div>
                 </div>
-            </div>
+            </div> */}
             <div>
             <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1')} src={bannerMobile[0]} alt="Second slide" />
             </div>

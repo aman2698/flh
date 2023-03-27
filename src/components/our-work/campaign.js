@@ -241,7 +241,7 @@ const Campaigns = () => {
 
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            Sara ali khan for Nooraniyat
+                            Sara Ali Khan for Nooraniyat
                         </div>
                         <div id='Nooraniyat' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
@@ -284,7 +284,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            Sara ali khan for Colgate
+                            Sara Ali Khan for Colgate
                         </div>
                         <div id='colgate' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
@@ -294,7 +294,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            Sara ali khan for REXONA
+                            Sara Ali Khan for REXONA
                         </div>
                         <div id='rexona' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1  tw-mb-10 tw-justify-center'>
                             {/* {bazaar.map((e,i) => (
@@ -331,7 +331,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            Varun dhawan and Sara ali khan for FBB
+                            Sara Ali khan for FBB
                         </div>
                         <div id='fbb' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'fbb', 0)} poster={fbb}>
@@ -340,7 +340,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            mira kapoor for One Plus
+                            Mira Kapoor for One Plus
                         </div>
                         <div id='one' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'one', 0)} poster={one}>
@@ -349,7 +349,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            Shilpa setty for Nourish
+                            Shilpa Shetty for Nourish
                         </div>
                         <div id='Nourish' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Nourish', 0)} poster={nourish}>
@@ -358,7 +358,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            Shilpa setty for Mama Earth
+                            Shilpa Shetty for Mama Earth
                         </div>
                         <div id='mama' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'mama', 0)} poster={mama}>
@@ -367,7 +367,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            Ananya pandey for Sketchers
+                            Ananya Pandey for Sketchers
                         </div>
                         <div id='Sketchers' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Sketchers', 0)} poster={sketchers}>
