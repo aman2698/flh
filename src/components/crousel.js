@@ -167,7 +167,7 @@ const Crousel = () => {
       <img class="d-block w-100 " src={hone} style={{'height':'100vh', 'objectFit':'cover'}} alt="Second slide"/>
     </div>
   </div> */}
-          <Slider {...settings2} style={{ 'width': '100vw' }}>
+          <Slider {...settings2} style={{ 'width': '99vw' }}>
             <div>
               <div className='min-[900px]:tw-grid min-[900px]:tw-grid-cols-3'>
                 <div>

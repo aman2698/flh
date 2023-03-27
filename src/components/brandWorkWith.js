@@ -505,7 +505,7 @@ const BrandWorkWith = () => {
 
 
       {/* Appearance */}
-      <div className='tw-bg-[#232323] min-[900px]:tw-bg-[linear-gradient(180deg, #1A1A1A 0%, #545454 100%)] tw-h-auto min-[900px]:tw-mt-[0px] tw-pt-[1px]' style={{'background':'#1A1A1A','opacity':'0.78'}}>
+      <div className='tw-bg-[#232323] min-[900px]:tw-bg-[linear-gradient(180deg, #1A1A1A 0%, #545454 100%)] tw-h-auto min-[900px]:tw-mt-[0px] tw-pt-[1px]' style={{'background':'rgba(26, 26, 26, 0.78)'}}>
         <div className='tw-grid tw-mx-2 min-[900px]:tw-mx-16  tw-py-4 '>
           <div className='row m-0 '>
           <div className=' tw-block min-[900px]:tw-hidden tw-font-sans tw-font-normal tw-italic tw-text-[46px] tw-text-white min-[900px]:tw-text-white' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase','opacity':'0.17',float:'right' }}>Appearance</div>
