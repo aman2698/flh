@@ -157,11 +157,11 @@ const Skin = () => {
                 {/* Commercial */}
                 <div className='tw-w-full backgroungg7' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
                 <div className='tw-hidden min-[900px]:tw-block'>
-            {/* <div id="carouselExampleIndicators18987" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-touch="true">
+            <div id="carouselExampleIndicators18987" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-touch="true">
 
               <div class="carousel-inner">
                 <div class="carousel-item active ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
+                  <img class="d-block w-100 tw-h-[75vh] tw-object-cover" src={bannerMobile[0]} alt="First slide" />
                   <div class="carousel-caption" style={{
                     'fontSize': '44px',
                     'color': '#fff',
@@ -173,61 +173,22 @@ const Skin = () => {
                     <h5>Skin</h5>
                   </div>
                 </div>
-                <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1')} src={bannerMobile[0]} alt="Second slide" />
-                </div>
-                <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/dcaYJOACtRg?autoplay=1')} src={bannerMobile[1]} alt="Third slide" />
-                </div>
-                <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/2JkSKSWnwP8?autoplay=1')} src={bannerMobile[2]} alt="Third slide" />
-                </div>
-                <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/1kR-d8wlhpQ?autoplay=1')} src={bannerMobile[3]} alt="Third slide" />
-                </div>
               </div>
 
-            </div> */}
-                        <Slider {...settings2} style={{ 'width': '100vw' }}>
-            {/* <div >
-                <div style={{'position':'relative'}}>
-
-            <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
-                  <div class="carousel-caption" style={{
-                    'fontSize': '30px',
-                    'color': '#fff',
-                    'background': 'rgba(0,0,0,0.6)',
-                    'padding': '2px 0px',
-                    'position': 'absolute',
-                    'left': '0px', 'bottom': '88px','width':'35%'
-                  }}>
-                    <h5>Skin</h5>
-                  </div>
-                </div>
-            </div> */}
-            <div>
-            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1')} src={bannerMobile[0]} alt="Second slide" />
             </div>
+            {/* <Slider {...settings2} style={{ 'width': '100vw','height':'80vh' }}>
             <div>
-            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/dcaYJOACtRg?autoplay=1')} src={bannerMobile[1]} alt="Third slide" />
-
-            </div>
-            <div>
-            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/2JkSKSWnwP8?autoplay=1')} src={bannerMobile[2]} alt="Third slide" />
-
-            </div>
-            <div>
-            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/1kR-d8wlhpQ?autoplay=1')} src={bannerMobile[3]} alt="Third slide" />
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover tw-h-[80vh]" onClick={e => playLink('https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1')} src={bannerMobile[0]} alt="Second slide" />
             </div>
 
-          </Slider>
+          </Slider> */}
           </div>
           <div className='min-[900px]:tw-hidden'>
-            {/* <div id="carouselExampleIndicators10" class="carousel slide carousel-fade" data-ride="carousel" >
+            <div id="carouselExampleIndicators10" class="carousel slide carousel-fade" data-ride="carousel" >
 
               <div class="carousel-inner">
                 <div class="carousel-item active ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
+                  <img class="d-block w-100 tw-h-[75vh] tw-object-cover" src={may[2]} alt="First slide" />
                   <div class="carousel-caption" style={{
                     'fontSize': '30px',
                     'color': '#fff',
@@ -239,42 +200,13 @@ const Skin = () => {
                     <h5>Skin</h5>
                   </div>
                 </div>
-                <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1')} src={bannerMobile[0]} alt="Second slide" />
-                </div>
-                <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/dcaYJOACtRg?autoplay=1')} src={bannerMobile[1]} alt="Third slide" />
-                </div>
-                <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/2JkSKSWnwP8?autoplay=1')} src={bannerMobile[2]} alt="Third slide" />
-                </div>
-                <div class="carousel-item ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/1kR-d8wlhpQ?autoplay=1')} src={bannerMobile[3]} alt="Third slide" />
-                </div>
-              </div>
-
-            </div> */}
-            <Slider {...settings2} style={{ 'width': '100vw' }}>
-            {/* <div >
-                <div style={{'position':'relative'}}>
-
-            <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={may[2]} alt="First slide" />
-                  <div class="carousel-caption" style={{
-                    'fontSize': '30px',
-                    'color': '#fff',
-                    'background': 'rgba(0,0,0,0.6)',
-                    'padding': '2px 0px',
-                    'position': 'absolute',
-                    'left': '0px', 'bottom': '88px','width':'35%'
-                  }}>
-                    <h5>Skin</h5>
                   </div>
-                </div>
-            </div> */}
-            <div>
-            <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1')} src={bannerMobile[0]} alt="Second slide" />
             </div>
+            {/* <Slider {...settings2} style={{ 'width': '100vw','height':'70vh' }}>
             <div>
+            <img class="d-block w-100 tw-h-[600px] tw-object-cover"  src={bannerMobile[0]} alt="Second slide" />
+            </div> */}
+            {/* <div>
             <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/dcaYJOACtRg?autoplay=1')} src={bannerMobile[1]} alt="Third slide" />
 
             </div>
@@ -284,9 +216,9 @@ const Skin = () => {
             </div>
             <div>
             <img class="d-block w-100 tw-h-[600px] tw-object-cover" onClick={e => playLink('https://www.youtube.com/embed/1kR-d8wlhpQ?autoplay=1')} src={bannerMobile[3]} alt="Third slide" />
-            </div>
+            </div> */}
 
-          </Slider>
+          {/* </Slider> */}
   
           </div>
                     <div className='tw-grid tw-mx-4 md:tw-mx-40 tw-mb-10 tw-pb-8 tw-relative' >
@@ -300,6 +232,38 @@ const Skin = () => {
                             </div>
                         </div>
 
+                        <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
+                        lakme
+                        </div>
+                        <div id='lakme' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-8 tw-mb-10 tw-justify-center'>
+                        <div>
+                        <video onClick={e => play(e, 'lakme', 0)} poster={bannerMobile[4]}>
+                                <source src='https://www.youtube.com/embed/j9R5ttkSgc4?autoplay=1' type="video/mp4" />
+                            </video>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>lakme & Lovely by Manya</span> */}
+                            </div>
+                            <div>
+                            <video onClick={e => play(e, 'lakme', 1)} poster={bannerMobile[1]}>
+                                <source src='https://www.youtube.com/embed/dcaYJOACtRg?autoplay=1' type="video/mp4" />
+                            </video>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>lakme & Lovely by Manya</span> */}
+                            </div>
+                            <div>
+                            <video onClick={e => play(e, 'lakme', 2)} poster={bannerMobile[2]}>
+                                <source src='https://www.youtube.com/embed/2JkSKSWnwP8?autoplay=1' type="video/mp4" />
+                            </video>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Glow & Lovely by Manya</span> */}
+                            </div>
+                            <div>
+                            <video onClick={e => play(e, 'lakme', 3)} poster={bannerMobile[3]}>
+                                <source src='https://www.youtube.com/embed/1kR-d8wlhpQ?autoplay=1' type="video/mp4" />
+                            </video>
+                                {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Glow & Lovely by Manya</span> */}
+                            </div>
+ 
+                            
+
+                        </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
                         Manya for Glow & Lovely

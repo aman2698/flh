@@ -258,7 +258,7 @@ const Apperance = () => {
             </div>
 
             <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-              Daisy
+              Daisy SHAH
             </div>
             <div id='vogue' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
               {daisy.map((e, i) => (

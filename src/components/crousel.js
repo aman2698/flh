@@ -4,8 +4,8 @@ import image1 from '../assets/img/carousel/1.png'
 import image3 from '../assets/img/carousel/3.png'
 import giff from '../assets/img/circle.gif'
 import cross from '../assets/img/times.svg';
-import left from '../assets/img/left-arrow.svg';
-import right from '../assets/img/right-arrow.svg';
+import left from '../assets/img/leftw.svg';
+import right from '../assets/img/right.svg';
 import logo from '../assets/img/logo.svg';
 import hone from '../assets/img/home.jpeg';
 import home2 from '../assets/img/home2.png';
@@ -30,6 +30,8 @@ const Crousel = () => {
     let [count, setcount] = React.useState(1)
     let [count2, setcount2] = React.useState(1)
     let [gif, setGif] = React.useState(true)
+    const sliderRef = React.useRef()
+    const sliderRefMobile = React.useRef()
   const [videoArray, setvideoArray] = React.useState('')
   let [selectedVideo, setSelectedVideo] = React.useState('https://player.vimeo.com/video/805016119?h=0fd1008446')
 
@@ -137,10 +139,27 @@ const Crousel = () => {
         document.getElementsByTagName('body')[0].classList.remove('tw-overflow-y-hidden')
       }
 
+      const onChangeInputminus = () =>{
+        if (sliderRef && sliderRef.current) {
+          sliderRef.current.slickPrev();
+        }
+        if (sliderRefMobile && sliderRefMobile.current) {
+          sliderRefMobile.current.slickPrev();
+        }
+      }
+
+      const onChangeInputplus = () =>{
+        if (sliderRef && sliderRef.current) {
+          sliderRef.current.slickNext();
+        }
+        if (sliderRefMobile && sliderRefMobile.current) {
+          sliderRefMobile.current.slickNext();
+        }
+      }
 
     return (
         <div className='crousel-component'>
-            <div className="tw-hidden min-[900px]:tw-grid " style={{'background':'linear-gradient(270deg, #4A4A4A 0.59%, #484848 14.03%, #474747 25.44%, #464646 33.68%, #525252 50.81%, #474747 75.54%, #474747 91.27%, #464646 99.17%, #484848 99.17%)','height':'85vh'}}>
+            <div className="tw-hidden min-[900px]:tw-grid tw-relative" style={{'background':'linear-gradient(270deg, #4A4A4A 0.59%, #484848 14.03%, #474747 25.44%, #464646 33.68%, #525252 50.81%, #474747 75.54%, #474747 91.27%, #464646 99.17%, #484848 99.17%)','height':'85vh'}}>
             {/* <div id="carouselExampleSlidesOnly" class="carousel slide " data-ride="carousel">
   <div class="carousel-inner" style={{'height':'85vh'}}>
     <div class="carousel-item  active" >
@@ -167,7 +186,7 @@ const Crousel = () => {
       <img class="d-block w-100 " src={hone} style={{'height':'100vh', 'objectFit':'cover'}} alt="Second slide"/>
     </div>
   </div> */}
-          <Slider {...settings2} style={{ 'width': '99vw' }}>
+          <Slider {...settings2} style={{ 'width': '100vw' }} ref={sliderRef}>
             <div>
               <div className='min-[900px]:tw-grid min-[900px]:tw-grid-cols-3'>
                 <div>
@@ -202,7 +221,14 @@ const Crousel = () => {
               </div>
             </div>
 
+
           </Slider>
+          <div className="left-header" onClick={onChangeInputminus} style={{'text-align': '-webkit-center','cursor':'pointer',zIndex: '1000000' }}>
+                    <span className="" aria-hidden="true"><img src={left} alt='dd'></img></span>
+                </div>
+                <div className="right-header" onClick={onChangeInputplus} style={{'text-align': '-webkit-center' ,'cursor':'pointer',zIndex: '1000000'}}>
+                        <span className="" aria-hidden="true"><img src={right} alt='dd'></img></span>
+                    </div>
 {/* // </div> */}
  
 
@@ -210,21 +236,36 @@ const Crousel = () => {
 </div> */}
 
             </div>
-            <div className='tw-grid min-[900px]:tw-hidden'>
-            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-touch="true">
-  <div class="carousel-inner" >
-    <div class="carousel-item active" >
-      <img class="d-block w-100 " src={mobile} style={{ 'objectFit':'contain'}} alt="First slide"/>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100 " onClick={play} src={mobile2} style={{'objectFit':'contain'}} alt="Second slide"/>
-    </div>
-    {/* <div class="carousel-item">
-      <img class="d-block w-100 " src={mobile} style={{'height':'100vh', 'objectFit':'contain'}} alt="Third slide"/>
-    </div> */}
-  </div>
-</div>
+        <div className='tw-grid min-[900px]:tw-hidden tw-relative'>
+          {/* <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-touch="true">
+            <div class="carousel-inner" >
+              <div class="carousel-item active" >
+                <img class="d-block w-100 " src={mobile} style={{ 'objectFit': 'contain' }} alt="First slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 " onClick={play} src={mobile2} style={{ 'objectFit': 'contain' }} alt="Second slide" />
+              </div>
             </div>
+          </div> */}
+          <Slider {...settings2} style={{ 'width': '100vw',height:'auto' }} ref={sliderRefMobile}>
+            <div>
+            <img class="d-block w-100 " src={mobile} style={{ 'objectFit': 'cover' }} alt="First slide" />
+  
+            </div>
+            <div>
+            <img class="d-block w-100 " onClick={play} src={mobile2} style={{ 'objectFit': 'cover' }} alt="Second slide" />
+
+            </div>
+
+
+          </Slider>
+          <div className="left-header-mobile" onClick={onChangeInputminus} style={{'text-align': '-webkit-center','cursor':'pointer',zIndex: '1000000' }}>
+                    <span className="" aria-hidden="true"><img src={left} alt='dd'></img></span>
+                </div>
+                <div className="right-header-mobile" onClick={onChangeInputplus} style={{'text-align': '-webkit-center' ,'cursor':'pointer',zIndex: '1000000'}}>
+                        <span className="" aria-hidden="true"><img src={right} alt='dd'></img></span>
+                    </div>
+        </div>
 
         <div id="modal2" className="tw-fixed tw-hidden tw-z-50 tw-inset-0 tw-bg-gray-900 tw-bg-opacity-60 tw-overflow-y-auto tw-h-full tw-w-full tw-modal" style={{ 'zIndex': '999999999999999' }}>
           <div className="tw-relative tw-mx-auto tw-h-full tw-w-full tw-shadow-xl tw-rounded-md tw-bg-white " id='video-model'>

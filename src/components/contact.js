@@ -34,7 +34,7 @@ const Contact = () => {
                 </Header>
                 <Crousell/>
                 <div>
-                    <div class="tw-flex tw-flex-col-reverse min-[900px]:tw-flex-row tw-mx-[10px]  min-[900px]:tw-mx-[200px] tw-my-[150px]">
+                    <div class="tw-flex tw-flex-col-reverse min-[900px]:tw-flex-row tw-mx-[10px]  min-[900px]:tw-mx-[200px] min-[900px]:tw-my-[150px] tw-my-[50px]">
                         <div className='min-[900px]:tw-w-1/2  tw-h-auto ' style={{ 'background': '#fff', 'border': '1px solid #000' }}>
                             <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-m-[20px]">
                                 <div className="">
@@ -121,12 +121,12 @@ const Contact = () => {
                                         Download profile
                                     </button>
                                 </div>
-                                <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#fff]'>
+                                {/* <div className='mx-auto tw-font-sans tw-font-semibold tw-text-[16px] tw=leading-[22px] tw-text-[#fff]'>
                                     <a href='https://wa.me/919167077150' target='_blank'>
                                     <img style={{'height':'29px','marginTop':'10px','borderRadius':'3px'}} src={w}></img>
 
                                     </a>
-                                </div>
+                                </div> */}
                                 <div className='tw-mt-[30px] tw-hidden min-[900px]:tw-block'>
                                     <img  src={logo} alt='ssss' />
                                 </div>
@@ -165,7 +165,9 @@ const Contact = () => {
                         <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
                     </div>
                 </div>
-
+                <a href="https://wa.me/919167077150" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
             </div>
         </>
     )

@@ -33,6 +33,7 @@ import para1 from '../../assets/img/hair/12.jpg'
 import sch1 from '../../assets/img/hair/13.jpg'
 import sch2 from '../../assets/img/hair/14.jpg'
 import logo from '../../assets/img/flh.svg';
+import banner from '../../assets/img/hair/banner.jpg';
 
 
 const Hair = () => {
@@ -151,7 +152,7 @@ const Hair = () => {
                                         <h5>Hair Commercial</h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item ">
+                                {/* <div class="carousel-item ">
                                     <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={streak[1]} alt="Second slide" />
                                     <div class="carousel-caption" style={{
                                         'fontSize': '44px',
@@ -176,7 +177,7 @@ const Hair = () => {
                                     }}>
                                         <h5>Hair Commercial</h5>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
 
                         </div>
@@ -187,7 +188,7 @@ const Hair = () => {
                             <div class="carousel-inner">
                                 {/* mobile view */}
                                 <div class="carousel-item active ">
-                                    <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={streak[0]} alt="First slide" />
+                                    <img class="d-block w-100 tw-h-[auto] tw-object-cover" src={banner} alt="First slide" />
                                     <div class="carousel-caption" style={{
                                         'fontSize': '30px',
                                         'color': '#fff',
@@ -199,7 +200,7 @@ const Hair = () => {
                                         <h5>Hair Commercial</h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item ">
+                                {/* <div class="carousel-item ">
                                     <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={streak[1]} alt="Second slide" />
                                     <div class="carousel-caption" style={{
                                         'fontSize': '30px',
@@ -224,7 +225,7 @@ const Hair = () => {
                                     }}>
                                         <h5>Hair Commercial</h5>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
 
                         </div>

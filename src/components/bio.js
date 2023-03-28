@@ -133,7 +133,7 @@ const Bio = () => {
         </div>
       </div>
     </div>
-    <div id='bio' className='tw-block min-[900px]:tw-hidden tw-py-[50px]' style={{'background':'#222222','position':'relative','zIndex':'9','marginTop':'-1px'}}>
+    <div id='bio' className='tw-block min-[900px]:tw-hidden tw-py-[50px]' style={{'background':'#222222','position':'relative','zIndex':'9','marginTop':'-10px'}}>
       <div className='tw-grid tw-mx-8 min-[900px]:tw-mx-36 tw-pt-12 tw-pb-20 border-florian tw-pt-[10px]'>
       <div className='tw-columns-1'>
         {/* <div id='home' className='min-[900px]:tw-hidden' style={{'marginBottom':'15px'}}>

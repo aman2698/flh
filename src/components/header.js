@@ -83,7 +83,7 @@ const Header = () => {
             <div className='tw-hidden min-[900px]:tw-flex min-[900px]:tw-flex-row ' style={{ height: '60px', margin: '0px 20px' }}>
                 <div className='tw-basis-[30%] tw-my-auto tw-mx-auto tw-font-bold tw-font-sans' style={{ 'fontSize': '20px' }} >
                     {/* <span style={{ 'cursor': 'pointer', 'color': '#fff' }} id='menu' onClick={e => setNavbar(!navbar)}>MENU</span> */}
-                    <img src={flhIcon} alt='home'></img>
+                    <img src={flhIcon} onClick={e => navigate("/")} style={{cursor:'pointer'}} alt='home'></img>
                 </div>
                 <div className='tw-basis-[68%] tw-my-auto' style={{ textAlign: '-webkit-center', }}>
                     {/* <img src={flhIcon} alt='home'></img> */}
@@ -96,8 +96,8 @@ const Header = () => {
                         {/* <img src={insta} alt='home' style={{ marginRight: '5px' }}></img>
                         <img src={fb} alt='home' style={{ marginRight: '5px' }}></img>
                         <img src={twitter} alt='home'></img> */}
-                        {!navbar && <img className='tw-float-right' style={{'width':'30px'}} src={togg} onClick={e => setNavbar(!navbar)} alt='home'></img>}
-                        {navbar && <img className='tw-float-right' src={cross} onClick={e => setNavbar(!navbar)} alt='home'></img>}
+                        {!navbar && <img className='tw-float-right' style={{'width':'30px','cursor':'pointer'}} src={togg} onClick={e => setNavbar(!navbar)} alt='home'></img>}
+                        {navbar && <img className='tw-float-right' style={{'cursor':'pointer'}} src={cross} onClick={e => setNavbar(!navbar)} alt='home'></img>}
 
                     </div>
                 </div>
@@ -107,11 +107,11 @@ const Header = () => {
                     <span onClick={e => setNavbar(!navbar)}>MENU</span>
                 </div> */}
                 <div className='tw-basis-2/3 tw-my-auto' style={{ textAlign: '-webkit-center', }}>
-                    <img className='tw-float-left' src={flhIcon} alt='home'></img>
+                    <img className='tw-float-left' onClick={e => navigate("/")} style={{cursor:'pointer'}} src={flhIcon} alt='home'></img>
                 </div>
                 <div className='tw-basis-1/3 tw-my-auto'> 
-                    {!navbar && <img className='tw-float-right' style={{'width':'30px'}} src={togg} onClick={e => setNavbar(!navbar)} alt='home'></img>}
-                    {navbar && <img className='tw-float-right' src={cross} onClick={e => setNavbar(!navbar)} alt='home'></img>}
+                    {!navbar && <img className='tw-float-right' style={{'width':'30px','cursor':'pointer'}} src={togg} onClick={e => setNavbar(!navbar)} alt='home'></img>}
+                    {navbar && <img className='tw-float-right' style={{'cursor':'pointer'}} src={cross} onClick={e => setNavbar(!navbar)} alt='home'></img>}
 
                 </div>
             </div>
