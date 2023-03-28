@@ -107,30 +107,30 @@ const CarouselOwrWork = () => {
     const slides = [
         {
             key: 1,
-            content: <div><img src={skin} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="1" /> <span className="overlay-name">SKIN COMMERCIAL</span> </div>,
+            content: <div><img src={skin} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '346px', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="1" /> <span className="overlay-name">SKIN COMMERCIAL</span> </div>,
             onClick: () => rediectSkin()
         },
         {
             key: 2,
-            content: <div><img src={hair} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="2" /> <span className="overlay-name">CELEBRITY APPEARANCE</span> </div>,
-            onClick: () => rediectHair()
+            content: <div><img src={hair} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '346px', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="2" /> <span className="overlay-name">CELEBRITY APPEARANCE</span> </div>,
+            onClick: () => rediectCA()
 
         },
         {
             key: 132,
-            content: <div><img src={comm} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" /> <span className="overlay-name">HAIR COMMERCIAL</span> </div>,
-            onClick: () => rediectcomm()
+            content: <div><img src={comm} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '346px', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="3" /> <span className="overlay-name">HAIR COMMERCIAL</span> </div>,
+            onClick: () => rediectHair()
 
         },
         {
             key: 13,
-            content: <div><img src={a4} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="4" /> <span className="overlay-name">CAMPAIGN</span> </div>,
+            content: <div><img src={a4} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '346px', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="4" /> <span className="overlay-name">CAMPAIGN</span> </div>,
             onClick: () => rediectCampign()
 
         },
         {
             key: 41,
-            content: <div><img src={a2} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '80%', 'height': '700px', 'objectFit': 'cover','border-radius':'20px' }} alt="5" /> <span className="overlay-name">MAGZINE COVER</span> </div>,
+            content: <div><img src={a2} className='img-grayscale item-inner tw-mx-auto' style={{ 'width': '346px', 'height': '500px', 'objectFit': 'cover','border-radius':'20px' }} alt="5" /> <span className="overlay-name">MAGZINE COVER</span> </div>,
             onClick: () => rediectMagine()
 
         },
@@ -145,8 +145,8 @@ const CarouselOwrWork = () => {
         if (index === -1 || index === 1) {
             return {
                 'opacity': 1,
-                'width': '600px',
-                'height':'600px',
+                'width': '500px',
+                'height':'500px',
                 'border-radius':'20px',
                 'filter': 'brightness(0.5)'
                 //             '-webkit-filter': 'grayscale(90%)',
@@ -241,12 +241,12 @@ const CarouselOwrWork = () => {
 
     return (
         <>
-            <div className="tw-hidden min-[900px]:tw-flex tw-flex-row tw-my-[50px]">
+            <div className="tw-hidden min-[900px]:tw-flex tw-flex-row tw-my-[10px]">
 
-                <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">                    <div className="" onClick={onChangeInputminus} style={{'text-align': '-webkit-center','cursor':'pointer' }}>
+                <div class="tw-basis-[10%]  my-auto">                    <div className="" onClick={onChangeInputminus} style={{'text-align': '-webkit-center','cursor':'pointer',zIndex: '1000000' }}>
                     <span className="" aria-hidden="true"><img src={left} alt='dd'></img></span>
                 </div></div>
-                <div class="tw-basis-[90%] min-[900px]:tw-basis-5/6 tw-w-[100%] tw-h-[700px] mx-auto">
+                <div class="tw-basis-[75%]  tw-w-[100%] tw-h-[700px] mx-auto">
 
                     <Carousel slides={slides} goToSlide={state.goToSlide}
                         offsetRadius={state.offsetRadius}
@@ -261,8 +261,8 @@ const CarouselOwrWork = () => {
 
 
                 </div>
-                <div class="tw-basis-[5%] min-[900px]:tw-basis-1/12 my-auto">
-                    <div className="" onClick={onChangeInputplus} style={{'text-align': '-webkit-center' ,'cursor':'pointer'}}>
+                <div class="tw-basis-[10%]  my-auto">
+                    <div className="" onClick={onChangeInputplus} style={{'text-align': '-webkit-center' ,'cursor':'pointer',zIndex: '1000000'}}>
                         <span className="" aria-hidden="true"><img src={right} alt='dd'></img></span>
                     </div>
                 </div>
