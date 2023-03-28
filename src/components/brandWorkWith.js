@@ -727,7 +727,7 @@ const BrandWorkWith = () => {
           </div>
         </div>
 
-        <div className='tw-w-full' >
+        <div className='tw-w-full tw-relative' >
 
           <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
             <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
@@ -735,10 +735,10 @@ const BrandWorkWith = () => {
               <div className='columns-1'>
                 <img className='mx-auto' src={flh1} alt='g' ></img>
                 {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
-                <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-20 mt-4 '>
-                  <img className='mx-auto' src={fb} alt='g' ></img>
-                  <img className='mx-auto' src={insta} alt='g' ></img>
-                  <img className='mx-auto' src={twitter} alt='g' ></img>
+                <div className='tw-grid tw-grid-cols-2 tw-gap-4 tw-mx-40 mt-4 '>
+                  <img className='mx-auto' onClick={e => window.open('https://www.facebook.com/florianhurelmakeuphair?mibextid=ZbWKwL', '_blank')} src={fb} alt='g' ></img>
+                  <img className='mx-auto' onClick={e => window.open('https://instagram.com/florianhurel?igshid=YmMyMTA2M2Y', '_blank')} src={insta} alt='g' ></img>
+                  {/* <img className='mx-auto' src={twitter} alt='g' ></img> */}
                 </div>
               </div>
             </div>
@@ -912,7 +912,7 @@ const BrandWorkWith = () => {
 
 
 
-        <div className='tw-w-full' >
+        <div className='tw-w-full tw-relative' >
       
         <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-8 mx-auto' >
           <img className='mx-auto my-auto min-[900px]:tw-block tw-hidden' src={fo1} alt='g' ></img>
@@ -920,10 +920,10 @@ const BrandWorkWith = () => {
             <div className='columns-1'>
               <img className='mx-auto' src={flh1} alt='g' ></img>
               {/* <img className='mx-auto' src={fo21} alt='g' ></img> */}
-              <div className='tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-20 mt-4 '>
-                <img className='mx-auto' src={fb} alt='g' ></img>
-                <img className='mx-auto' src={insta} alt='g' ></img>
-                <img className='mx-auto' src={twitter} alt='g' ></img>
+              <div className='tw-grid tw-grid-cols-2 tw-gap-4 tw-mx-40 mt-4 '>
+                <img className='mx-auto' onClick={e => window.open('https://www.facebook.com/florianhurelmakeuphair?mibextid=ZbWKwL', '_blank')} src={fb} alt='g' ></img>
+                <img className='mx-auto' onClick={e => window.open('https://instagram.com/florianhurel?igshid=YmMyMTA2M2Y', '_blank')} src={insta} alt='g' ></img>
+                {/* <img className='mx-auto' src={twitter} alt='g' ></img> */}
               </div>
             </div>
           </div>
