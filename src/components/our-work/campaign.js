@@ -25,6 +25,7 @@ import flipkart from '../../assets/img/campign/12.jpg'
 import cadbury from '../../assets/img/campign/cadbury.JPG'
 import ceris from '../../assets/img/campign/ceris.jpg'
 import logo from '../../assets/img/flh.svg';
+import banner from '../../assets/img/campign/banner.png';
 
 const Campaigns = () => {
     const [imageArray, setimageArray] = React.useState([])
@@ -137,7 +138,7 @@ const Campaigns = () => {
                             <div class="carousel-inner">
                                 {/* mobile view */}
                                 <div class="carousel-item active ">
-                                    <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={noor[0]} alt="First slide" />
+                                    <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={banner} alt="First slide" />
                                     <div class="carousel-caption" style={{
                                         'fontSize': '44px',
                                         'color': '#fff',
@@ -149,7 +150,7 @@ const Campaigns = () => {
                                         <h5>Campaigns</h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item ">
+                                {/* <div class="carousel-item ">
                                     <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={noor[1]} alt="Second slide" />
                                     <div class="carousel-caption" style={{
                                         'fontSize': '44px',
@@ -174,7 +175,7 @@ const Campaigns = () => {
                                     }}>
                                         <h5>Campaigns</h5>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
 
                         </div>
@@ -367,7 +368,7 @@ const Campaigns = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                            Ananya Pandey for Sketchers
+                            Ananya Pandey for Skechers
                         </div>
                         <div id='Sketchers' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
                             <video onClick={e => play(e, 'Sketchers', 0)} poster={sketchers}>

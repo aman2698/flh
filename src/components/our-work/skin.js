@@ -380,14 +380,14 @@ const Skin = () => {
                         </div>
 
                         <div className='tw-grid-cols-1 tw-font-sans tw-font-semibold tw-my-2  md:tw-my-4 fontt' >
-                        Sara ali khan for FEMA
+                        Sara ali khan for FIAMA
                         </div>
                         <div id='fema' className='tw-grid md:tw-grid-cols-4 tw-grid-cols-2 tw-gap-1 tw-mb-10 tw-justify-center'>
 
                         <div>
-                            <video poster={fema}>
-                            {/* <video onClick={e => play(e, 'fema', 2)} poster={fema}> */}
-                                <source src='https://www.youtube.com/embed/6dH51aKh3rA?autoplay=1' type="video/mp4" />
+                            {/* <video poster={fema}> */}
+                            <video onClick={e => play(e, 'fema', 0)} poster={fema}>
+                                <source src='https://www.youtube.com/embed/qk2pNxlVXe4?autoplay=1' type="video/mp4" />
                             </video>
                                 {/* <span className='mx-auto ellipsImageName' style={{ 'display': 'flex', 'justifyContent': 'center' }}>Biotique by Sara</span> */}
                             </div>

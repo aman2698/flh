@@ -214,7 +214,7 @@ const BrandWorkWith = () => {
         <div className='tw-grid tw-mx-2 min-[900px]:tw-mx-36'>
           <div className='tw-columns-1'>
             <div className=' min-[900px]:tw-text-[48px] tw-text-[25px] tw-mt-4 min-[900px]:tw-mt-[30px] min-[900px]:tw-leading-[60px] tw-leading-[30px] tw-italic tw-text-[#fff] ' style={{ 'textTransform': 'uppercase', 'textAlign': 'right', 'opacity': '0.3' }}>
-              Brands worked with
+            Publications Worked With
             </div>
           </div>
           <div className='tw-hidden min-[900px]:tw-grid tw-grid-cols-2 min-[900px]:tw-grid-cols-5 tw-gap-4 tw-my-[45px] '>
@@ -280,7 +280,8 @@ const BrandWorkWith = () => {
           <div className='tw-columns-1'>
             <p className='tw-font-sans tw-font-normal min-[900px]:tw-text-[26px] tw-leading-[35px]  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-[#fff] min-[900px]:tw-text-[#fff]' style={{ 'textTransform': 'lowercase' }}>
               {/* <span className='quotes'>"</span> */}
-              Speaking of his International Experience of so many years, Florian himself has developed a Method of his own which he passes out to young, experienced and aspiring artists through his educational platform “Florian Hurel Academy” as a entrepreneur, Florian holds on to business within the education and fitness sectors of the Industry owning Florian Hurel Academy and FloFitBox Mumbai.
+              {/* Speaking of his International Experience of so many years, Florian himself has developed a Method of his own which he passes out to young, experienced and aspiring artists through his educational platform “Florian Hurel Academy” as a entrepreneur, Florian holds on to business within the education and fitness sectors of the Industry owning Florian Hurel Academy and FloFitBox Mumbai. */}
+              Speaking of his international experience over many years, Florian himself has developed a method of his own, which he passes on to young, enthusiastic, and aspiring artists through his educational platform, “Florian Hurel Academy.” As an entrepreneur, Florian holds onto businesses within the education and fitness sectors of the industry, owning Florian Hurel Academy and FloFitBox Mumbai. 
             </p>
           </div>
           <div className='tw-grid tw-grid-cols-4 tw-gap-2 tw-my-[45px]' >
@@ -322,20 +323,20 @@ const BrandWorkWith = () => {
 
       </div> */}
 
-      {/* our work */}
+      {/* Projects */}
       <div className=' tw-hidden min-[900px]:tw-block' style={{'background':`linear-gradient(180deg, #3E3E3E 20.02%, #1A1919 73.58%)`,'backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)'}}>
       <div className='tw-pt-[30px] tw-hidden min-[900px]:tw-block backgroungg' style={{'backgroundSize':'cover','backgroundColor':'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)','zIndex':'2','position':'relative'}}>
       <div  className='tw-grid tw-mx-0 min-[900px]:tw-mx-16 tw-pt-10 min-[900px]:tw-h-auto ' >
         <div className='border-florian' style={{'zIndex':'0'}}>
         <div className='row tw-pb-[20px] w-full '>
-          {/* <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small tw-mx-10 min-[900px]:tw-mx-0' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase' }}>our work</div> */}
+          {/* <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small tw-mx-10 min-[900px]:tw-mx-0' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase' }}>Projects</div> */}
           <div className='col-md-12 p-0'>
 
           <div class="" style={{    'float': 'right',
     'marginTop': '-70px',
     'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #3e3e3e 73.58%)','padding':'3px 12px', marginRight:'-6px','zIndex':'1'}}>
             <div class=" tw-mx-4 ">
-                <span className='tw-font-sans tw-italic tw-font-normal tw-text-[96px] tw-text-[#fff]' style={{'opacity':'0.17'}}>OUR WORK</span>
+                <span className='tw-font-sans tw-italic tw-font-normal tw-text-[96px] tw-text-[#fff]' style={{'opacity':'0.17'}}>Projects</span>
             </div>
           </div>
           </div>
@@ -367,7 +368,7 @@ const BrandWorkWith = () => {
           {/* <div className='tw-font-sans tw-font-bold tw-text-2xl underline-small tw-mx-10 min-[900px]:tw-mx-0' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase' }}>our work</div> */}
           <div class="" style={{ }}>
             <div class=" tw-mx-4 ">
-                <span className='tw-font-sans tw-italic tw-font-normal tw-text-[48px] tw-text-[#fff]' style={{'opacity':'0.17','float':'right'}}>OUR WORK</span>
+                <span className='tw-font-sans tw-italic tw-font-normal tw-text-[48px] tw-text-[#fff]' style={{'opacity':'0.17','float':'right'}}>Projects</span>
             </div>
           </div>
           <div className='tw-mt-[60px]'>
@@ -400,7 +401,8 @@ const BrandWorkWith = () => {
               <p className='tw-font-sans tw-font-[300] min-[900px]:tw-text-2xl tw-italic tw-text-[20px]  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-white' style={{'textAlign':'left' }}>
               {/* <span className='quotes'>"</span> */}
                 {/* Speaking of his many years of international experience, Florian himself has developed a system that he shares with aspiring young, seasoned, and established artists through his educational platform, "FLORIAN HUREL ACADEMY," which he runs as an entrepreneur. FLORIAN CONTINUES TO DO BUSINESS IN THE EDUCATION AND FITNESS SECTORS OF THE INDUSTRY AND OWNS FLORIAN HUREL ACADEMY AND FLOFITBOX MUMBAI */}
-                Speaking of his International Experience of so many years, Florian himself has developed a Method of his own which he passes out to young, experienced and aspiring artists through his educational platform “Florian Hurel Academy” as a entrepreneur, Florian holds on to business within the education and fitness sectors of the Industry owning Florian Hurel Academy and FloFitBox Mumbai.
+                {/* Speaking of his International Experience of so many years, Florian himself has developed a Method of his own which he passes out to young, experienced and aspiring artists through his educational platform “Florian Hurel Academy” as a entrepreneur, Florian holds on to business within the education and fitness sectors of the Industry owning Florian Hurel Academy and FloFitBox Mumbai. */}
+                Speaking of his international experience over many years, Florian himself has developed a method of his own, which he passes on to young, enthusiastic, and aspiring artists through his educational platform, “Florian Hurel Academy.” As an entrepreneur, Florian holds onto businesses within the education and fitness sectors of the industry, owning Florian Hurel Academy and FloFitBox Mumbai. 
               </p>
             </div>
 

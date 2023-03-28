@@ -11,6 +11,7 @@ import cross from '../../assets/img/times.svg';
 import left from '../../assets/img/left-arrow.svg';
 import right from '../../assets/img/right-arrow.svg';
 import logo from '../../assets/img/flh.svg';
+import banner from '../../assets/img/CA/banner.png';
 
 const Apperance = () => {
   const [imageArray, setimageArray] = React.useState([])
@@ -86,7 +87,7 @@ const Apperance = () => {
               <div class="carousel-inner">
                 {/* mobile view */}
                 <div class="carousel-item active ">
-                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={daisy[0]} alt="First slide" />
+                  <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={banner} alt="First slide" />
                   <div class="carousel-caption" style={{
                     'fontSize': '44px',
                     'color': '#fff',
@@ -98,7 +99,7 @@ const Apperance = () => {
                     <h5>Celebrity Apperencce</h5>
                   </div>
                 </div>
-                <div class="carousel-item ">
+                {/* <div class="carousel-item ">
                   <img class="d-block w-100 tw-h-[600px] tw-object-cover" src={deepika[0]} alt="Second slide" />
                   <div class="carousel-caption" style={{
                     'fontSize': '44px',
@@ -123,7 +124,7 @@ const Apperance = () => {
                   }}>
                     <h5>Celebrity Apperencce</h5>
                   </div>
-                </div>
+                </div> */}
               </div>
 
             </div>
