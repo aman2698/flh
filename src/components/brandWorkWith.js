@@ -640,7 +640,7 @@ const BrandWorkWith = () => {
 
 
           <div className='tw-columns-1 '>
-            <div className='tw-font-sans tw-font-normal tw-italic min-[900px]:tw-text-[96px] tw-text-[36px] min-[900px]:tw-leading-[121px] tw-leading-[45px] tw-text-white min-[900px]:tw-text-white underline-small' style={{ 'marginBottom': '15px', 'opacity': '0.17', float: 'right', 'textAlign': 'end', 'textTransform': 'uppercase' }}>Newsletter & <br /> awards</div>
+            <div className='tw-font-sans tw-font-normal tw-italic min-[900px]:tw-text-[96px] tw-text-[36px] min-[900px]:tw-leading-[121px] tw-leading-[45px] tw-text-white min-[900px]:tw-text-white ' style={{ 'marginBottom': '15px', 'opacity': '0.17', float: 'right', 'textAlign': 'end', 'textTransform': 'uppercase' }}>Newsletter & <br /> awards</div>
             <div className='tw-hidden min-[900px]:tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-2  tw-mx-8 min-[900px]:tw-mx-16 min-[900px]:tw-mt-[275px] tw-my-10 mx-auto' >
               <div className="card" style={{'background':'rgba(248, 248, 248, 0.2)'}}>
                 <img className='mx-auto my-3' src={b1} alt='g' style={{ 'width': '90%', 'height': '300px', 'objectFit': 'cover' }}></img>
@@ -823,7 +823,7 @@ const BrandWorkWith = () => {
 
 
           <div className='tw-columns-1 '>
-            <div className='tw-font-sans tw-font-normal tw-italic min-[900px]:tw-text-[96px] tw-text-[36px] min-[900px]:tw-leading-[121px] tw-leading-[45px] tw-text-white min-[900px]:tw-text-white underline-small' style={{ 'marginBottom': '15px','opacity':'0.17',float:'right','textAlign':'end','textTransform':'uppercase' }}>Newsletter & <br/> awards</div>
+            <div className='tw-font-sans tw-font-normal tw-italic min-[900px]:tw-text-[96px] tw-text-[36px] min-[900px]:tw-leading-[121px] tw-leading-[45px] tw-text-white min-[900px]:tw-text-white' style={{ 'marginBottom': '15px','opacity':'0.17',float:'right','textAlign':'end','textTransform':'uppercase' }}>Newsletter & <br/> awards</div>
             <div className='tw-hidden min-[900px]:tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-2  tw-mx-8 min-[900px]:tw-mx-16 min-[900px]:tw-mt-[275px] tw-my-10 mx-auto'>
               <div className="card">
                 <img className='mx-auto my-3' src={b1} alt='g' style={{ 'width': '90%', 'height': '300px', 'objectFit': 'cover' }}></img>

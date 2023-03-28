@@ -62,7 +62,7 @@ const Bio = () => {
             <source src='https://player.vimeo.com/video/805016119?h=0fd1008446' type="video/mp4" />
           </video>
         </div> */}
-        <div className='tw-font-sans tw-text-[96px] tw-font-normal underline-small ' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase','color':'#fff','opacity':'0.17','position':'absolute','top':'-70px' }}>Bio</div>
+        <div className='tw-font-sans tw-text-[96px] tw-font-normal ' style={{ 'marginBottom': '15px', 'textTransform': 'uppercase','color':'#fff','opacity':'0.17','position':'absolute','top':'-70px' }}>Bio</div>
         <div className='tw-font-sans tw-mx-8 tw-font-normal min-[900px]:tw-text-[24px] tw-leading-[150%] tw-text-lg tw-text-[#DEDEDE;]'>
           <p>Florian Hurel is a renowned hair and makeup artist with over a decade of experience in the beauty industry. He is known for his exceptional skills in creating flawless and natural-looking makeup, and his ability to enhance a person's beauty without overpowering their features.</p>
           <p>Florian began his career in Paris, where he honed his skills working with some of the most prestigious names in the fashion industry. He has since established himself as a go-to artist for high-end editorial shoots, advertising campaigns, and red carpet events.</p>
