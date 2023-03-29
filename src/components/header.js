@@ -151,7 +151,7 @@ const Header = () => {
                                 'lineHeight': '35px',
                                 'textTransform': 'uppercase'
                             }}>
-                                <span style={{ 'cursor': 'pointer' }} onClick={e => setourWork(!ourWork)}>Our works {ourWork ? <span>-</span> : <span>+</span>}</span>
+                                <span style={{ 'cursor': 'pointer' }} onClick={e => setourWork(!ourWork)}>Projects {ourWork ? <span>-</span> : <span>+</span>}</span>
                             </li>
                             <ul className={`tw-items-center tw-justify-center tw-ml-16 ${ourWork ? "tw-block" : "tw-hidden"}`}>
                                 <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{
@@ -305,7 +305,7 @@ const Header = () => {
                                 'lineHeight': '35px',
                                 'textTransform': 'uppercase'
                             }}>
-                                <span style={{ 'cursor': 'pointer' }} onClick={e => setourWork(!ourWork)}>Our works {ourWork ? <span>-</span> : <span>+</span>}</span>
+                                <span style={{ 'cursor': 'pointer' }} onClick={e => setourWork(!ourWork)}>Projects {ourWork ? <span>-</span> : <span>+</span>}</span>
                             </li>
                             <ul className={`tw-items-center tw-justify-center tw-ml-16 ${ourWork ? "tw-block" : "tw-hidden"}`}>
                                 <li className="tw-text-white min-[900px]:tw-text-gray-600 min-[900px]:hover:tw-text-gray-900 tw-p-2" style={{

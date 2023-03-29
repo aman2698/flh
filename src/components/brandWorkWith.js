@@ -278,7 +278,7 @@ const BrandWorkWith = () => {
             </div>
           </div> */}
           <div className='tw-columns-1'>
-            <p className='tw-font-sans tw-font-normal min-[900px]:tw-text-[26px] tw-leading-[35px]  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-[#fff] min-[900px]:tw-text-[#fff]' style={{ 'textTransform': 'lowercase' }}>
+            <p className='tw-font-sans tw-font-normal min-[900px]:tw-text-[26px] tw-leading-[35px]  tw-mt-1 tw-text-center min-[900px]:tw-mt-2 tw-text-[#fff] min-[900px]:tw-text-[#fff]' style={{ }}>
               {/* <span className='quotes'>"</span> */}
               {/* Speaking of his International Experience of so many years, Florian himself has developed a Method of his own which he passes out to young, experienced and aspiring artists through his educational platform “Florian Hurel Academy” as a entrepreneur, Florian holds on to business within the education and fitness sectors of the Industry owning Florian Hurel Academy and FloFitBox Mumbai. */}
               Speaking of his international experience over many years, Florian himself has developed a method of his own, which he passes on to young, enthusiastic, and aspiring artists through his educational platform, “Florian Hurel Academy.” As an entrepreneur, Florian holds onto businesses within the education and fitness sectors of the industry, owning Florian Hurel Academy and FloFitBox Mumbai. 
