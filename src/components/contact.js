@@ -12,8 +12,16 @@ import logo1 from '../assets/img/flh.svg';
 import w from '../assets/img/w.jpeg';
 import Crousell from './crousel 2';
 
-const Contact = () => {
+const formReducer = (state, event) => {
+    return {
+      ...state,
+      [event.target.name]: event.target.value
+    }
+   }
 
+const Contact = () => {
+    const [formData, setFormData] = React.useReducer(formReducer, {});
+    const [submit, setSubmit]= React.useState(false)
     const download = () => {
         fetch('Florian-Hurel.pdf').then(e => {
             const url = e.url;
@@ -26,6 +34,28 @@ const Contact = () => {
             link.parentNode.removeChild(link);
 
         })
+    }
+
+    const handelSubmit = () =>{
+        fetch("https://formsubmit.co/ajax/zarir@latelierartistmanagement.com", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: formData.first + ' ' + formData.last,
+                message: formData.message,
+                email:formData.email
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+                setSubmit(true)
+                console.log(data)
+            })
+            .catch(error => console.log(error));
+         console.log(formData);
     }
     return (
         <>
@@ -43,9 +73,10 @@ const Contact = () => {
                                     </label>
                                     <input
                                         type="text"
-                                        name="first-name"
+                                        name="first"
                                         id="first-name"
                                         autoComplete="given-name"
+                                        onChange={setFormData}
                                         className="tw-mt-2 tw-block tw-w-full tw-rounded-md  tw-shadow tw-appearance-none tw-border tw-rounded tw-py-2 tw-px-3 tw-text-gray-700 tw-leading-tight focus:tw-outline-none focus:tw-shadow-outline"
                                     />
                                 </div>
@@ -54,8 +85,9 @@ const Contact = () => {
                                 </label>
                                     <input
                                         type="text"
-                                        name="last-name"
+                                        name="last"
                                         id="last-name"
+                                        onChange={setFormData}
                                         autoComplete="family-name"
                                         className="tw-mt-2 tw-block tw-w-full tw-rounded-md  tw-shadow tw-appearance-none tw-border tw-rounded tw-py-2 tw-px-3 tw-text-gray-700 tw-leading-tight focus:tw-outline-none focus:tw-shadow-outline"
                                     />
@@ -68,8 +100,9 @@ const Contact = () => {
                                     </label>
                                     <input
                                         type="text"
-                                        name="Email"
+                                        name="email"
                                         id="Email"
+                                        onChange={setFormData}
                                         autoComplete="given-name"
                                         className="tw-mt-2 tw-block tw-w-full tw-rounded-md  tw-shadow tw-appearance-none tw-border tw-rounded tw-py-2 tw-px-3 tw-text-gray-700 tw-leading-tight focus:tw-outline-none focus:tw-shadow-outline"
                                     />
@@ -97,17 +130,25 @@ const Contact = () => {
                                     <textarea
                                         rows="5"
                                         type="text"
-                                        name="Message"
+                                        name="message"
                                         id="Message"
+                                        onChange={setFormData}
                                         autoComplete="given-name"
                                         className="tw-mt-2 tw-block tw-w-full tw-rounded-md  tw-shadow tw-appearance-none tw-border tw-rounded tw-py-2 tw-px-3 tw-text-gray-700 tw-leading-tight focus:tw-outline-none focus:tw-shadow-outline"
                                     />
                                 </div>
                             </div>
                             <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-m-[20px]">
-                                <button class="tw-bg-black hover:tw-bg-white tw-text-white hover:tw-text-black tw-font-bold tw-py-2 tw-px-4 tw-rounded">
+                                {!submit ? 
+                                <button onClick={handelSubmit} disabled={(formData.first && formData.last && formData.email)? false: true} class="tw-bg-black disabled:tw-bg-[#585858] disabled:tw-text-white disabled:tw-cursor-not-allowed hover:tw-bg-white tw-text-white hover:tw-text-black tw-font-bold tw-py-2 tw-px-4 tw-rounded">
                                     Send Message
                                 </button>
+                                :
+                                <button  class="tw-bg-[#fff] tw-text-black tw-font-bold tw-py-2 tw-px-4 tw-rounded">
+                                Thanks, We will reach you shortly.
+                            </button>
+                                }
+
 
                             </div>
                         </div>
@@ -155,13 +196,14 @@ const Contact = () => {
                     <hr className='w-full tw-hidden min-[900px]:tw-block' />
                     <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
                         <div></div>
-                        <div className='mx-auto tw-text-white'>&#169;Copyrights 2023</div>
+                        <div className='mx-auto tw-text-white'>&#169;Copyrights 2023 by Florian Design by <a href='https://dibizsolution.com' target='_blank'>Dibiz Solution</a></div>
                         <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
                     </div>
                     <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
                         {/* <div></div> */}
-                        <div className='mx-auto tw-text-white'>&#169;Copyrights 2023
+                        <div className='mx-auto tw-text-white'>&#169;Copyrights 2023 by Florian
                         </div>
+                        <div className='mx-auto tw-text-white tw-mt-[-20px]'>Design by <a href='https://dibizsolution.com' target='_blank'>Dibiz Solution</a></div>
                         <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
                     </div>
                 </div>

@@ -347,13 +347,14 @@ const Magzine = () => {
         <hr className='w-full tw-hidden min-[900px]:tw-block' />
         <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
           <div></div>
-          <div className='mx-auto tw-text-white'>&#169;Copyrights 2023</div>
+          <div className='mx-auto tw-text-white'>&#169;Copyrights 2023 by Florian Design by <a href='https://dibizsolution.com' target='_blank'>Dibiz Solution</a></div>
           <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
         </div>
         <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
           {/* <div></div> */}
-          <div className='mx-auto tw-text-white'>&#169;Copyrights 2023
+          <div className='mx-auto tw-text-white'>&#169;Copyrights 2023 by Florian
           </div>
+          <div className='mx-auto tw-text-white tw-mt-[-20px]'>Design by <a href='https://dibizsolution.com' target='_blank'>Dibiz Solution</a></div>
           <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
         </div>
       </div>

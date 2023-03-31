@@ -22,7 +22,8 @@ const Blog = () => {
     <div className='min-[900px]:tw-relative tw-h-auto' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
       <div className='tw-w-full backgroungg8'>
         <Header />
-        <div className='tw-grid tw-mx-4 min-[900px]:tw-mx-24 tw-my-10 ' style={{ 'background': 'linear-gradient(180deg, #3E3E3E 3.02%, #1A1919 73.58%)' }}>
+        <div className=''>
+        <div className='tw-grid tw-mx-4 min-[900px]:tw-mx-24 tw-my-10 ' >
           <div className='tw-columns-1 '>
             <div className='tw-font-sans tw-font-bold fontt' style={{ 'marginBottom': '15px','fontSize':'60px' }}>Our Blog</div>
             <div className='tw-grid min-[900px]:tw-grid-cols-3 tw-grid-cols-1 tw-gap-8  tw-mx-auto min-[900px]:tw-mx-48 tw-my-10 mx-auto'>
@@ -73,6 +74,7 @@ const Blog = () => {
           </div> */}
           </div>
         </div>
+        
 
         {/* footer */}
         <div className='tw-w-full tw-relative' >
@@ -95,15 +97,18 @@ const Blog = () => {
           <hr className='w-full tw-hidden min-[900px]:tw-block' />
           <div className=' tw-hidden min-[900px]:tw-grid tw-grid-cols-3 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-mt-4 tw-py-4 mx-auto' >
             <div></div>
-            <div className='mx-auto tw-text-white'>&#169;Copyrights 2023</div>
+            <div className='mx-auto tw-text-white'>&#169;Copyrights 2023 by Florian Design by <a href='https://dibizsolution.com' target='_blank'>Dibiz Solution</a></div>
             <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
           </div>
           <div className=' tw-grid min-[900px]:tw-hidden tw-grid-cols-1 tw-gap-4 tw-mx-10 md:tw-mx-40 tw-py-2 mx-auto' >
             {/* <div></div> */}
-            <div className='mx-auto tw-text-white'>&#169;Copyrights 2023
+            <div className='mx-auto tw-text-white'>&#169;Copyrights 2023 by Florian
+            </div>
+            <div className='mx-auto tw-text-white tw-mt-[-20px]'>Design by <a href='https://dibizsolution.com' target='_blank'>Dibiz Solution</a>
             </div>
             <div className='mx-auto tw-text-white'>Privacy policy / Cookies policy / Terms of use</div>
           </div>
+        </div>
         </div>
       </div>
     </div>

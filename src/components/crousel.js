@@ -196,7 +196,7 @@ const Crousel = () => {
                   }} src={image1}></img>
                 </div>
                 <div>
-                  <img style={{ 'height': '85vh' }} src={image2}></img>
+                  <img style={{ 'height': '85vh','width':'100%' }} src={image2}></img>
                 </div>
                 <div>
                   <img style={{
